@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Biblioteca</string>
+    <string name="book_not_found">Libro no encontrado</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_book_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvTitleBookDetailActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:layout_margin="24dip"
+            android:text="Title"/>
+
+    </RelativeLayout>
+
+    <fragment
+        android:name="com.franco.juanjo.pac1.tema2.fragments.BookDetailFragment"
+        android:id="@+id/fragBookDetailBookDetailActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.franco.juanjo.pac1.tema2.activities.BookDetailActivity"
+        tools:layout="@layout/fragment_book_detail"/>
+
+</LinearLayout>

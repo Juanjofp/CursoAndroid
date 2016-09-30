@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_book_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.franco.juanjo.pac1.tema2.activities.BookListActivity">
+
+    <fragment
+        class="com.franco.juanjo.pac1.tema2.fragments.BookListFragment"
+        android:id="@+id/fragBookListBookListActivity"
+        android:layout_width="@dimen/book_list_width_booklistactivity"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_book_list" />
+
+    <fragment
+        class="com.franco.juanjo.pac1.tema2.fragments.BookDetailFragment"
+        android:id="@+id/fragBookDetailBookListActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_book_detail" />
+
+</LinearLayout>
