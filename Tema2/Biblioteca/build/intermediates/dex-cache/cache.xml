@@ -11,13 +11,94 @@
         <dex dex="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.4.0_d376da53e229342e862ec4710613e627680f544b/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/Centic/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        is-multidex="true"
+        jar="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_10d9dfa266dcc06a6d637ae19a9f396fd10a22fc.jar" />
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_1127c637d9396269d5e3733455a0afeacf328853/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_b26048689f2a342f63e5a99e28713ca5d108f829/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.4.0_a6e6ee0a0dd7c96470213cb4b6098a37bc35fa91/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.4.0_8488791d77c23575eecbb36726aba0e9274f5ca3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="43e10ed299738521e68f8fbcae48fea03aba52e1">
+        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_cba6c5cf2d3da18810df9629a14320b7d7b6852b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8cec9db87d7683cf428a7c6a0f95427081e00656">
+        <dex dex="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b7fb0cc97fcde57d535a9abff6cf64cd54728dab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_5a6a96c2f0efc7076f360916f3f59592fb25e95c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ced83d9625c27c916709ad68d56099fbdbfcdf0a">
+        <dex dex="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_53818b0933601ad66e18d2da915f7162595b7e86/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_ed810eb5be035b4b55613e602855ed58b5ba91b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_b2ceb968d8b8c9b30b2b55f57207cf526551ca9b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -48,15 +129,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_1127c637d9396269d5e3733455a0afeacf328853/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Centic/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
         jumboMode="true"
         optimize="true"
@@ -65,31 +137,40 @@
         <dex dex="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_10d9dfa266dcc06a6d637ae19a9f396fd10a22fc/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_a350c8e2f63aa52dd52d0502b79229801511718a.jar" />
+        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_a350c8e2f63aa52dd52d0502b79229801511718a/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.4.0_eb2d5d94f36527ebb050a27ece9e459f9b5ca518.jar" />
+        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.4.0_eb2d5d94f36527ebb050a27ece9e459f9b5ca518/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        is-multidex="true"
+        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_b26048689f2a342f63e5a99e28713ca5d108f829.jar" />
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_c899e194082f2e9d8bdd6c929ccdfd78bccb9527/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6b7b0dea7d984c898fedab175916fe44d032f65c">
+        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_da29bfe9f94fecb5558100e8b0a3708dce55d20f/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -108,96 +189,6 @@
         revision="23.0.3"
         sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
         <dex dex="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.4.0_334b3c90ab584a4ec1854fd4ab527125b5dc1c54/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c0d9dd7df07472ccbbfb236a6385c2b8896a4cb5">
-        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/pre-dexed/debug/instant-run_da29bfe9f94fecb5558100e8b0a3708dce55d20f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_b2ceb968d8b8c9b30b2b55f57207cf526551ca9b.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="8cec9db87d7683cf428a7c6a0f95427081e00656">
-        <dex dex="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b7fb0cc97fcde57d535a9abff6cf64cd54728dab/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ced83d9625c27c916709ad68d56099fbdbfcdf0a">
-        <dex dex="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_53818b0933601ad66e18d2da915f7162595b7e86/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
-        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.4.0_8488791d77c23575eecbb36726aba0e9274f5ca3.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/Centic/Desktop/Master/M0.660Desarrollo_avanzado_Android/PACS/PAC1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_ed810eb5be035b4b55613e602855ed58b5ba91b9/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_a6e6ee0a0dd7c96470213cb4b6098a37bc35fa91.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_c899e194082f2e9d8bdd6c929ccdfd78bccb9527.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_5a6a96c2f0efc7076f360916f3f59592fb25e95c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="5b763dddf2f9e4a345f65bffc4d217e278a75562">
-        <dex dex="/Users/Centic/Desktop/CursoAndroid2016/Tema2/Biblioteca/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_cba6c5cf2d3da18810df9629a14320b7d7b6852b.jar" />
     </item>
 
 </items>
