@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+<EditText 
+	android:id="@+id/etComponenteTextView"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Ejemplos Intent"
+    />
+    
+<Button android:text="Foto" android:id="@+id/button1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="takePhoto"/>
+
+<Button android:text="Enlace" android:id="@+id/button2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="shareLink"/>
+
+<Button android:text="Web" android:id="@+id/button3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="showWeb"/>
+
+<Button android:text="Telefono" android:id="@+id/button3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="makeCall"/>
+
+<Button android:text="Dialogo" android:id="@+id/button4" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+
+<Button android:text="Notificacion" android:id="@+id/button5" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+
+<ImageView android:id="@+id/imageView1" android:src="@drawable/icon" android:layout_height="fill_parent" android:layout_width="fill_parent" android:scaleType="fitXY"/>
+
+</LinearLayout>

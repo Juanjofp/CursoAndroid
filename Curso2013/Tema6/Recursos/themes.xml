@@ -1,0 +1,1813 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head><title>core/res/res/values/themes.xml - platform/frameworks/base - Git at Google</title><link rel="stylesheet" type="text/css" href="//www.google.com/css/go.css" /><link rel="stylesheet" type="text/css" href="/+static/prettify/prettify.vf-M93Ay4IiiWRQSJKPGWQ.cache.css" /><link rel="stylesheet" type="text/css" href="/+static/gitiles.sc1AQ5sZBtrPTWvjf0CFrw.cache.css" /><script src="/+static/prettify/prettify_compiled.wQKdUVM0AfatEiTiXCI6lw.cache.js" type="text/javascript"></script></head><body onload="prettyPrint()"><h1><img src="//www.google.com/images/logo_sm.gif" alt="Google" />Git</h1><div class="menu"> <a href="https://www.google.com/accounts/ServiceLogin?service=gerritcodereview&amp;continue=https://android.googlesource.com/login/platform/frameworks/base/%2B/refs/heads/master/core/res/res/values/themes.xml">Sign in</a> </div><div class="breadcrumbs"><a href="/?format=HTML">android</a> / <a href="/platform/frameworks/base/">platform/frameworks/base</a> / <a href="/platform/frameworks/base/+/refs/heads/master">refs/heads/master</a> / <a href="/platform/frameworks/base/+/refs/heads/master/">.</a> / <a href="/platform/frameworks/base/+/refs/heads/master/core">core</a> / <a href="/platform/frameworks/base/+/refs/heads/master/core/res">res</a> / <a href="/platform/frameworks/base/+/refs/heads/master/core/res/res">res</a> / <a href="/platform/frameworks/base/+/refs/heads/master/core/res/res/values">values</a> / themes.xml</div><div class="sha1">blob: 75850dd0c1907c9946238a89bee2dae81b18642c [<a href="/platform/frameworks/base/+log/refs/heads/master/core/res/res/values/themes.xml">file history</a>]</div><pre class="git-blob prettyprint linenums lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+--&gt;
+
+&lt;!--
+===============================================================
+                        PLEASE READ
+===============================================================
+
+The Holo themes must not be modified in order to pass CTS.
+Many related themes and styles depend on other values defined in this file.
+If you would like to provide custom themes and styles for your device,
+please see themes_device_defaults.xml.
+
+===============================================================
+                        PLEASE READ
+===============================================================
+ --&gt;
+&lt;resources&gt;
+    &lt;!-- The default theme for apps on API level 10 and lower. This is the theme used for
+         activities that have not explicitly set their own theme.
+         &lt;p&gt;You can count on this being a dark
+         background with light text on top, but should try to make no
+         other assumptions about its appearance. In particular, the text
+         inside of widgets using this theme may be completely different,
+         with the widget container being a light color and the text on top
+         of it a dark color.
+         &lt;p&gt;If you&#39;re developing for API level 11 and higher, you should instead use {@link
+         #Theme_Holo} or {@link #Theme_DeviceDefault}.&lt;/p&gt;
+    --&gt;
+    &lt;style name=&quot;Theme&quot;&gt;
+
+        &lt;item name=&quot;colorForeground&quot;&gt;@android:color/bright_foreground_dark&lt;/item&gt;
+        &lt;item name=&quot;colorForegroundInverse&quot;&gt;@android:color/bright_foreground_dark_inverse&lt;/item&gt;
+        &lt;item name=&quot;colorBackground&quot;&gt;@android:color/background_dark&lt;/item&gt;
+        &lt;item name=&quot;colorBackgroundCacheHint&quot;&gt;?android:attr/colorBackground&lt;/item&gt;
+
+        &lt;item name=&quot;colorPressedHighlight&quot;&gt;@color/legacy_pressed_highlight&lt;/item&gt;
+        &lt;item name=&quot;colorLongPressedHighlight&quot;&gt;@color/legacy_long_pressed_highlight&lt;/item&gt;
+        &lt;item name=&quot;colorFocusedHighlight&quot;&gt;@color/legacy_selected_highlight&lt;/item&gt;
+        &lt;item name=&quot;colorMultiSelectHighlight&quot;&gt;@color/legacy_selected_highlight&lt;/item&gt;
+        &lt;item name=&quot;colorActivatedHighlight&quot;&gt;@color/legacy_selected_highlight&lt;/item&gt;
+
+        &lt;item name=&quot;disabledAlpha&quot;&gt;0.5&lt;/item&gt;
+        &lt;item name=&quot;backgroundDimAmount&quot;&gt;0.6&lt;/item&gt;
+
+        &lt;!-- Text styles --&gt;
+        &lt;item name=&quot;textAppearance&quot;&gt;@android:style/TextAppearance&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceInverse&quot;&gt;@android:style/TextAppearance.Inverse&lt;/item&gt;
+
+        &lt;item name=&quot;textColorPrimary&quot;&gt;@android:color/primary_text_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondary&quot;&gt;@android:color/secondary_text_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorTertiary&quot;&gt;@android:color/tertiary_text_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverse&quot;&gt;@android:color/primary_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryInverse&quot;&gt;@android:color/secondary_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorTertiaryInverse&quot;&gt;@android:color/tertiary_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryDisableOnly&quot;&gt;@android:color/primary_text_dark_disable_only&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverseDisableOnly&quot;&gt;@android:color/primary_text_light_disable_only&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryNoDisable&quot;&gt;@android:color/primary_text_dark_nodisable&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryNoDisable&quot;&gt;@android:color/secondary_text_dark_nodisable&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverseNoDisable&quot;&gt;@android:color/primary_text_light_nodisable&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryInverseNoDisable&quot;&gt;@android:color/secondary_text_light_nodisable&lt;/item&gt;
+        &lt;item name=&quot;textColorHint&quot;&gt;@android:color/hint_foreground_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorHintInverse&quot;&gt;@android:color/hint_foreground_light&lt;/item&gt;
+        &lt;item name=&quot;textColorSearchUrl&quot;&gt;@android:color/search_url_text&lt;/item&gt;
+        &lt;item name=&quot;textColorHighlight&quot;&gt;@android:color/highlighted_text_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorHighlightInverse&quot;&gt;@android:color/highlighted_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorLink&quot;&gt;@android:color/link_text_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorLinkInverse&quot;&gt;@android:color/link_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorAlertDialogListItem&quot;&gt;@android:color/primary_text_light_disable_only&lt;/item&gt;
+
+        &lt;item name=&quot;textAppearanceLarge&quot;&gt;@android:style/TextAppearance.Large&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceMedium&quot;&gt;@android:style/TextAppearance.Medium&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSmall&quot;&gt;@android:style/TextAppearance.Small&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceLargeInverse&quot;&gt;@android:style/TextAppearance.Large.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceMediumInverse&quot;&gt;@android:style/TextAppearance.Medium.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSmallInverse&quot;&gt;@android:style/TextAppearance.Small.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSearchResultTitle&quot;&gt;@android:style/TextAppearance.SearchResult.Title&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSearchResultSubtitle&quot;&gt;@android:style/TextAppearance.SearchResult.Subtitle&lt;/item&gt;
+
+        &lt;item name=&quot;textAppearanceEasyCorrectSuggestion&quot;&gt;@android:style/TextAppearance.EasyCorrectSuggestion&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceMisspelledSuggestion&quot;&gt;@android:style/TextAppearance.MisspelledSuggestion&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceAutoCorrectionSuggestion&quot;&gt;@android:style/TextAppearance.AutoCorrectionSuggestion&lt;/item&gt;
+
+        &lt;item name=&quot;textAppearanceButton&quot;&gt;@android:style/TextAppearance.Widget.Button&lt;/item&gt;
+        
+        &lt;item name=&quot;editTextColor&quot;&gt;@android:color/primary_text_light&lt;/item&gt;
+        &lt;item name=&quot;editTextBackground&quot;&gt;@android:drawable/edit_text&lt;/item&gt;
+        
+        &lt;item name=&quot;candidatesTextStyleSpans&quot;&gt;@android:string/candidates_style&lt;/item&gt;
+        
+        &lt;item name=&quot;textCheckMark&quot;&gt;@android:drawable/indicator_check_mark_dark&lt;/item&gt;
+        &lt;item name=&quot;textCheckMarkInverse&quot;&gt;@android:drawable/indicator_check_mark_light&lt;/item&gt;
+
+        &lt;item name=&quot;textAppearanceLargePopupMenu&quot;&gt;@android:style/TextAppearance.Widget.PopupMenu.Large&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSmallPopupMenu&quot;&gt;@android:style/TextAppearance.Widget.PopupMenu.Small&lt;/item&gt;
+
+        &lt;!-- Button styles --&gt;
+        &lt;item name=&quot;buttonStyle&quot;&gt;@android:style/Widget.Button&lt;/item&gt;
+
+        &lt;item name=&quot;buttonStyleSmall&quot;&gt;@android:style/Widget.Button.Small&lt;/item&gt;
+        &lt;item name=&quot;buttonStyleInset&quot;&gt;@android:style/Widget.Button.Inset&lt;/item&gt;
+
+        &lt;item name=&quot;buttonStyleToggle&quot;&gt;@android:style/Widget.Button.Toggle&lt;/item&gt;
+
+        &lt;item name=&quot;selectableItemBackground&quot;&gt;@android:drawable/item_background&lt;/item&gt;
+        &lt;item name=&quot;borderlessButtonStyle&quot;&gt;?android:attr/buttonStyle&lt;/item&gt;
+        &lt;item name=&quot;homeAsUpIndicator&quot;&gt;@android:drawable/ic_ab_back_holo_dark&lt;/item&gt;
+
+        &lt;!-- List attributes --&gt;
+        &lt;item name=&quot;listPreferredItemHeight&quot;&gt;64dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemHeightSmall&quot;&gt;?android:attr/listPreferredItemHeight&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemHeightLarge&quot;&gt;?android:attr/listPreferredItemHeight&lt;/item&gt;
+        &lt;item name=&quot;dropdownListPreferredItemHeight&quot;&gt;?android:attr/listPreferredItemHeight&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceListItem&quot;&gt;?android:attr/textAppearanceLarge&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceListItemSmall&quot;&gt;?android:attr/textAppearanceLarge&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingLeft&quot;&gt;6dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingRight&quot;&gt;6dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingStart&quot;&gt;6dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingEnd&quot;&gt;6dip&lt;/item&gt;
+
+        &lt;!-- @hide --&gt;
+        &lt;item name=&quot;searchResultListItemHeight&quot;&gt;58dip&lt;/item&gt;
+        &lt;item name=&quot;listDivider&quot;&gt;@drawable/divider_horizontal_dark&lt;/item&gt;
+        &lt;item name=&quot;listSeparatorTextViewStyle&quot;&gt;@android:style/Widget.TextView.ListSeparator&lt;/item&gt;   
+
+        &lt;item name=&quot;listChoiceIndicatorSingle&quot;&gt;@android:drawable/btn_radio&lt;/item&gt;
+        &lt;item name=&quot;listChoiceIndicatorMultiple&quot;&gt;@android:drawable/btn_check&lt;/item&gt;
+
+        &lt;item name=&quot;listChoiceBackgroundIndicator&quot;&gt;@android:drawable/list_selector_background&lt;/item&gt;
+
+        &lt;item name=&quot;activatedBackgroundIndicator&quot;&gt;@android:drawable/activated_background&lt;/item&gt;
+
+        &lt;item name=&quot;listDividerAlertDialog&quot;&gt;@android:drawable/divider_horizontal_bright&lt;/item&gt;
+
+        &lt;item name=&quot;expandableListPreferredItemPaddingLeft&quot;&gt;40dip&lt;/item&gt;
+        &lt;item name=&quot;expandableListPreferredChildPaddingLeft&quot;&gt;
+                ?android:attr/expandableListPreferredItemPaddingLeft&lt;/item&gt;
+
+        &lt;item name=&quot;expandableListPreferredItemIndicatorLeft&quot;&gt;3dip&lt;/item&gt;
+        &lt;item name=&quot;expandableListPreferredItemIndicatorRight&quot;&gt;0dip&lt;/item&gt;
+        &lt;item name=&quot;expandableListPreferredChildIndicatorLeft&quot;&gt;
+                ?android:attr/expandableListPreferredItemIndicatorLeft&lt;/item&gt;
+        &lt;item name=&quot;expandableListPreferredChildIndicatorRight&quot;&gt;
+                ?android:attr/expandableListPreferredItemIndicatorRight&lt;/item&gt;
+        &lt;item name=&quot;findOnPageNextDrawable&quot;&gt;@android:drawable/ic_find_next_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;findOnPagePreviousDrawable&quot;&gt;@android:drawable/ic_find_previous_holo_dark&lt;/item&gt;
+
+        &lt;!-- Gallery attributes --&gt;
+        &lt;item name=&quot;galleryItemBackground&quot;&gt;@android:drawable/gallery_item_background&lt;/item&gt;
+        
+        &lt;!-- Window attributes --&gt;
+        &lt;item name=&quot;windowBackground&quot;&gt;@android:drawable/screen_background_selector_dark&lt;/item&gt;
+        &lt;item name=&quot;windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;windowNoTitle&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowFullscreen&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowIsFloating&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;windowShowWallpaper&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowTitleStyle&quot;&gt;@android:style/WindowTitle&lt;/item&gt;
+        &lt;item name=&quot;windowTitleSize&quot;&gt;25dip&lt;/item&gt;
+        &lt;item name=&quot;windowTitleBackgroundStyle&quot;&gt;@android:style/WindowTitleBackground&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.Activity&lt;/item&gt;
+        &lt;item name=&quot;android:windowSoftInputMode&quot;&gt;stateUnspecified|adjustUnspecified&lt;/item&gt;
+        &lt;item name=&quot;windowActionBar&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowActionModeOverlay&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowCloseOnTouchOutside&quot;&gt;false&lt;/item&gt;
+
+        &lt;!-- Define these here; ContextThemeWrappers around themes that define them should
+             always clear these values. --&gt;
+        &lt;item name=&quot;windowFixedWidthMajor&quot;&gt;0dp&lt;/item&gt;
+        &lt;item name=&quot;windowFixedWidthMinor&quot;&gt;0dp&lt;/item&gt;
+        &lt;item name=&quot;windowFixedHeightMajor&quot;&gt;0dp&lt;/item&gt;
+        &lt;item name=&quot;windowFixedHeightMinor&quot;&gt;0dp&lt;/item&gt;
+
+        &lt;!-- Dialog attributes --&gt;
+        &lt;item name=&quot;dialogTheme&quot;&gt;@android:style/Theme.Dialog&lt;/item&gt;
+        &lt;item name=&quot;dialogTitleIconsDecorLayout&quot;&gt;@layout/dialog_title_icons&lt;/item&gt;
+        &lt;item name=&quot;dialogCustomTitleDecorLayout&quot;&gt;@layout/dialog_custom_title&lt;/item&gt;
+        &lt;item name=&quot;dialogTitleDecorLayout&quot;&gt;@layout/dialog_title&lt;/item&gt;
+
+        &lt;!-- AlertDialog attributes --&gt;
+        &lt;item name=&quot;alertDialogTheme&quot;&gt;@android:style/Theme.Dialog.Alert&lt;/item&gt;
+        &lt;item name=&quot;alertDialogStyle&quot;&gt;@android:style/AlertDialog&lt;/item&gt;
+        &lt;item name=&quot;alertDialogCenterButtons&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;alertDialogIcon&quot;&gt;@android:drawable/ic_dialog_alert&lt;/item&gt;
+
+        &lt;!-- Presentation attributes (introduced after API level 10 so does not
+             have a special old-style theme. --&gt;
+        &lt;item name=&quot;presentationTheme&quot;&gt;@android:style/Theme.DeviceDefault.Dialog.Presentation&lt;/item&gt;
+
+        &lt;!-- Toast attributes --&gt;
+        &lt;item name=&quot;toastFrameBackground&quot;&gt;@android:drawable/toast_frame&lt;/item&gt;
+
+        &lt;!-- Panel attributes --&gt;
+        &lt;item name=&quot;panelBackground&quot;&gt;@android:drawable/menu_background&lt;/item&gt;
+        &lt;item name=&quot;panelFullBackground&quot;&gt;@android:drawable/menu_background_fill_parent_width&lt;/item&gt;
+        &lt;!-- These three attributes do not seems to be used by the framework. Declared public though --&gt;
+        &lt;item name=&quot;panelColorBackground&quot;&gt;#000&lt;/item&gt;
+        &lt;item name=&quot;panelColorForeground&quot;&gt;?android:attr/textColorPrimary&lt;/item&gt;
+        &lt;item name=&quot;panelTextAppearance&quot;&gt;?android:attr/textAppearance&lt;/item&gt;
+
+        &lt;item name=&quot;panelMenuIsCompact&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;panelMenuListWidth&quot;&gt;296dip&lt;/item&gt;
+
+        &lt;!-- Scrollbar attributes --&gt;
+        &lt;item name=&quot;scrollbarFadeDuration&quot;&gt;250&lt;/item&gt;
+        &lt;item name=&quot;scrollbarDefaultDelayBeforeFade&quot;&gt;300&lt;/item&gt; 
+        &lt;item name=&quot;scrollbarSize&quot;&gt;10dip&lt;/item&gt;
+        &lt;item name=&quot;scrollbarThumbHorizontal&quot;&gt;@android:drawable/scrollbar_handle_horizontal&lt;/item&gt;
+        &lt;item name=&quot;scrollbarThumbVertical&quot;&gt;@android:drawable/scrollbar_handle_vertical&lt;/item&gt;
+        &lt;item name=&quot;scrollbarTrackHorizontal&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;scrollbarTrackVertical&quot;&gt;@null&lt;/item&gt;
+
+        &lt;!-- Text selection handle attributes --&gt;
+        &lt;item name=&quot;textSelectHandleLeft&quot;&gt;@android:drawable/text_select_handle_left&lt;/item&gt;
+        &lt;item name=&quot;textSelectHandleRight&quot;&gt;@android:drawable/text_select_handle_right&lt;/item&gt;
+        &lt;item name=&quot;textSelectHandle&quot;&gt;@android:drawable/text_select_handle_middle&lt;/item&gt;
+        &lt;item name=&quot;textSelectHandleWindowStyle&quot;&gt;@android:style/Widget.TextSelectHandle&lt;/item&gt;
+        &lt;item name=&quot;textEditPasteWindowLayout&quot;&gt;@android:layout/text_edit_paste_window&lt;/item&gt;
+        &lt;item name=&quot;textEditNoPasteWindowLayout&quot;&gt;@android:layout/text_edit_no_paste_window&lt;/item&gt;
+        &lt;item name=&quot;textEditSidePasteWindowLayout&quot;&gt;@android:layout/text_edit_side_paste_window&lt;/item&gt;
+        &lt;item name=&quot;textEditSideNoPasteWindowLayout&quot;&gt;@android:layout/text_edit_side_no_paste_window&lt;/item&gt;
+        &lt;item name=&quot;textSuggestionsWindowStyle&quot;&gt;@android:style/Widget.TextSuggestionsPopupWindow&lt;/item&gt;
+        &lt;item name=&quot;textEditSuggestionItemLayout&quot;&gt;@android:layout/text_edit_suggestion_item&lt;/item&gt;
+        &lt;item name=&quot;textCursorDrawable&quot;&gt;@null&lt;/item&gt;
+
+        &lt;!-- Widget styles --&gt;
+        &lt;item name=&quot;absListViewStyle&quot;&gt;@android:style/Widget.AbsListView&lt;/item&gt;
+        &lt;item name=&quot;autoCompleteTextViewStyle&quot;&gt;@android:style/Widget.AutoCompleteTextView&lt;/item&gt;        
+        &lt;item name=&quot;checkboxStyle&quot;&gt;@android:style/Widget.CompoundButton.CheckBox&lt;/item&gt;
+        &lt;item name=&quot;checkedTextViewStyle&quot;&gt;@android:style/Widget.CheckedTextView&lt;/item&gt;
+        &lt;item name=&quot;dropDownListViewStyle&quot;&gt;@android:style/Widget.ListView.DropDown&lt;/item&gt;
+        &lt;item name=&quot;editTextStyle&quot;&gt;@android:style/Widget.EditText&lt;/item&gt;
+        &lt;item name=&quot;expandableListViewStyle&quot;&gt;@android:style/Widget.ExpandableListView&lt;/item&gt;
+        &lt;item name=&quot;expandableListViewWhiteStyle&quot;&gt;@android:style/Widget.ExpandableListView.White&lt;/item&gt;
+        &lt;item name=&quot;galleryStyle&quot;&gt;@android:style/Widget.Gallery&lt;/item&gt;
+        &lt;item name=&quot;gestureOverlayViewStyle&quot;&gt;@android:style/Widget.GestureOverlayView&lt;/item&gt;
+        &lt;item name=&quot;gridViewStyle&quot;&gt;@android:style/Widget.GridView&lt;/item&gt;
+        &lt;item name=&quot;imageButtonStyle&quot;&gt;@android:style/Widget.ImageButton&lt;/item&gt;
+        &lt;item name=&quot;imageWellStyle&quot;&gt;@android:style/Widget.ImageWell&lt;/item&gt;
+        &lt;item name=&quot;listViewStyle&quot;&gt;@android:style/Widget.ListView&lt;/item&gt;
+        &lt;item name=&quot;listViewWhiteStyle&quot;&gt;@android:style/Widget.ListView.White&lt;/item&gt;
+        &lt;item name=&quot;popupWindowStyle&quot;&gt;@android:style/Widget.PopupWindow&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyle&quot;&gt;@android:style/Widget.ProgressBar&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleHorizontal&quot;&gt;@android:style/Widget.ProgressBar.Horizontal&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleSmall&quot;&gt;@android:style/Widget.ProgressBar.Small&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleSmallTitle&quot;&gt;@android:style/Widget.ProgressBar.Small.Title&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleLarge&quot;&gt;@android:style/Widget.ProgressBar.Large&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleInverse&quot;&gt;@android:style/Widget.ProgressBar.Inverse&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleSmallInverse&quot;&gt;@android:style/Widget.ProgressBar.Small.Inverse&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleLargeInverse&quot;&gt;@android:style/Widget.ProgressBar.Large.Inverse&lt;/item&gt;
+        &lt;item name=&quot;seekBarStyle&quot;&gt;@android:style/Widget.SeekBar&lt;/item&gt;
+        &lt;item name=&quot;ratingBarStyle&quot;&gt;@android:style/Widget.RatingBar&lt;/item&gt;
+        &lt;item name=&quot;ratingBarStyleIndicator&quot;&gt;@android:style/Widget.RatingBar.Indicator&lt;/item&gt;
+        &lt;item name=&quot;ratingBarStyleSmall&quot;&gt;@android:style/Widget.RatingBar.Small&lt;/item&gt;
+        &lt;item name=&quot;radioButtonStyle&quot;&gt;@android:style/Widget.CompoundButton.RadioButton&lt;/item&gt;
+        &lt;item name=&quot;scrollViewStyle&quot;&gt;@android:style/Widget.ScrollView&lt;/item&gt;
+        &lt;item name=&quot;horizontalScrollViewStyle&quot;&gt;@android:style/Widget.HorizontalScrollView&lt;/item&gt;
+        &lt;item name=&quot;spinnerStyle&quot;&gt;@android:style/Widget.Spinner&lt;/item&gt;
+        &lt;item name=&quot;dropDownSpinnerStyle&quot;&gt;@android:style/Widget.Spinner.DropDown&lt;/item&gt;
+        &lt;item name=&quot;starStyle&quot;&gt;@android:style/Widget.CompoundButton.Star&lt;/item&gt;
+        &lt;item name=&quot;tabWidgetStyle&quot;&gt;@android:style/Widget.TabWidget&lt;/item&gt;
+        &lt;item name=&quot;textViewStyle&quot;&gt;@android:style/Widget.TextView&lt;/item&gt;
+        &lt;item name=&quot;errorMessageBackground&quot;&gt;@android:drawable/popup_inline_error&lt;/item&gt;
+        &lt;item name=&quot;errorMessageAboveBackground&quot;&gt;@android:drawable/popup_inline_error_above&lt;/item&gt;
+        &lt;item name=&quot;webTextViewStyle&quot;&gt;@android:style/Widget.WebTextView&lt;/item&gt;
+        &lt;item name=&quot;webViewStyle&quot;&gt;@android:style/Widget.WebView&lt;/item&gt;
+        &lt;item name=&quot;dropDownItemStyle&quot;&gt;@android:style/Widget.DropDownItem&lt;/item&gt;
+        &lt;item name=&quot;spinnerDropDownItemStyle&quot;&gt;@android:style/Widget.DropDownItem.Spinner&lt;/item&gt;
+        &lt;item name=&quot;spinnerItemStyle&quot;&gt;@android:style/Widget.TextView.SpinnerItem&lt;/item&gt;
+        &lt;item name=&quot;dropDownHintAppearance&quot;&gt;@android:style/TextAppearance.Widget.DropDownHint&lt;/item&gt;
+        &lt;item name=&quot;keyboardViewStyle&quot;&gt;@android:style/Widget.KeyboardView&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeOverlay&quot;&gt;@android:drawable/quickcontact_badge_overlay_dark&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleWindowSmall&quot;&gt;@android:style/Widget.QuickContactBadge.WindowSmall&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleWindowMedium&quot;&gt;@android:style/Widget.QuickContactBadge.WindowMedium&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleWindowLarge&quot;&gt;@android:style/Widget.QuickContactBadge.WindowLarge&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleSmallWindowSmall&quot;&gt;@android:style/Widget.QuickContactBadgeSmall.WindowSmall&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleSmallWindowMedium&quot;&gt;@android:style/Widget.QuickContactBadgeSmall.WindowMedium&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleSmallWindowLarge&quot;&gt;@android:style/Widget.QuickContactBadgeSmall.WindowLarge&lt;/item&gt;
+        &lt;item name=&quot;listPopupWindowStyle&quot;&gt;@android:style/Widget.ListPopupWindow&lt;/item&gt;
+        &lt;item name=&quot;popupMenuStyle&quot;&gt;@android:style/Widget.PopupMenu&lt;/item&gt;
+        &lt;item name=&quot;activityChooserViewStyle&quot;&gt;@android:style/Widget.ActivityChooserView&lt;/item&gt;
+
+        &lt;item name=&quot;mediaRouteButtonStyle&quot;&gt;@android:style/Widget.DeviceDefault.MediaRouteButton&lt;/item&gt;
+
+        &lt;!-- Preference styles --&gt;
+        &lt;item name=&quot;preferenceScreenStyle&quot;&gt;@android:style/Preference.PreferenceScreen&lt;/item&gt;
+        &lt;item name=&quot;preferenceFragmentStyle&quot;&gt;@style/PreferenceFragment&lt;/item&gt;
+        &lt;item name=&quot;preferenceCategoryStyle&quot;&gt;@android:style/Preference.Category&lt;/item&gt;
+        &lt;item name=&quot;preferenceStyle&quot;&gt;@android:style/Preference&lt;/item&gt;
+        &lt;item name=&quot;preferenceInformationStyle&quot;&gt;@android:style/Preference.Information&lt;/item&gt;
+        &lt;item name=&quot;checkBoxPreferenceStyle&quot;&gt;@android:style/Preference.CheckBoxPreference&lt;/item&gt;
+        &lt;item name=&quot;switchPreferenceStyle&quot;&gt;@android:style/Preference.SwitchPreference&lt;/item&gt;
+        &lt;item name=&quot;yesNoPreferenceStyle&quot;&gt;@android:style/Preference.DialogPreference.YesNoPreference&lt;/item&gt;
+        &lt;item name=&quot;dialogPreferenceStyle&quot;&gt;@android:style/Preference.DialogPreference&lt;/item&gt;
+        &lt;item name=&quot;editTextPreferenceStyle&quot;&gt;@android:style/Preference.DialogPreference.EditTextPreference&lt;/item&gt;
+        &lt;item name=&quot;ringtonePreferenceStyle&quot;&gt;@android:style/Preference.RingtonePreference&lt;/item&gt;
+        &lt;item name=&quot;preferenceLayoutChild&quot;&gt;@android:layout/preference_child&lt;/item&gt;
+        &lt;item name=&quot;preferencePanelStyle&quot;&gt;@style/PreferencePanel&lt;/item&gt;
+        &lt;item name=&quot;detailsElementBackground&quot;&gt;@android:drawable/panel_bg_holo_dark&lt;/item&gt;
+
+        &lt;!-- Search widget styles --&gt;
+        &lt;item name=&quot;searchWidgetCorpusItemBackground&quot;&gt;@android:color/search_widget_corpus_item_background&lt;/item&gt;
+
+        &lt;!-- Action bar styles --&gt;
+        &lt;item name=&quot;actionDropDownStyle&quot;&gt;@android:style/Widget.Spinner.DropDown&lt;/item&gt;
+        &lt;item name=&quot;actionButtonStyle&quot;&gt;@android:style/Widget.ActionButton&lt;/item&gt;
+        &lt;item name=&quot;actionOverflowButtonStyle&quot;&gt;@android:style/Widget.ActionButton.Overflow&lt;/item&gt;
+        &lt;item name=&quot;actionModeBackground&quot;&gt;@android:drawable/cab_background_top_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeSplitBackground&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;actionModeCloseDrawable&quot;&gt;@android:drawable/ic_menu_close_clear_cancel&lt;/item&gt;
+        &lt;item name=&quot;actionModeCutDrawable&quot;&gt;@android:drawable/ic_menu_cut_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeCopyDrawable&quot;&gt;@android:drawable/ic_menu_copy_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModePasteDrawable&quot;&gt;@android:drawable/ic_menu_paste_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeSelectAllDrawable&quot;&gt;@android:drawable/ic_menu_selectall_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeShareDrawable&quot;&gt;@android:drawable/ic_menu_share_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeFindDrawable&quot;&gt;@android:drawable/ic_menu_find_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeWebSearchDrawable&quot;&gt;@android:drawable/ic_menu_search&lt;/item&gt;
+        &lt;item name=&quot;actionBarTabStyle&quot;&gt;@style/Widget.ActionBar.TabView&lt;/item&gt;
+        &lt;item name=&quot;actionBarTabBarStyle&quot;&gt;@style/Widget.ActionBar.TabBar&lt;/item&gt;
+        &lt;item name=&quot;actionBarTabTextStyle&quot;&gt;@style/Widget.ActionBar.TabText&lt;/item&gt;
+        &lt;item name=&quot;actionModeStyle&quot;&gt;@style/Widget.ActionMode&lt;/item&gt;
+        &lt;item name=&quot;actionModeCloseButtonStyle&quot;&gt;@style/Widget.ActionButton.CloseMode&lt;/item&gt;
+        &lt;item name=&quot;actionBarStyle&quot;&gt;@android:style/Widget.ActionBar&lt;/item&gt;
+        &lt;item name=&quot;actionBarSplitStyle&quot;&gt;?android:attr/actionBarStyle&lt;/item&gt;
+        &lt;item name=&quot;actionBarSize&quot;&gt;@dimen/action_bar_default_height&lt;/item&gt;
+        &lt;item name=&quot;actionModePopupWindowStyle&quot;&gt;?android:attr/popupWindowStyle&lt;/item&gt;
+        &lt;item name=&quot;actionMenuTextAppearance&quot;&gt;@android:style/TextAppearance.Holo.Widget.ActionBar.Menu&lt;/item&gt;
+        &lt;item name=&quot;actionMenuTextColor&quot;&gt;?android:attr/textColorPrimary&lt;/item&gt;
+        &lt;item name=&quot;actionBarWidgetTheme&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;actionBarDivider&quot;&gt;?android:attr/dividerVertical&lt;/item&gt;
+        &lt;item name=&quot;actionBarItemBackground&quot;&gt;?android:attr/selectableItemBackground&lt;/item&gt;
+
+        &lt;item name=&quot;dividerVertical&quot;&gt;@drawable/divider_vertical_dark&lt;/item&gt;
+        &lt;item name=&quot;dividerHorizontal&quot;&gt;@drawable/divider_vertical_dark&lt;/item&gt;
+        &lt;item name=&quot;buttonBarStyle&quot;&gt;@android:style/ButtonBar&lt;/item&gt;
+        &lt;item name=&quot;buttonBarButtonStyle&quot;&gt;?android:attr/buttonStyle&lt;/item&gt;
+        &lt;item name=&quot;segmentedButtonStyle&quot;&gt;@android:style/SegmentedButton&lt;/item&gt;
+
+        &lt;!-- SearchView attributes --&gt;
+        &lt;item name=&quot;searchDropdownBackground&quot;&gt;@android:drawable/spinner_dropdown_background&lt;/item&gt;
+        &lt;item name=&quot;searchViewTextField&quot;&gt;@drawable/textfield_searchview_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;searchViewTextFieldRight&quot;&gt;@drawable/textfield_searchview_right_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;searchViewCloseIcon&quot;&gt;@android:drawable/ic_clear&lt;/item&gt;
+        &lt;item name=&quot;searchViewSearchIcon&quot;&gt;@android:drawable/ic_search&lt;/item&gt;
+        &lt;item name=&quot;searchViewGoIcon&quot;&gt;@android:drawable/ic_go&lt;/item&gt;
+        &lt;item name=&quot;searchViewVoiceIcon&quot;&gt;@android:drawable/ic_voice_search&lt;/item&gt;
+        &lt;item name=&quot;searchViewEditQuery&quot;&gt;@android:drawable/ic_commit_search_api_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;searchViewEditQueryBackground&quot;&gt;?attr/selectableItemBackground&lt;/item&gt;
+
+        &lt;item name=&quot;searchDialogTheme&quot;&gt;@style/Theme.SearchBar&lt;/item&gt;
+
+        &lt;!-- PreferenceFrameLayout attributes --&gt;
+        &lt;item name=&quot;preferenceFrameLayoutStyle&quot;&gt;@android:style/Widget.PreferenceFrameLayout&lt;/item&gt;
+
+        &lt;!-- NumberPicker style--&gt;
+        &lt;item name=&quot;numberPickerStyle&quot;&gt;@style/Widget.NumberPicker&lt;/item&gt;
+
+        &lt;!-- CalendarView style--&gt;
+        &lt;item name=&quot;calendarViewStyle&quot;&gt;@style/Widget.CalendarView&lt;/item&gt;
+
+        &lt;!-- TimePicker style --&gt;
+        &lt;item name=&quot;timePickerStyle&quot;&gt;@style/Widget.TimePicker&lt;/item&gt;
+
+        &lt;!-- DatePicker style --&gt;
+        &lt;item name=&quot;datePickerStyle&quot;&gt;@style/Widget.DatePicker&lt;/item&gt;
+
+        &lt;item name=&quot;fastScrollThumbDrawable&quot;&gt;@android:drawable/scrollbar_handle_accelerated_anim2&lt;/item&gt;
+        &lt;item name=&quot;fastScrollTrackDrawable&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;fastScrollPreviewBackgroundRight&quot;&gt;@android:drawable/menu_submenu_background&lt;/item&gt;
+        &lt;item name=&quot;fastScrollPreviewBackgroundLeft&quot;&gt;@android:drawable/menu_submenu_background&lt;/item&gt;
+        &lt;item name=&quot;fastScrollOverlayPosition&quot;&gt;floating&lt;/item&gt;
+        &lt;item name=&quot;fastScrollTextColor&quot;&gt;@android:color/primary_text_dark&lt;/item&gt;
+
+        &lt;!-- Pointer style --&gt;
+        &lt;item name=&quot;pointerStyle&quot;&gt;@android:style/Pointer&lt;/item&gt;
+
+        &lt;!-- Accessibility focused drawable. --&gt;
+        &lt;item name=&quot;accessibilityFocusedDrawable&quot;&gt;@android:drawable/view_accessibility_focused&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of {@link #Theme} with no title bar --&gt;
+    &lt;style name=&quot;Theme.NoTitleBar&quot;&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of {@link #Theme} that has no title bar and no status bar --&gt;
+    &lt;style name=&quot;Theme.NoTitleBar.Fullscreen&quot;&gt;
+        &lt;item name=&quot;android:windowFullscreen&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+    &lt;/style&gt;
+    
+    &lt;!-- Theme for a light background with dark text on top.  Set your activity
+         to this theme if you would like such an appearance.  As with the
+         default theme, you should try to assume little more than that the
+         background will be a light color.
+         &lt;p&gt;This is designed for API level 10 and lower.&lt;/p&gt;--&gt;
+    &lt;style name=&quot;Theme.Light&quot;&gt;
+        &lt;item name=&quot;windowBackground&quot;&gt;@android:drawable/screen_background_selector_light&lt;/item&gt;
+        &lt;item name=&quot;colorBackground&quot;&gt;@android:color/background_light&lt;/item&gt;
+        &lt;item name=&quot;colorForeground&quot;&gt;@color/bright_foreground_light&lt;/item&gt;
+        &lt;item name=&quot;colorForegroundInverse&quot;&gt;@android:color/bright_foreground_light_inverse&lt;/item&gt;
+        
+        &lt;item name=&quot;textColorPrimary&quot;&gt;@android:color/primary_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondary&quot;&gt;@android:color/secondary_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorTertiary&quot;&gt;@android:color/tertiary_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverse&quot;&gt;@android:color/primary_text_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryInverse&quot;&gt;@android:color/secondary_text_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorTertiaryInverse&quot;&gt;@android:color/tertiary_text_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryDisableOnly&quot;&gt;@android:color/primary_text_light_disable_only&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverseDisableOnly&quot;&gt;@android:color/primary_text_dark_disable_only&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryNoDisable&quot;&gt;@android:color/primary_text_light_nodisable&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryNoDisable&quot;&gt;@android:color/secondary_text_light_nodisable&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverseNoDisable&quot;&gt;@android:color/primary_text_dark_nodisable&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryInverseNoDisable&quot;&gt;@android:color/secondary_text_dark_nodisable&lt;/item&gt;
+        &lt;item name=&quot;textColorHint&quot;&gt;@android:color/hint_foreground_light&lt;/item&gt;
+        &lt;item name=&quot;textColorHintInverse&quot;&gt;@android:color/hint_foreground_dark&lt;/item&gt;        
+        &lt;item name=&quot;textColorHighlight&quot;&gt;@android:color/highlighted_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorHighlightInverse&quot;&gt;@android:color/highlighted_text_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorLink&quot;&gt;@android:color/link_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorLinkInverse&quot;&gt;@android:color/link_text_dark&lt;/item&gt;
+        
+        &lt;item name=&quot;editTextColor&quot;&gt;@android:color/primary_text_light&lt;/item&gt;
+        &lt;item name=&quot;listChoiceBackgroundIndicator&quot;&gt;@android:drawable/list_selector_background&lt;/item&gt;
+
+        &lt;item name=&quot;activatedBackgroundIndicator&quot;&gt;@android:drawable/activated_background_light&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeOverlay&quot;&gt;@android:drawable/quickcontact_badge_overlay_light&lt;/item&gt;
+
+        &lt;item name=&quot;popupWindowStyle&quot;&gt;@android:style/Widget.PopupWindow&lt;/item&gt;
+        
+        &lt;item name=&quot;textCheckMark&quot;&gt;@android:drawable/indicator_check_mark_light&lt;/item&gt;
+        &lt;item name=&quot;textCheckMarkInverse&quot;&gt;@android:drawable/indicator_check_mark_dark&lt;/item&gt;
+
+        &lt;item name=&quot;gestureOverlayViewStyle&quot;&gt;@android:style/Widget.GestureOverlayView.White&lt;/item&gt;
+        &lt;item name=&quot;expandableListViewStyle&quot;&gt;@android:style/Widget.ExpandableListView.White&lt;/item&gt;
+        &lt;item name=&quot;listViewStyle&quot;&gt;@android:style/Widget.ListView.White&lt;/item&gt;
+        &lt;item name=&quot;listDivider&quot;&gt;@drawable/divider_horizontal_bright&lt;/item&gt;
+        &lt;item name=&quot;listSeparatorTextViewStyle&quot;&gt;@android:style/Widget.TextView.ListSeparator.White&lt;/item&gt;
+
+        &lt;item name=&quot;progressBarStyle&quot;&gt;@android:style/Widget.ProgressBar.Inverse&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleSmall&quot;&gt;@android:style/Widget.ProgressBar.Small.Inverse&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleLarge&quot;&gt;@android:style/Widget.ProgressBar.Large.Inverse&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleInverse&quot;&gt;@android:style/Widget.ProgressBar&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleSmallInverse&quot;&gt;@android:style/Widget.ProgressBar.Small&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleLargeInverse&quot;&gt;@android:style/Widget.ProgressBar.Large&lt;/item&gt;
+        &lt;item name=&quot;actionModeCutDrawable&quot;&gt;@android:drawable/ic_menu_cut_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeCopyDrawable&quot;&gt;@android:drawable/ic_menu_copy_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModePasteDrawable&quot;&gt;@android:drawable/ic_menu_paste_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeSelectAllDrawable&quot;&gt;@android:drawable/ic_menu_selectall_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeShareDrawable&quot;&gt;@android:drawable/ic_menu_share_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeFindDrawable&quot;&gt;@android:drawable/ic_menu_find_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeWebSearchDrawable&quot;&gt;@android:drawable/ic_menu_search_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeBackground&quot;&gt;@android:drawable/cab_background_top_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeSplitBackground&quot;&gt;@android:drawable/cab_background_bottom_holo_light&lt;/item&gt;
+
+        &lt;!-- SearchView attributes --&gt;
+        &lt;item name=&quot;searchDropdownBackground&quot;&gt;@android:drawable/search_dropdown_light&lt;/item&gt;
+        &lt;item name=&quot;searchViewTextField&quot;&gt;@drawable/textfield_searchview_holo_light&lt;/item&gt;
+        &lt;item name=&quot;searchViewTextFieldRight&quot;&gt;@drawable/textfield_searchview_right_holo_light&lt;/item&gt;
+        &lt;item name=&quot;searchViewCloseIcon&quot;&gt;@android:drawable/ic_clear_holo_light&lt;/item&gt;
+        &lt;item name=&quot;searchViewSearchIcon&quot;&gt;@android:drawable/ic_search_api_holo_light&lt;/item&gt;
+        &lt;item name=&quot;searchViewGoIcon&quot;&gt;@android:drawable/ic_go_search_api_holo_light&lt;/item&gt;
+        &lt;item name=&quot;searchViewVoiceIcon&quot;&gt;@android:drawable/ic_voice_search_api_holo_light&lt;/item&gt;
+        &lt;item name=&quot;searchViewEditQuery&quot;&gt;@android:drawable/ic_commit_search_api_holo_light&lt;/item&gt;
+
+        &lt;item name=&quot;detailsElementBackground&quot;&gt;@android:drawable/panel_bg_holo_light&lt;/item&gt;
+
+        &lt;item name=&quot;mediaRouteButtonStyle&quot;&gt;@android:style/Widget.DeviceDefault.Light.MediaRouteButton&lt;/item&gt;
+        &lt;item name=&quot;findOnPageNextDrawable&quot;&gt;@android:drawable/ic_find_next_holo_light&lt;/item&gt;
+        &lt;item name=&quot;findOnPagePreviousDrawable&quot;&gt;@android:drawable/ic_find_previous_holo_light&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of {@link #Theme_Light} with no title bar --&gt;
+    &lt;style name=&quot;Theme.Light.NoTitleBar&quot;&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of {@link #Theme_Light} that has no title bar and
+         no status bar --&gt;
+    &lt;style name=&quot;Theme.Light.NoTitleBar.Fullscreen&quot;&gt;
+        &lt;item name=&quot;android:windowFullscreen&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+    &lt;/style&gt;
+    
+    &lt;!-- Variant on {@link #Theme} that ensures the background is
+         completely black.  This is useful for things like image viewers and
+         media players.   If you want the normal (dark background) theme
+         do &lt;em&gt;not&lt;/em&gt; use this, use {@link #Theme}. --&gt;
+    &lt;style name=&quot;Theme.Black&quot;&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:color/black&lt;/item&gt;
+        &lt;item name=&quot;android:colorBackground&quot;&gt;@android:color/black&lt;/item&gt;
+    &lt;/style&gt;
+    
+    &lt;!-- Variant of {@link #Theme_Black} with no title bar --&gt;
+    &lt;style name=&quot;Theme.Black.NoTitleBar&quot;&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of {@link #Theme_Black} that has no title bar and
+         no status bar --&gt;
+    &lt;style name=&quot;Theme.Black.NoTitleBar.Fullscreen&quot;&gt;
+        &lt;item name=&quot;android:windowFullscreen&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+    &lt;/style&gt;
+    
+    &lt;!-- Theme for windows that want to have the user&#39;s selected
+         wallpaper appear behind them (for API level 10 and lower).  --&gt;
+    &lt;style name=&quot;Theme.Wallpaper&quot;&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;android:colorBackgroundCacheHint&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowShowWallpaper&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of {@link #Theme_Wallpaper} that has no title bar --&gt;
+    &lt;style name=&quot;Theme.Wallpaper.NoTitleBar&quot;&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of {@link #Theme_Wallpaper} that
+         has no title bar or status bar. --&gt;
+    &lt;style name=&quot;Theme.Wallpaper.NoTitleBar.Fullscreen&quot;&gt;
+        &lt;item name=&quot;android:windowFullscreen&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Theme for a wallpaper&#39;s setting activity, which is designed to be a transparent
+         background with a dark shade, so the previous Activity is visible in the background. --&gt;
+    &lt;style name=&quot;Theme.WallpaperSettings&quot;&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:drawable/screen_background_dark_transparent&lt;/item&gt;
+        &lt;item name=&quot;android:colorBackgroundCacheHint&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsTranslucent&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.Translucent&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Theme for a wallpaper&#39;s setting activity, which is designed to be a transparent
+         background with a light shade, so the previous Activity is visible in the background. --&gt;
+    &lt;style name=&quot;Theme.Light.WallpaperSettings&quot;&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:drawable/screen_background_light_transparent&lt;/item&gt;
+        &lt;item name=&quot;android:colorBackgroundCacheHint&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsTranslucent&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.Translucent&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Style to apply on top of a wallpaper settings theme when it is being
+         shown on top of the real wallpaper --&gt;
+    &lt;style name=&quot;ActiveWallpaperSettings&quot;&gt;
+    &lt;/style&gt;
+    
+    &lt;!-- Style to apply on top of a wallpaper settings theme when it is being
+         shown on top of the real wallpaper --&gt;
+    &lt;style name=&quot;PreviewWallpaperSettings&quot;&gt;
+    &lt;/style&gt;
+    
+    &lt;!-- Theme for translucent activities (on API level 10 and lower). That is, windows
+         that allow you to see through them to the windows behind.  This sets up the translucent
+         flag and appropriate animations for your windows.  --&gt;
+    &lt;style name=&quot;Theme.Translucent&quot;&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;android:colorBackgroundCacheHint&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsTranslucent&quot;&gt;true&lt;/item&gt;
+        &lt;!-- Note that we use the base animation style here (that is no
+             animations) because we really have no idea how this kind of
+             activity will be used. --&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of {@link #Theme_Translucent} with no title bar --&gt;
+    &lt;style name=&quot;Theme.Translucent.NoTitleBar&quot;&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of {@link #Theme_Translucent} that has no title bar and
+         no status bar --&gt;
+    &lt;style name=&quot;Theme.Translucent.NoTitleBar.Fullscreen&quot;&gt;
+        &lt;item name=&quot;android:windowFullscreen&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+    
+    &lt;!-- Default theme for activities that don&#39;t actually display a UI; that
+         is, they finish themselves before being resumed.  --&gt;
+    &lt;style name=&quot;Theme.NoDisplay&quot;&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsTranslucent&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowDisablePreview&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowNoDisplay&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Default theme for dialog windows and activities (on API level 10 and lower),
+         which is used by the
+         {@link android.app.Dialog} class.  This changes the window to be
+         floating (not fill the entire screen), and puts a frame around its
+         contents.  You can set this theme on an activity if you would like to
+         make an activity that looks like a Dialog. --&gt;
+    &lt;style name=&quot;Theme.Dialog&quot;&gt;
+        &lt;item name=&quot;android:windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowTitleStyle&quot;&gt;@android:style/DialogWindowTitle&lt;/item&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:drawable/panel_background&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsFloating&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.Dialog&lt;/item&gt;
+        &lt;item name=&quot;android:windowSoftInputMode&quot;&gt;stateUnspecified|adjustPan&lt;/item&gt;
+        &lt;item name=&quot;android:windowCloseOnTouchOutside&quot;&gt;@bool/config_closeDialogWhenTouchOutside&lt;/item&gt;
+        &lt;item name=&quot;android:windowActionModeOverlay&quot;&gt;true&lt;/item&gt;
+
+        &lt;item name=&quot;android:colorBackgroundCacheHint&quot;&gt;@null&lt;/item&gt;
+        
+        &lt;item name=&quot;textAppearance&quot;&gt;@android:style/TextAppearance&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceInverse&quot;&gt;@android:style/TextAppearance.Inverse&lt;/item&gt;
+
+        &lt;item name=&quot;textColorPrimary&quot;&gt;@android:color/primary_text_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondary&quot;&gt;@android:color/secondary_text_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorTertiary&quot;&gt;@android:color/tertiary_text_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverse&quot;&gt;@android:color/primary_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryInverse&quot;&gt;@android:color/secondary_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorTertiaryInverse&quot;&gt;@android:color/tertiary_text_light&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryDisableOnly&quot;&gt;@android:color/primary_text_dark_disable_only&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverseDisableOnly&quot;&gt;@android:color/primary_text_light_disable_only&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryNoDisable&quot;&gt;@android:color/primary_text_dark_nodisable&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryNoDisable&quot;&gt;@android:color/secondary_text_dark_nodisable&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverseNoDisable&quot;&gt;@android:color/primary_text_light_nodisable&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryInverseNoDisable&quot;&gt;@android:color/secondary_text_light_nodisable&lt;/item&gt;
+        &lt;item name=&quot;textColorHint&quot;&gt;@android:color/hint_foreground_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorHintInverse&quot;&gt;@android:color/hint_foreground_light&lt;/item&gt;
+        &lt;item name=&quot;textColorSearchUrl&quot;&gt;@android:color/search_url_text&lt;/item&gt;
+
+        &lt;item name=&quot;textAppearanceLarge&quot;&gt;@android:style/TextAppearance.Large&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceMedium&quot;&gt;@android:style/TextAppearance.Medium&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSmall&quot;&gt;@android:style/TextAppearance.Small&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceLargeInverse&quot;&gt;@android:style/TextAppearance.Large.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceMediumInverse&quot;&gt;@android:style/TextAppearance.Medium.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSmallInverse&quot;&gt;@android:style/TextAppearance.Small.Inverse&lt;/item&gt;
+
+        &lt;item name=&quot;listPreferredItemPaddingLeft&quot;&gt;10dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingRight&quot;&gt;10dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingStart&quot;&gt;10dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingEnd&quot;&gt;10dip&lt;/item&gt;
+
+        &lt;item name=&quot;preferencePanelStyle&quot;&gt;@style/PreferencePanel.Dialog&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of {@link Theme_Dialog} that does not include a frame (or background).
+         The view hierarchy of the dialog is responsible for drawing all of
+         its pixels. --&gt;
+    &lt;style name=&quot;Theme.Dialog.NoFrame&quot;&gt;
+        &lt;item name=&quot;windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;android:windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:backgroundDimEnabled&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsTranslucent&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowCloseOnTouchOutside&quot;&gt;false&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Default theme for alert dialog windows (on API level 10 and lower), which is used by the
+         {@link android.app.AlertDialog} class.  This is basically a dialog
+         but sets the background to empty so it can do two-tone backgrounds. --&gt;
+    &lt;style name=&quot;Theme.Dialog.Alert&quot;&gt;
+        &lt;item name=&quot;windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;windowTitleStyle&quot;&gt;@android:style/DialogWindowTitle&lt;/item&gt;
+        &lt;item name=&quot;windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;itemTextAppearance&quot;&gt;@android:style/TextAppearance.Large.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceListItem&quot;&gt;@android:style/TextAppearance.Large.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceListItemSmall&quot;&gt;@android:style/TextAppearance.Large.Inverse&lt;/item&gt;
+    &lt;/style&gt;
+    
+    &lt;!-- Default dark theme for panel windows (on API level 10 and lower).  This removes all
+         extraneous window decorations, so you basically have an empty rectangle in which
+         to place your content.  It makes the window floating, with a transparent
+         background, and turns off dimming behind the window. --&gt;
+    &lt;style name=&quot;Theme.Panel&quot;&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;android:colorBackgroundCacheHint&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsFloating&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:backgroundDimEnabled&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsTranslucent&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Default light theme for panel windows (on API level 10 and lower).  This removes all
+         extraneous window decorations, so you basically have an empty rectangle in which
+         to place your content.  It makes the window floating, with a transparent
+         background, and turns off dimming behind the window. --&gt;
+    &lt;style name=&quot;Theme.Light.Panel&quot;&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;android:colorBackgroundCacheHint&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsFloating&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:backgroundDimEnabled&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsTranslucent&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Default holo dark theme for panel windows.  This removes all extraneous
+         window decorations, so you basically have an empty rectangle in which
+         to place your content.  It makes the window floating, with a transparent
+         background, and turns off dimming behind the window. --&gt;
+    &lt;style name=&quot;Theme.Holo.Panel&quot;&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;android:colorBackgroundCacheHint&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsFloating&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:backgroundDimEnabled&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsTranslucent&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Default holo light theme for panel windows.  This removes all extraneous
+         window decorations, so you basically have an empty rectangle in which
+         to place your content.  It makes the window floating, with a transparent
+         background, and turns off dimming behind the window. --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.Panel&quot;&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;android:colorBackgroundCacheHint&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsFloating&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:backgroundDimEnabled&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsTranslucent&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Default theme for input methods (on API level 10 and lower), which is used by the
+         {@link android.inputmethodservice.InputMethodService} class.
+         this inherits from Theme.Panel, but sets up IME appropriate animations
+         and a few custom attributes. --&gt;
+    &lt;style name=&quot;Theme.InputMethod&quot; parent=&quot;Theme.Panel&quot;&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.InputMethod&lt;/item&gt;
+        &lt;item name=&quot;android:imeFullscreenBackground&quot;&gt;@android:drawable/input_method_fullscreen_background&lt;/item&gt;
+        &lt;item name=&quot;android:imeExtractEnterAnimation&quot;&gt;@android:anim/input_method_extract_enter&lt;/item&gt;
+        &lt;item name=&quot;android:imeExtractExitAnimation&quot;&gt;@android:anim/input_method_extract_exit&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Default theme for holo style input methods, which is used by the
+         {@link android.inputmethodservice.InputMethodService} class.
+         this inherits from Theme.Panel, but sets up IME appropriate animations
+         and a few custom attributes. --&gt;
+    &lt;style name=&quot;Theme.Holo.InputMethod&quot; parent=&quot;Theme.Holo.Light.Panel&quot;&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.InputMethod&lt;/item&gt;
+        &lt;item name=&quot;android:imeFullscreenBackground&quot;&gt;@android:drawable/screen_background_selector_light&lt;/item&gt;
+        &lt;item name=&quot;android:imeExtractEnterAnimation&quot;&gt;@android:anim/input_method_extract_enter&lt;/item&gt;
+        &lt;item name=&quot;android:imeExtractExitAnimation&quot;&gt;@android:anim/input_method_extract_exit&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Theme for the search input bar. --&gt;
+    &lt;style name=&quot;Theme.SearchBar&quot; parent=&quot;Theme.Holo.Light.Panel&quot;&gt;
+        &lt;item name=&quot;actionModeBackground&quot;&gt;@android:drawable/cab_background_top_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeSplitBackground&quot;&gt;@android:drawable/cab_background_bottom_holo_light&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;style name=&quot;Theme.Holo.SearchBar&quot; parent=&quot;Theme.Holo.Panel&quot;&gt;
+        &lt;item name=&quot;actionModeBackground&quot;&gt;@android:drawable/cab_background_top_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeSplitBackground&quot;&gt;@android:drawable/cab_background_bottom_holo_light&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;style name=&quot;Theme.Holo.Light.SearchBar&quot; parent=&quot;Theme.Holo.Light.Panel&quot;&gt;
+        &lt;item name=&quot;actionModeBackground&quot;&gt;@android:drawable/cab_background_top_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeSplitBackground&quot;&gt;@android:drawable/cab_background_bottom_holo_light&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Theme for the search input bar when doing global search. The only
+         difference from non-global search is that we do not dim the background. --&gt;
+    &lt;style name=&quot;Theme.GlobalSearchBar&quot; parent=&quot;Theme.Panel&quot;&gt;
+        &lt;item name=&quot;windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;actionModeBackground&quot;&gt;@android:drawable/cab_background_top_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeSplitBackground&quot;&gt;@android:drawable/cab_background_bottom_holo_light&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Menu Themes --&gt;
+    &lt;eat-comment /&gt;
+
+    &lt;style name=&quot;Theme.IconMenu&quot; parent=&quot;Theme.Holo&quot;&gt;
+        &lt;!-- Menu/item attributes --&gt;
+        &lt;item name=&quot;android:itemTextAppearance&quot;&gt;@android:style/TextAppearance.Widget.IconMenu.Item&lt;/item&gt;
+        &lt;item name=&quot;android:itemBackground&quot;&gt;?android:attr/selectableItemBackground&lt;/item&gt;
+        &lt;item name=&quot;android:itemIconDisabledAlpha&quot;&gt;?android:attr/disabledAlpha&lt;/item&gt;
+        &lt;item name=&quot;android:horizontalDivider&quot;&gt;@android:drawable/divider_horizontal_dark&lt;/item&gt;
+        &lt;item name=&quot;android:verticalDivider&quot;&gt;@android:drawable/divider_vertical_dark&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.OptionsPanel&lt;/item&gt;
+        &lt;item name=&quot;android:moreIcon&quot;&gt;@android:drawable/ic_menu_more&lt;/item&gt;
+        &lt;item name=&quot;android:background&quot;&gt;@null&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;style name=&quot;Theme.ExpandedMenu&quot; parent=&quot;Theme.Holo&quot;&gt;
+        &lt;!-- Menu/item attributes --&gt;
+        &lt;item name=&quot;android:itemTextAppearance&quot;&gt;?android:attr/textAppearanceLarge&lt;/item&gt;
+        &lt;item name=&quot;android:listViewStyle&quot;&gt;@android:style/Widget.ListView.Menu&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.OptionsPanel&lt;/item&gt;
+        &lt;item name=&quot;android:background&quot;&gt;@null&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;style name=&quot;Theme.Holo.CompactMenu&quot;&gt;
+        &lt;!-- Menu/item attributes --&gt;
+        &lt;item name=&quot;android:itemTextAppearance&quot;&gt;?android:attr/textAppearanceMedium&lt;/item&gt;
+        &lt;item name=&quot;android:listViewStyle&quot;&gt;@android:style/Widget.Holo.ListView&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.DropDownUp&lt;/item&gt;
+        &lt;item name=&quot;android:background&quot;&gt;@null&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;style name=&quot;Theme.Holo.Light.CompactMenu&quot;&gt;
+        &lt;!-- Menu/item attributes --&gt;
+        &lt;item name=&quot;android:itemTextAppearance&quot;&gt;?android:attr/textAppearanceMedium&lt;/item&gt;
+        &lt;item name=&quot;android:listViewStyle&quot;&gt;@android:style/Widget.Holo.Light.ListView&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.DropDownUp&lt;/item&gt;
+        &lt;item name=&quot;android:background&quot;&gt;@null&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- @hide --&gt;
+    &lt;style name=&quot;Theme.Dialog.AppError&quot; parent=&quot;Theme.Holo.Dialog&quot;&gt;
+        &lt;item name=&quot;windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;windowTitleStyle&quot;&gt;@android:style/DialogWindowTitle&lt;/item&gt;
+        &lt;item name=&quot;windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;windowIsFloating&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;textAppearance&quot;&gt;@style/TextAppearance.Theme.Dialog.AppError&lt;/item&gt;
+        &lt;item name=&quot;android:windowCloseOnTouchOutside&quot;&gt;false&lt;/item&gt;
+    &lt;/style&gt;
+    
+    &lt;!-- Special theme for the recent apps dialog, to allow customization
+         with overlays. --&gt;
+    &lt;style name=&quot;Theme.Dialog.RecentApplications&quot; parent=&quot;Theme.DeviceDefault.Dialog&quot;&gt;
+        &lt;item name=&quot;windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.RecentApplications&lt;/item&gt;
+        &lt;item name=&quot;android:textColor&quot;&gt;@android:color/secondary_text_nofocus&lt;/item&gt;
+        &lt;item name=&quot;android:windowCloseOnTouchOutside&quot;&gt;false&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Default theme for window that looks like a toast. --&gt;
+    &lt;style name=&quot;Theme.Toast&quot; parent=&quot;@android:style/Theme.Dialog&quot;&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:drawable/toast_frame&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.Toast&lt;/item&gt;
+        &lt;item name=&quot;android:backgroundDimEnabled&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowCloseOnTouchOutside&quot;&gt;false&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;style name=&quot;Theme.Panel.Volume&quot;&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.VolumePanel&lt;/item&gt;
+        &lt;item name=&quot;android:windowCloseOnTouchOutside&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Default theme with an Action Bar. --&gt;
+    &lt;style name=&quot;Theme.WithActionBar&quot;&gt;
+        &lt;item name=&quot;android:windowActionBar&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- No title bar, but Action Mode bars will overlay application content
+         instead of pushing it down to make room. --&gt;
+    &lt;style name=&quot;Theme.NoTitleBar.OverlayActionModes&quot;&gt;
+        &lt;item name=&quot;android:windowActionModeOverlay&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+    
+    &lt;!-- Honeycomb holographic theme (dark version).
+         &lt;p&gt;This is the default system theme for apps that target API level 11 - 13. Starting
+         with API level 14, the default system theme is supplied by {@link #Theme_DeviceDefault},
+         which might apply a different style on different devices. If you want to ensure that your
+         app consistently uses the Holo theme at all times, you must explicitly declare it in your
+         manifest. For example, {@code &amp;lt;application android:theme=&quot;@android:style/Theme.Holo&quot;&amp;gt;}.
+         For more information, read &lt;a
+         href=&quot;http://android-developers.blogspot.com/2012/01/holo-everywhere.html&quot;&gt;Holo
+         Everywhere&lt;/a&gt;.&lt;/p&gt;
+         &lt;p&gt;The widgets in the holographic theme are translucent on their background, so
+         applications must ensure that any background they use with this theme is itself
+         dark; otherwise, it will be difficult to see the widgets. This UI style also includes a
+         full action bar by default.&lt;/p&gt;
+
+         &lt;p&gt;Styles used by the Holo theme are named using the convention Type.Holo.Etc
+         (for example, {@code Widget.Holo.Button} and {@code
+         TextAppearance.Holo.Widget.PopupMenu.Large}).
+         Specific resources used by Holo are named using the convention @type/foo_bar_baz_holo
+         with trailing _dark or _light specifiers if they are not shared between both light and
+         dark versions of the theme. --&gt;
+    &lt;style name=&quot;Theme.Holo&quot;&gt;
+        &lt;item name=&quot;colorForeground&quot;&gt;@android:color/bright_foreground_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;colorForegroundInverse&quot;&gt;@android:color/bright_foreground_inverse_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;colorBackground&quot;&gt;@android:color/background_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;colorBackgroundCacheHint&quot;&gt;@android:drawable/background_cache_hint_selector_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;disabledAlpha&quot;&gt;0.5&lt;/item&gt;
+        &lt;item name=&quot;backgroundDimAmount&quot;&gt;0.6&lt;/item&gt;
+
+        &lt;item name=&quot;colorPressedHighlight&quot;&gt;@color/holo_blue_light&lt;/item&gt;
+        &lt;item name=&quot;colorLongPressedHighlight&quot;&gt;@color/holo_blue_bright&lt;/item&gt;
+        &lt;item name=&quot;colorFocusedHighlight&quot;&gt;@color/holo_blue_dark&lt;/item&gt;
+        &lt;item name=&quot;colorMultiSelectHighlight&quot;&gt;@color/holo_green_light&lt;/item&gt;
+        &lt;item name=&quot;colorActivatedHighlight&quot;&gt;@color/holo_blue_dark&lt;/item&gt;
+
+        &lt;!-- Text styles --&gt;
+        &lt;item name=&quot;textAppearance&quot;&gt;@android:style/TextAppearance.Holo&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceInverse&quot;&gt;@android:style/TextAppearance.Holo.Inverse&lt;/item&gt;
+
+        &lt;item name=&quot;textColorPrimary&quot;&gt;@android:color/primary_text_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondary&quot;&gt;@android:color/secondary_text_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorTertiary&quot;&gt;@android:color/tertiary_text_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverse&quot;&gt;@android:color/primary_text_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryInverse&quot;&gt;@android:color/secondary_text_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorTertiaryInverse&quot;&gt;@android:color/tertiary_text_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryDisableOnly&quot;&gt;@android:color/primary_text_disable_only_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverseDisableOnly&quot;&gt;@android:color/primary_text_disable_only_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryNoDisable&quot;&gt;@android:color/primary_text_nodisable_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryNoDisable&quot;&gt;@android:color/secondary_text_nodisable_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverseNoDisable&quot;&gt;@android:color/primary_text_nodisable_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryInverseNoDisable&quot;&gt;@android:color/secondary_text_nodisable_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorHint&quot;&gt;@android:color/hint_foreground_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorHintInverse&quot;&gt;@android:color/hint_foreground_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorSearchUrl&quot;&gt;@android:color/search_url_text_holo&lt;/item&gt;
+        &lt;item name=&quot;textColorHighlight&quot;&gt;@android:color/highlighted_text_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorHighlightInverse&quot;&gt;@android:color/highlighted_text_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorLink&quot;&gt;@android:color/holo_blue_light&lt;/item&gt;
+        &lt;item name=&quot;textColorLinkInverse&quot;&gt;@android:color/holo_blue_light&lt;/item&gt;
+        &lt;item name=&quot;textColorAlertDialogListItem&quot;&gt;@android:color/primary_text_holo_dark&lt;/item&gt;
+
+        &lt;item name=&quot;textAppearanceLarge&quot;&gt;@android:style/TextAppearance.Holo.Large&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceMedium&quot;&gt;@android:style/TextAppearance.Holo.Medium&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSmall&quot;&gt;@android:style/TextAppearance.Holo.Small&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceLargeInverse&quot;&gt;@android:style/TextAppearance.Holo.Large.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceMediumInverse&quot;&gt;@android:style/TextAppearance.Holo.Medium.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSmallInverse&quot;&gt;@android:style/TextAppearance.Holo.Small.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSearchResultTitle&quot;&gt;@android:style/TextAppearance.Holo.SearchResult.Title&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSearchResultSubtitle&quot;&gt;@android:style/TextAppearance.Holo.SearchResult.Subtitle&lt;/item&gt;
+        
+        &lt;item name=&quot;textAppearanceButton&quot;&gt;@android:style/TextAppearance.Holo.Widget.Button&lt;/item&gt;
+        
+        &lt;item name=&quot;editTextColor&quot;&gt;?android:attr/textColorPrimary&lt;/item&gt;
+        &lt;item name=&quot;editTextBackground&quot;&gt;@android:drawable/edit_text_holo_dark&lt;/item&gt;
+        
+        &lt;item name=&quot;candidatesTextStyleSpans&quot;&gt;@android:string/candidates_style&lt;/item&gt;
+        
+        &lt;item name=&quot;textCheckMark&quot;&gt;@android:drawable/indicator_check_mark_dark&lt;/item&gt;
+        &lt;item name=&quot;textCheckMarkInverse&quot;&gt;@android:drawable/indicator_check_mark_light&lt;/item&gt;
+
+        &lt;item name=&quot;textAppearanceLargePopupMenu&quot;&gt;@android:style/TextAppearance.Holo.Widget.PopupMenu.Large&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSmallPopupMenu&quot;&gt;@android:style/TextAppearance.Holo.Widget.PopupMenu.Small&lt;/item&gt;
+
+        &lt;!-- Button styles --&gt;
+        &lt;item name=&quot;buttonStyle&quot;&gt;@android:style/Widget.Holo.Button&lt;/item&gt;
+
+        &lt;item name=&quot;buttonStyleSmall&quot;&gt;@android:style/Widget.Holo.Button.Small&lt;/item&gt;
+        &lt;item name=&quot;buttonStyleInset&quot;&gt;@android:style/Widget.Holo.Button.Inset&lt;/item&gt;
+
+        &lt;item name=&quot;buttonStyleToggle&quot;&gt;@android:style/Widget.Holo.Button.Toggle&lt;/item&gt;
+        &lt;item name=&quot;switchStyle&quot;&gt;@android:style/Widget.Holo.CompoundButton.Switch&lt;/item&gt;
+        &lt;item name=&quot;mediaRouteButtonStyle&quot;&gt;@android:style/Widget.Holo.MediaRouteButton&lt;/item&gt;
+
+        &lt;item name=&quot;selectableItemBackground&quot;&gt;@android:drawable/item_background_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;borderlessButtonStyle&quot;&gt;@android:style/Widget.Holo.Button.Borderless&lt;/item&gt;
+        &lt;item name=&quot;homeAsUpIndicator&quot;&gt;@android:drawable/ic_ab_back_holo_dark&lt;/item&gt;
+
+        &lt;!-- List attributes --&gt;
+        &lt;item name=&quot;listPreferredItemHeight&quot;&gt;64dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemHeightSmall&quot;&gt;48dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemHeightLarge&quot;&gt;80dip&lt;/item&gt;
+        &lt;item name=&quot;dropdownListPreferredItemHeight&quot;&gt;?android:attr/listPreferredItemHeightSmall&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceListItemSmall&quot;&gt;?android:attr/textAppearanceMedium&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingLeft&quot;&gt;8dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingRight&quot;&gt;8dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingStart&quot;&gt;8dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingEnd&quot;&gt;8dip&lt;/item&gt;
+
+        &lt;!-- @hide --&gt;
+        &lt;item name=&quot;searchResultListItemHeight&quot;&gt;58dip&lt;/item&gt;
+        &lt;item name=&quot;listDivider&quot;&gt;@drawable/list_divider_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;listSeparatorTextViewStyle&quot;&gt;@android:style/Widget.Holo.TextView.ListSeparator&lt;/item&gt;   
+
+        &lt;item name=&quot;listChoiceIndicatorSingle&quot;&gt;@android:drawable/btn_radio_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;listChoiceIndicatorMultiple&quot;&gt;@android:drawable/btn_check_holo_dark&lt;/item&gt;
+
+        &lt;item name=&quot;listChoiceBackgroundIndicator&quot;&gt;@android:drawable/list_selector_holo_dark&lt;/item&gt;
+
+        &lt;item name=&quot;activatedBackgroundIndicator&quot;&gt;@android:drawable/activated_background_holo_dark&lt;/item&gt;
+
+        &lt;item name=&quot;listDividerAlertDialog&quot;&gt;@android:drawable/list_divider_holo_dark&lt;/item&gt;
+
+        &lt;item name=&quot;expandableListPreferredItemPaddingLeft&quot;&gt;40dip&lt;/item&gt;
+        &lt;item name=&quot;expandableListPreferredChildPaddingLeft&quot;&gt;?android:attr/expandableListPreferredItemPaddingLeft&lt;/item&gt;
+
+        &lt;item name=&quot;expandableListPreferredItemIndicatorLeft&quot;&gt;3dip&lt;/item&gt;
+        &lt;item name=&quot;expandableListPreferredItemIndicatorRight&quot;&gt;0dip&lt;/item&gt;
+        &lt;item name=&quot;expandableListPreferredChildIndicatorLeft&quot;&gt;?android:attr/expandableListPreferredItemIndicatorLeft&lt;/item&gt;
+        &lt;item name=&quot;expandableListPreferredChildIndicatorRight&quot;&gt;?android:attr/expandableListPreferredItemIndicatorRight&lt;/item&gt;
+        &lt;item name=&quot;findOnPageNextDrawable&quot;&gt;@android:drawable/ic_find_next_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;findOnPagePreviousDrawable&quot;&gt;@android:drawable/ic_find_previous_holo_dark&lt;/item&gt;
+
+        &lt;!-- Gallery attributes --&gt;
+        &lt;item name=&quot;galleryItemBackground&quot;&gt;@android:drawable/gallery_item_background&lt;/item&gt;
+        
+        &lt;!-- Window attributes --&gt;
+        &lt;item name=&quot;windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;windowNoTitle&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowFullscreen&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowIsFloating&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;windowShowWallpaper&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowTitleStyle&quot;&gt;@android:style/WindowTitle.Holo&lt;/item&gt;
+        &lt;item name=&quot;windowTitleSize&quot;&gt;25dip&lt;/item&gt;
+        &lt;item name=&quot;windowTitleBackgroundStyle&quot;&gt;@android:style/WindowTitleBackground.Holo&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.Holo.Activity&lt;/item&gt;
+        &lt;item name=&quot;android:windowSoftInputMode&quot;&gt;stateUnspecified|adjustUnspecified&lt;/item&gt;
+        &lt;item name=&quot;windowActionBar&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;windowActionModeOverlay&quot;&gt;false&lt;/item&gt;
+
+        &lt;!-- Dialog attributes --&gt;
+        &lt;item name=&quot;dialogTheme&quot;&gt;@android:style/Theme.Holo.Dialog&lt;/item&gt;
+        &lt;item name=&quot;dialogTitleIconsDecorLayout&quot;&gt;@layout/dialog_title_icons_holo&lt;/item&gt;
+        &lt;item name=&quot;dialogCustomTitleDecorLayout&quot;&gt;@layout/dialog_custom_title_holo&lt;/item&gt;
+        &lt;item name=&quot;dialogTitleDecorLayout&quot;&gt;@layout/dialog_title_holo&lt;/item&gt;
+
+        &lt;!-- AlertDialog attributes --&gt;
+        &lt;item name=&quot;alertDialogTheme&quot;&gt;@android:style/Theme.Holo.Dialog.Alert&lt;/item&gt;
+        &lt;item name=&quot;alertDialogStyle&quot;&gt;@android:style/AlertDialog.Holo&lt;/item&gt;
+        &lt;item name=&quot;alertDialogCenterButtons&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;alertDialogIcon&quot;&gt;@android:drawable/ic_dialog_alert_holo_dark&lt;/item&gt;
+
+        &lt;!-- Presentation attributes --&gt;
+        &lt;item name=&quot;presentationTheme&quot;&gt;@android:style/Theme.Holo.Dialog.Presentation&lt;/item&gt;
+
+        &lt;!-- Toast attributes --&gt;
+        &lt;item name=&quot;toastFrameBackground&quot;&gt;@android:drawable/toast_frame_holo&lt;/item&gt;
+
+        &lt;!-- Panel attributes --&gt;
+        &lt;item name=&quot;panelBackground&quot;&gt;@android:drawable/menu_hardkey_panel_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;panelFullBackground&quot;&gt;@android:drawable/menu_background_fill_parent_width&lt;/item&gt;
+        &lt;!-- These three attributes do not seems to be used by the framework. Declared public though --&gt;
+        &lt;item name=&quot;panelColorBackground&quot;&gt;#000&lt;/item&gt;
+        &lt;item name=&quot;panelColorForeground&quot;&gt;?android:attr/textColorPrimary&lt;/item&gt;
+        &lt;item name=&quot;panelTextAppearance&quot;&gt;?android:attr/textAppearance&lt;/item&gt;
+
+        &lt;item name=&quot;panelMenuIsCompact&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;panelMenuListWidth&quot;&gt;250dip&lt;/item&gt;
+        &lt;item name=&quot;panelMenuListTheme&quot;&gt;@android:style/Theme.Holo.CompactMenu&lt;/item&gt;
+
+        &lt;!-- Scrollbar attributes --&gt;
+        &lt;item name=&quot;scrollbarFadeDuration&quot;&gt;250&lt;/item&gt;
+        &lt;item name=&quot;scrollbarDefaultDelayBeforeFade&quot;&gt;300&lt;/item&gt; 
+        &lt;item name=&quot;scrollbarSize&quot;&gt;10dip&lt;/item&gt;
+        &lt;item name=&quot;scrollbarThumbHorizontal&quot;&gt;@android:drawable/scrollbar_handle_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;scrollbarThumbVertical&quot;&gt;@android:drawable/scrollbar_handle_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;scrollbarTrackHorizontal&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;scrollbarTrackVertical&quot;&gt;@null&lt;/item&gt;
+
+        &lt;!-- Text selection handle attributes --&gt;
+        &lt;item name=&quot;textSelectHandleLeft&quot;&gt;@android:drawable/text_select_handle_left&lt;/item&gt;
+        &lt;item name=&quot;textSelectHandleRight&quot;&gt;@android:drawable/text_select_handle_right&lt;/item&gt;
+        &lt;item name=&quot;textSelectHandle&quot;&gt;@android:drawable/text_select_handle_middle&lt;/item&gt;
+        &lt;item name=&quot;textSelectHandleWindowStyle&quot;&gt;@android:style/Widget.Holo.TextSelectHandle&lt;/item&gt;
+        &lt;item name=&quot;textSuggestionsWindowStyle&quot;&gt;@android:style/Widget.Holo.TextSuggestionsPopupWindow&lt;/item&gt;
+        &lt;item name=&quot;textCursorDrawable&quot;&gt;@android:drawable/text_cursor_holo_dark&lt;/item&gt;
+
+        &lt;!-- Widget styles --&gt;
+        &lt;item name=&quot;absListViewStyle&quot;&gt;@android:style/Widget.Holo.AbsListView&lt;/item&gt;
+        &lt;item name=&quot;autoCompleteTextViewStyle&quot;&gt;@android:style/Widget.Holo.AutoCompleteTextView&lt;/item&gt;
+        &lt;item name=&quot;checkboxStyle&quot;&gt;@android:style/Widget.Holo.CompoundButton.CheckBox&lt;/item&gt;
+        &lt;item name=&quot;checkedTextViewStyle&quot;&gt;@android:style/Widget.Holo.CheckedTextView&lt;/item&gt;
+        &lt;item name=&quot;dropDownListViewStyle&quot;&gt;@android:style/Widget.Holo.ListView.DropDown&lt;/item&gt;
+        &lt;item name=&quot;editTextStyle&quot;&gt;@android:style/Widget.Holo.EditText&lt;/item&gt;
+        &lt;item name=&quot;expandableListViewStyle&quot;&gt;@android:style/Widget.Holo.ExpandableListView&lt;/item&gt;
+        &lt;item name=&quot;expandableListViewWhiteStyle&quot;&gt;@android:style/Widget.Holo.ExpandableListView.White&lt;/item&gt;
+        &lt;item name=&quot;galleryStyle&quot;&gt;@android:style/Widget.Holo.Gallery&lt;/item&gt;
+        &lt;item name=&quot;gestureOverlayViewStyle&quot;&gt;@android:style/Widget.Holo.GestureOverlayView&lt;/item&gt;
+        &lt;item name=&quot;gridViewStyle&quot;&gt;@android:style/Widget.Holo.GridView&lt;/item&gt;
+        &lt;item name=&quot;imageButtonStyle&quot;&gt;@android:style/Widget.Holo.ImageButton&lt;/item&gt;
+        &lt;item name=&quot;imageWellStyle&quot;&gt;@android:style/Widget.Holo.ImageWell&lt;/item&gt;
+        &lt;item name=&quot;listViewStyle&quot;&gt;@android:style/Widget.Holo.ListView&lt;/item&gt;
+        &lt;item name=&quot;listViewWhiteStyle&quot;&gt;@android:style/Widget.Holo.ListView.White&lt;/item&gt;
+        &lt;item name=&quot;popupWindowStyle&quot;&gt;@android:style/Widget.Holo.PopupWindow&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyle&quot;&gt;@android:style/Widget.Holo.ProgressBar&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleHorizontal&quot;&gt;@android:style/Widget.Holo.ProgressBar.Horizontal&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleSmall&quot;&gt;@android:style/Widget.Holo.ProgressBar.Small&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleSmallTitle&quot;&gt;@android:style/Widget.Holo.ProgressBar.Small.Title&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleLarge&quot;&gt;@android:style/Widget.Holo.ProgressBar.Large&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleInverse&quot;&gt;@android:style/Widget.Holo.ProgressBar.Inverse&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleSmallInverse&quot;&gt;@android:style/Widget.Holo.ProgressBar.Small.Inverse&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleLargeInverse&quot;&gt;@android:style/Widget.Holo.ProgressBar.Large.Inverse&lt;/item&gt;
+        &lt;item name=&quot;seekBarStyle&quot;&gt;@android:style/Widget.Holo.SeekBar&lt;/item&gt;
+        &lt;item name=&quot;ratingBarStyle&quot;&gt;@android:style/Widget.Holo.RatingBar&lt;/item&gt;
+        &lt;item name=&quot;ratingBarStyleIndicator&quot;&gt;@android:style/Widget.Holo.RatingBar.Indicator&lt;/item&gt;
+        &lt;item name=&quot;ratingBarStyleSmall&quot;&gt;@android:style/Widget.Holo.RatingBar.Small&lt;/item&gt;
+        &lt;item name=&quot;radioButtonStyle&quot;&gt;@android:style/Widget.Holo.CompoundButton.RadioButton&lt;/item&gt;
+        &lt;item name=&quot;scrollViewStyle&quot;&gt;@android:style/Widget.Holo.ScrollView&lt;/item&gt;
+        &lt;item name=&quot;horizontalScrollViewStyle&quot;&gt;@android:style/Widget.Holo.HorizontalScrollView&lt;/item&gt;
+        &lt;item name=&quot;spinnerStyle&quot;&gt;?android:attr/dropDownSpinnerStyle&lt;/item&gt;
+        &lt;item name=&quot;dropDownSpinnerStyle&quot;&gt;@android:style/Widget.Holo.Spinner.DropDown&lt;/item&gt;
+        &lt;item name=&quot;starStyle&quot;&gt;@android:style/Widget.Holo.CompoundButton.Star&lt;/item&gt;
+        &lt;item name=&quot;tabWidgetStyle&quot;&gt;@android:style/Widget.Holo.TabWidget&lt;/item&gt;
+        &lt;item name=&quot;textViewStyle&quot;&gt;@android:style/Widget.Holo.TextView&lt;/item&gt;
+        &lt;item name=&quot;errorMessageBackground&quot;&gt;@android:drawable/popup_inline_error_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;errorMessageAboveBackground&quot;&gt;@android:drawable/popup_inline_error_above_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;webTextViewStyle&quot;&gt;@android:style/Widget.Holo.WebTextView&lt;/item&gt;
+        &lt;item name=&quot;webViewStyle&quot;&gt;@android:style/Widget.Holo.WebView&lt;/item&gt;
+        &lt;item name=&quot;dropDownItemStyle&quot;&gt;@android:style/Widget.Holo.DropDownItem&lt;/item&gt;
+        &lt;item name=&quot;spinnerDropDownItemStyle&quot;&gt;@android:style/Widget.Holo.DropDownItem.Spinner&lt;/item&gt;
+        &lt;item name=&quot;spinnerItemStyle&quot;&gt;@android:style/Widget.Holo.TextView.SpinnerItem&lt;/item&gt;
+        &lt;item name=&quot;dropDownHintAppearance&quot;&gt;@android:style/TextAppearance.Holo.Widget.DropDownHint&lt;/item&gt;
+        &lt;item name=&quot;keyboardViewStyle&quot;&gt;@android:style/Widget.Holo.KeyboardView&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleWindowSmall&quot;&gt;@android:style/Widget.Holo.QuickContactBadge.WindowSmall&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleWindowMedium&quot;&gt;@android:style/Widget.Holo.QuickContactBadge.WindowMedium&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleWindowLarge&quot;&gt;@android:style/Widget.Holo.QuickContactBadge.WindowLarge&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleSmallWindowSmall&quot;&gt;@android:style/Widget.Holo.QuickContactBadgeSmall.WindowSmall&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleSmallWindowMedium&quot;&gt;@android:style/Widget.Holo.QuickContactBadgeSmall.WindowMedium&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleSmallWindowLarge&quot;&gt;@android:style/Widget.Holo.QuickContactBadgeSmall.WindowLarge&lt;/item&gt;
+        &lt;item name=&quot;listPopupWindowStyle&quot;&gt;@android:style/Widget.Holo.ListPopupWindow&lt;/item&gt;
+        &lt;item name=&quot;popupMenuStyle&quot;&gt;@android:style/Widget.Holo.PopupMenu&lt;/item&gt;
+        &lt;item name=&quot;stackViewStyle&quot;&gt;@android:style/Widget.Holo.StackView&lt;/item&gt;
+        &lt;item name=&quot;activityChooserViewStyle&quot;&gt;@android:style/Widget.Holo.ActivityChooserView&lt;/item&gt;
+
+        &lt;!-- Preference styles --&gt;
+        &lt;item name=&quot;preferenceScreenStyle&quot;&gt;@android:style/Preference.Holo.PreferenceScreen&lt;/item&gt;
+        &lt;item name=&quot;preferenceFragmentStyle&quot;&gt;@style/PreferenceFragment.Holo&lt;/item&gt;
+        &lt;item name=&quot;preferenceCategoryStyle&quot;&gt;@android:style/Preference.Holo.Category&lt;/item&gt;
+        &lt;item name=&quot;preferenceStyle&quot;&gt;@android:style/Preference.Holo&lt;/item&gt;
+        &lt;item name=&quot;preferenceInformationStyle&quot;&gt;@android:style/Preference.Holo.Information&lt;/item&gt;
+        &lt;item name=&quot;checkBoxPreferenceStyle&quot;&gt;@android:style/Preference.Holo.CheckBoxPreference&lt;/item&gt;
+        &lt;item name=&quot;switchPreferenceStyle&quot;&gt;@android:style/Preference.Holo.SwitchPreference&lt;/item&gt;
+        &lt;item name=&quot;yesNoPreferenceStyle&quot;&gt;@android:style/Preference.Holo.DialogPreference.YesNoPreference&lt;/item&gt;
+        &lt;item name=&quot;dialogPreferenceStyle&quot;&gt;@android:style/Preference.Holo.DialogPreference&lt;/item&gt;
+        &lt;item name=&quot;editTextPreferenceStyle&quot;&gt;@android:style/Preference.Holo.DialogPreference.EditTextPreference&lt;/item&gt;
+        &lt;item name=&quot;ringtonePreferenceStyle&quot;&gt;@android:style/Preference.Holo.RingtonePreference&lt;/item&gt;
+        &lt;item name=&quot;preferenceLayoutChild&quot;&gt;@android:layout/preference_child_holo&lt;/item&gt;
+        &lt;item name=&quot;detailsElementBackground&quot;&gt;@android:drawable/panel_bg_holo_dark&lt;/item&gt;
+
+        &lt;!-- Search widget styles --&gt;
+        &lt;item name=&quot;searchWidgetCorpusItemBackground&quot;&gt;@android:color/search_widget_corpus_item_background&lt;/item&gt;
+
+        &lt;!-- Action bar styles --&gt;
+        &lt;item name=&quot;actionDropDownStyle&quot;&gt;@android:style/Widget.Holo.Spinner.DropDown.ActionBar&lt;/item&gt;
+        &lt;item name=&quot;actionButtonStyle&quot;&gt;@android:style/Widget.Holo.ActionButton&lt;/item&gt;
+        &lt;item name=&quot;actionOverflowButtonStyle&quot;&gt;@android:style/Widget.Holo.ActionButton.Overflow&lt;/item&gt;
+        &lt;item name=&quot;actionModeBackground&quot;&gt;@android:drawable/cab_background_top_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeSplitBackground&quot;&gt;@android:drawable/cab_background_bottom_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeCloseDrawable&quot;&gt;@android:drawable/ic_cab_done_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionBarTabStyle&quot;&gt;@style/Widget.Holo.ActionBar.TabView&lt;/item&gt;
+        &lt;item name=&quot;actionBarTabBarStyle&quot;&gt;@style/Widget.Holo.ActionBar.TabBar&lt;/item&gt;
+        &lt;item name=&quot;actionBarTabTextStyle&quot;&gt;@style/Widget.Holo.ActionBar.TabText&lt;/item&gt;
+        &lt;item name=&quot;actionModeStyle&quot;&gt;@style/Widget.Holo.ActionMode&lt;/item&gt;
+        &lt;item name=&quot;actionModeCloseButtonStyle&quot;&gt;@style/Widget.Holo.ActionButton.CloseMode&lt;/item&gt;
+        &lt;item name=&quot;actionBarStyle&quot;&gt;@android:style/Widget.Holo.ActionBar&lt;/item&gt;
+        &lt;item name=&quot;actionBarSize&quot;&gt;@dimen/action_bar_default_height&lt;/item&gt;
+        &lt;item name=&quot;actionModePopupWindowStyle&quot;&gt;@android:style/Widget.Holo.PopupWindow.ActionMode&lt;/item&gt;
+        &lt;item name=&quot;actionBarWidgetTheme&quot;&gt;@null&lt;/item&gt;
+
+        &lt;item name=&quot;actionModeCutDrawable&quot;&gt;@android:drawable/ic_menu_cut_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeCopyDrawable&quot;&gt;@android:drawable/ic_menu_copy_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModePasteDrawable&quot;&gt;@android:drawable/ic_menu_paste_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeSelectAllDrawable&quot;&gt;@android:drawable/ic_menu_selectall_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeShareDrawable&quot;&gt;@android:drawable/ic_menu_share_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeFindDrawable&quot;&gt;@android:drawable/ic_menu_find_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeWebSearchDrawable&quot;&gt;@android:drawable/ic_menu_search_holo_dark&lt;/item&gt;
+
+        &lt;item name=&quot;dividerVertical&quot;&gt;?android:attr/listDivider&lt;/item&gt;
+        &lt;item name=&quot;dividerHorizontal&quot;&gt;?android:attr/listDivider&lt;/item&gt;
+        &lt;item name=&quot;buttonBarStyle&quot;&gt;@android:style/Holo.ButtonBar&lt;/item&gt;
+        &lt;item name=&quot;buttonBarButtonStyle&quot;&gt;?android:attr/borderlessButtonStyle&lt;/item&gt;
+        &lt;item name=&quot;segmentedButtonStyle&quot;&gt;@android:style/Holo.SegmentedButton&lt;/item&gt;
+
+        &lt;!-- SearchView attributes --&gt;
+        &lt;item name=&quot;searchDropdownBackground&quot;&gt;@android:drawable/search_dropdown_dark&lt;/item&gt;
+
+        &lt;item name=&quot;searchDialogTheme&quot;&gt;@style/Theme.Holo.SearchBar&lt;/item&gt;
+
+        &lt;!-- PreferenceFrameLayout attributes --&gt;
+        &lt;item name=&quot;preferenceFrameLayoutStyle&quot;&gt;@android:style/Widget.Holo.PreferenceFrameLayout&lt;/item&gt;
+
+        &lt;!-- NumberPicker style--&gt;
+        &lt;item name=&quot;numberPickerStyle&quot;&gt;@style/Widget.Holo.NumberPicker&lt;/item&gt;
+
+        &lt;!-- CalendarView style--&gt;
+        &lt;item name=&quot;calendarViewStyle&quot;&gt;@style/Widget.Holo.CalendarView&lt;/item&gt;
+
+        &lt;!-- TimePicker style --&gt;
+        &lt;item name=&quot;timePickerStyle&quot;&gt;@style/Widget.Holo.TimePicker&lt;/item&gt;
+
+        &lt;!-- DatePicker style --&gt;
+        &lt;item name=&quot;datePickerStyle&quot;&gt;@style/Widget.Holo.DatePicker&lt;/item&gt;
+
+        &lt;item name=&quot;fastScrollThumbDrawable&quot;&gt;@android:drawable/fastscroll_thumb_holo&lt;/item&gt;
+        &lt;item name=&quot;fastScrollPreviewBackgroundLeft&quot;&gt;@android:drawable/fastscroll_label_left_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;fastScrollPreviewBackgroundRight&quot;&gt;@android:drawable/fastscroll_label_right_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;fastScrollTrackDrawable&quot;&gt;@android:drawable/fastscroll_track_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;fastScrollOverlayPosition&quot;&gt;atThumb&lt;/item&gt;
+
+    &lt;/style&gt;
+
+    &lt;!-- Honeycomb holographic theme (light version).  The widgets in the
+         holographic theme are translucent on their brackground, so applications
+         must ensure that any background they use with this theme is itself
+         light; otherwise, it will be difficult to see the widgets.  This
+         UI style also includes a full action bar by default. --&gt;
+    &lt;style name=&quot;Theme.Holo.Light&quot; parent=&quot;Theme.Light&quot;&gt;
+        &lt;item name=&quot;colorForeground&quot;&gt;@android:color/bright_foreground_holo_light&lt;/item&gt;
+        &lt;item name=&quot;colorForegroundInverse&quot;&gt;@android:color/bright_foreground_inverse_holo_light&lt;/item&gt;
+        &lt;item name=&quot;colorBackground&quot;&gt;@android:color/background_holo_light&lt;/item&gt;
+        &lt;item name=&quot;colorBackgroundCacheHint&quot;&gt;@android:drawable/background_cache_hint_selector_holo_light&lt;/item&gt;
+        &lt;item name=&quot;disabledAlpha&quot;&gt;0.5&lt;/item&gt;
+        &lt;item name=&quot;backgroundDimAmount&quot;&gt;0.6&lt;/item&gt;
+
+        &lt;item name=&quot;colorPressedHighlight&quot;&gt;@color/holo_blue_light&lt;/item&gt;
+        &lt;item name=&quot;colorLongPressedHighlight&quot;&gt;@color/holo_blue_bright&lt;/item&gt;
+        &lt;item name=&quot;colorFocusedHighlight&quot;&gt;@color/holo_blue_dark&lt;/item&gt;
+        &lt;item name=&quot;colorMultiSelectHighlight&quot;&gt;@color/holo_green_light&lt;/item&gt;
+        &lt;item name=&quot;colorActivatedHighlight&quot;&gt;@color/holo_blue_dark&lt;/item&gt;
+
+        &lt;!-- Text styles --&gt;
+        &lt;item name=&quot;textAppearance&quot;&gt;@android:style/TextAppearance.Holo.Light&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceInverse&quot;&gt;@android:style/TextAppearance.Holo.Light.Inverse&lt;/item&gt;
+
+        &lt;item name=&quot;textColorPrimary&quot;&gt;@android:color/primary_text_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondary&quot;&gt;@android:color/secondary_text_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorTertiary&quot;&gt;@android:color/tertiary_text_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverse&quot;&gt;@android:color/primary_text_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryInverse&quot;&gt;@android:color/secondary_text_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorTertiaryInverse&quot;&gt;@android:color/tertiary_text_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryDisableOnly&quot;&gt;@android:color/primary_text_disable_only_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverseDisableOnly&quot;&gt;@android:color/primary_text_disable_only_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryNoDisable&quot;&gt;@android:color/primary_text_nodisable_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryNoDisable&quot;&gt;@android:color/secondary_text_nodisable_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorPrimaryInverseNoDisable&quot;&gt;@android:color/primary_text_nodisable_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorSecondaryInverseNoDisable&quot;&gt;@android:color/secondary_text_nodisable_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorHint&quot;&gt;@android:color/hint_foreground_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorHintInverse&quot;&gt;@android:color/hint_foreground_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorSearchUrl&quot;&gt;@android:color/search_url_text_holo&lt;/item&gt;
+        &lt;item name=&quot;textColorHighlight&quot;&gt;@android:color/highlighted_text_holo_light&lt;/item&gt;
+        &lt;item name=&quot;textColorHighlightInverse&quot;&gt;@android:color/highlighted_text_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;textColorLink&quot;&gt;@android:color/holo_blue_light&lt;/item&gt;
+        &lt;item name=&quot;textColorLinkInverse&quot;&gt;@android:color/holo_blue_light&lt;/item&gt;
+        &lt;item name=&quot;textColorAlertDialogListItem&quot;&gt;@android:color/primary_text_holo_light&lt;/item&gt;
+
+        &lt;item name=&quot;textAppearanceLarge&quot;&gt;@android:style/TextAppearance.Holo.Light.Large&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceMedium&quot;&gt;@android:style/TextAppearance.Holo.Light.Medium&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSmall&quot;&gt;@android:style/TextAppearance.Holo.Light.Small&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceLargeInverse&quot;&gt;@android:style/TextAppearance.Holo.Light.Large.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceMediumInverse&quot;&gt;@android:style/TextAppearance.Holo.Light.Medium.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSmallInverse&quot;&gt;@android:style/TextAppearance.Holo.Light.Small.Inverse&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSearchResultTitle&quot;&gt;@android:style/TextAppearance.Holo.Light.SearchResult.Title&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSearchResultSubtitle&quot;&gt;@android:style/TextAppearance.Holo.Light.SearchResult.Subtitle&lt;/item&gt;
+        
+        &lt;item name=&quot;textAppearanceButton&quot;&gt;@android:style/TextAppearance.Holo.Light.Widget.Button&lt;/item&gt;
+
+        &lt;item name=&quot;editTextColor&quot;&gt;?android:attr/textColorPrimary&lt;/item&gt;
+        &lt;item name=&quot;editTextBackground&quot;&gt;@android:drawable/edit_text_holo_light&lt;/item&gt;
+
+        &lt;item name=&quot;candidatesTextStyleSpans&quot;&gt;@android:string/candidates_style&lt;/item&gt;
+        
+        &lt;item name=&quot;textCheckMark&quot;&gt;@android:drawable/indicator_check_mark_light&lt;/item&gt;
+        &lt;item name=&quot;textCheckMarkInverse&quot;&gt;@android:drawable/indicator_check_mark_dark&lt;/item&gt;
+
+        &lt;item name=&quot;textAppearanceLargePopupMenu&quot;&gt;@android:style/TextAppearance.Holo.Light.Widget.PopupMenu.Large&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceSmallPopupMenu&quot;&gt;@android:style/TextAppearance.Holo.Light.Widget.PopupMenu.Small&lt;/item&gt;
+
+        &lt;!-- Button styles --&gt;
+        &lt;item name=&quot;buttonStyle&quot;&gt;@android:style/Widget.Holo.Light.Button&lt;/item&gt;
+
+        &lt;item name=&quot;buttonStyleSmall&quot;&gt;@android:style/Widget.Holo.Light.Button.Small&lt;/item&gt;
+        &lt;item name=&quot;buttonStyleInset&quot;&gt;@android:style/Widget.Holo.Light.Button.Inset&lt;/item&gt;
+
+        &lt;item name=&quot;buttonStyleToggle&quot;&gt;@android:style/Widget.Holo.Light.Button.Toggle&lt;/item&gt;
+        &lt;item name=&quot;switchStyle&quot;&gt;@android:style/Widget.Holo.Light.CompoundButton.Switch&lt;/item&gt;
+        &lt;item name=&quot;mediaRouteButtonStyle&quot;&gt;@android:style/Widget.Holo.Light.MediaRouteButton&lt;/item&gt;
+
+        &lt;item name=&quot;selectableItemBackground&quot;&gt;@android:drawable/item_background_holo_light&lt;/item&gt;
+        &lt;item name=&quot;borderlessButtonStyle&quot;&gt;@android:style/Widget.Holo.Light.Button.Borderless&lt;/item&gt;
+        &lt;item name=&quot;homeAsUpIndicator&quot;&gt;@android:drawable/ic_ab_back_holo_light&lt;/item&gt;
+
+        &lt;!-- List attributes --&gt;
+        &lt;item name=&quot;listPreferredItemHeight&quot;&gt;64dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemHeightSmall&quot;&gt;48dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemHeightLarge&quot;&gt;80dip&lt;/item&gt;
+        &lt;item name=&quot;dropdownListPreferredItemHeight&quot;&gt;?android:attr/listPreferredItemHeightSmall&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceListItemSmall&quot;&gt;?android:attr/textAppearanceMedium&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingLeft&quot;&gt;8dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingRight&quot;&gt;8dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingStart&quot;&gt;8dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingEnd&quot;&gt;8dip&lt;/item&gt;
+
+        &lt;!-- @hide --&gt;
+        &lt;item name=&quot;searchResultListItemHeight&quot;&gt;58dip&lt;/item&gt;
+        &lt;item name=&quot;listDivider&quot;&gt;@drawable/list_divider_holo_light&lt;/item&gt;
+        &lt;item name=&quot;listSeparatorTextViewStyle&quot;&gt;@android:style/Widget.Holo.Light.TextView.ListSeparator&lt;/item&gt;   
+
+        &lt;item name=&quot;listChoiceIndicatorSingle&quot;&gt;@android:drawable/btn_radio_holo_light&lt;/item&gt;
+        &lt;item name=&quot;listChoiceIndicatorMultiple&quot;&gt;@android:drawable/btn_check_holo_light&lt;/item&gt;
+
+        &lt;item name=&quot;listChoiceBackgroundIndicator&quot;&gt;@android:drawable/list_selector_holo_light&lt;/item&gt;
+
+        &lt;item name=&quot;activatedBackgroundIndicator&quot;&gt;@android:drawable/activated_background_holo_light&lt;/item&gt;
+
+        &lt;item name=&quot;expandableListPreferredItemPaddingLeft&quot;&gt;40dip&lt;/item&gt;
+        &lt;item name=&quot;expandableListPreferredChildPaddingLeft&quot;&gt;?android:attr/expandableListPreferredItemPaddingLeft&lt;/item&gt;
+
+        &lt;item name=&quot;expandableListPreferredItemIndicatorLeft&quot;&gt;3dip&lt;/item&gt;
+        &lt;item name=&quot;expandableListPreferredItemIndicatorRight&quot;&gt;0dip&lt;/item&gt;
+        &lt;item name=&quot;expandableListPreferredChildIndicatorLeft&quot;&gt;?android:attr/expandableListPreferredItemIndicatorLeft&lt;/item&gt;
+        &lt;item name=&quot;expandableListPreferredChildIndicatorRight&quot;&gt;?android:attr/expandableListPreferredItemIndicatorRight&lt;/item&gt;
+
+        &lt;item name=&quot;listDividerAlertDialog&quot;&gt;@android:drawable/list_divider_holo_light&lt;/item&gt;
+        &lt;item name=&quot;findOnPageNextDrawable&quot;&gt;@android:drawable/ic_find_next_holo_light&lt;/item&gt;
+        &lt;item name=&quot;findOnPagePreviousDrawable&quot;&gt;@android:drawable/ic_find_previous_holo_light&lt;/item&gt;
+
+        &lt;!-- Gallery attributes --&gt;
+        &lt;item name=&quot;galleryItemBackground&quot;&gt;@android:drawable/gallery_item_background&lt;/item&gt;
+        
+        &lt;!-- Window attributes --&gt;
+        &lt;item name=&quot;windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;windowNoTitle&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowFullscreen&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowIsFloating&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@android:drawable/ab_solid_shadow_holo&lt;/item&gt;
+        &lt;item name=&quot;windowShowWallpaper&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;windowTitleStyle&quot;&gt;@android:style/WindowTitle.Holo&lt;/item&gt;
+        &lt;item name=&quot;windowTitleSize&quot;&gt;25dip&lt;/item&gt;
+        &lt;item name=&quot;windowTitleBackgroundStyle&quot;&gt;@android:style/WindowTitleBackground.Holo&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.Holo.Activity&lt;/item&gt;
+        &lt;item name=&quot;android:windowSoftInputMode&quot;&gt;stateUnspecified|adjustUnspecified&lt;/item&gt;
+        &lt;item name=&quot;windowActionBar&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;windowActionModeOverlay&quot;&gt;false&lt;/item&gt;
+
+        &lt;!-- Dialog attributes --&gt;
+        &lt;item name=&quot;dialogTheme&quot;&gt;@android:style/Theme.Holo.Light.Dialog&lt;/item&gt;
+        &lt;item name=&quot;dialogTitleIconsDecorLayout&quot;&gt;@layout/dialog_title_icons_holo&lt;/item&gt;
+        &lt;item name=&quot;dialogCustomTitleDecorLayout&quot;&gt;@layout/dialog_custom_title_holo&lt;/item&gt;
+        &lt;item name=&quot;dialogTitleDecorLayout&quot;&gt;@layout/dialog_title_holo&lt;/item&gt;
+
+        &lt;!-- AlertDialog attributes --&gt;
+        &lt;item name=&quot;alertDialogTheme&quot;&gt;@android:style/Theme.Holo.Light.Dialog.Alert&lt;/item&gt;
+        &lt;item name=&quot;alertDialogStyle&quot;&gt;@android:style/AlertDialog.Holo.Light&lt;/item&gt;
+        &lt;item name=&quot;alertDialogCenterButtons&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;alertDialogIcon&quot;&gt;@android:drawable/ic_dialog_alert_holo_light&lt;/item&gt;
+
+        &lt;!-- Presentation attributes --&gt;
+        &lt;item name=&quot;presentationTheme&quot;&gt;@android:style/Theme.Holo.Light.Dialog.Presentation&lt;/item&gt;
+
+        &lt;!-- Toast attributes --&gt;
+        &lt;item name=&quot;toastFrameBackground&quot;&gt;@android:drawable/toast_frame_holo&lt;/item&gt;
+
+        &lt;!-- Panel attributes --&gt;
+        &lt;item name=&quot;panelBackground&quot;&gt;@android:drawable/menu_hardkey_panel_holo_light&lt;/item&gt;
+        &lt;item name=&quot;panelFullBackground&quot;&gt;@android:drawable/menu_background_fill_parent_width&lt;/item&gt;
+        &lt;!-- These three attributes do not seems to be used by the framework. Declared public though --&gt;
+        &lt;item name=&quot;panelColorBackground&quot;&gt;#000&lt;/item&gt;
+        &lt;item name=&quot;panelColorForeground&quot;&gt;?android:attr/textColorPrimary&lt;/item&gt;
+        &lt;item name=&quot;panelTextAppearance&quot;&gt;?android:attr/textAppearance&lt;/item&gt;
+
+        &lt;item name=&quot;panelMenuIsCompact&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;panelMenuListWidth&quot;&gt;250dip&lt;/item&gt;
+        &lt;item name=&quot;panelMenuListTheme&quot;&gt;@android:style/Theme.Holo.Light.CompactMenu&lt;/item&gt;
+
+        &lt;!-- Scrollbar attributes --&gt;
+        &lt;item name=&quot;scrollbarFadeDuration&quot;&gt;250&lt;/item&gt;
+        &lt;item name=&quot;scrollbarDefaultDelayBeforeFade&quot;&gt;300&lt;/item&gt;
+        &lt;item name=&quot;scrollbarSize&quot;&gt;10dip&lt;/item&gt;
+        &lt;item name=&quot;scrollbarThumbHorizontal&quot;&gt;@android:drawable/scrollbar_handle_holo_light&lt;/item&gt;
+        &lt;item name=&quot;scrollbarThumbVertical&quot;&gt;@android:drawable/scrollbar_handle_holo_light&lt;/item&gt;
+        &lt;item name=&quot;scrollbarTrackHorizontal&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;scrollbarTrackVertical&quot;&gt;@null&lt;/item&gt;
+
+        &lt;!-- Text selection handle attributes --&gt;
+        &lt;item name=&quot;textSelectHandleLeft&quot;&gt;@android:drawable/text_select_handle_left&lt;/item&gt;
+        &lt;item name=&quot;textSelectHandleRight&quot;&gt;@android:drawable/text_select_handle_right&lt;/item&gt;
+        &lt;item name=&quot;textSelectHandle&quot;&gt;@android:drawable/text_select_handle_middle&lt;/item&gt;
+        &lt;item name=&quot;textSelectHandleWindowStyle&quot;&gt;@android:style/Widget.Holo.TextSelectHandle&lt;/item&gt;
+        &lt;item name=&quot;textSuggestionsWindowStyle&quot;&gt;@android:style/Widget.Holo.Light.TextSuggestionsPopupWindow&lt;/item&gt;
+        &lt;item name=&quot;textCursorDrawable&quot;&gt;@android:drawable/text_cursor_holo_light&lt;/item&gt;
+
+        &lt;!-- Widget styles --&gt;
+        &lt;item name=&quot;absListViewStyle&quot;&gt;@android:style/Widget.Holo.Light.AbsListView&lt;/item&gt;
+        &lt;item name=&quot;autoCompleteTextViewStyle&quot;&gt;@android:style/Widget.Holo.Light.AutoCompleteTextView&lt;/item&gt;
+        &lt;item name=&quot;checkboxStyle&quot;&gt;@android:style/Widget.Holo.Light.CompoundButton.CheckBox&lt;/item&gt;
+        &lt;item name=&quot;checkedTextViewStyle&quot;&gt;@android:style/Widget.Holo.Light.CheckedTextView&lt;/item&gt;
+        &lt;item name=&quot;dropDownListViewStyle&quot;&gt;@android:style/Widget.Holo.ListView.DropDown&lt;/item&gt;
+        &lt;item name=&quot;editTextStyle&quot;&gt;@android:style/Widget.Holo.Light.EditText&lt;/item&gt;
+        &lt;item name=&quot;expandableListViewStyle&quot;&gt;@android:style/Widget.Holo.Light.ExpandableListView&lt;/item&gt;
+        &lt;item name=&quot;expandableListViewWhiteStyle&quot;&gt;@android:style/Widget.Holo.Light.ExpandableListView.White&lt;/item&gt;
+        &lt;item name=&quot;galleryStyle&quot;&gt;@android:style/Widget.Holo.Light.Gallery&lt;/item&gt;
+        &lt;item name=&quot;gestureOverlayViewStyle&quot;&gt;@android:style/Widget.Holo.Light.GestureOverlayView&lt;/item&gt;
+        &lt;item name=&quot;gridViewStyle&quot;&gt;@android:style/Widget.Holo.Light.GridView&lt;/item&gt;
+        &lt;item name=&quot;imageButtonStyle&quot;&gt;@android:style/Widget.Holo.Light.ImageButton&lt;/item&gt;
+        &lt;item name=&quot;imageWellStyle&quot;&gt;@android:style/Widget.Holo.Light.ImageWell&lt;/item&gt;
+        &lt;item name=&quot;listViewStyle&quot;&gt;@android:style/Widget.Holo.Light.ListView&lt;/item&gt;
+        &lt;item name=&quot;listViewWhiteStyle&quot;&gt;@android:style/Widget.Holo.Light.ListView.White&lt;/item&gt;
+        &lt;item name=&quot;popupWindowStyle&quot;&gt;@android:style/Widget.Holo.Light.PopupWindow&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyle&quot;&gt;@android:style/Widget.Holo.Light.ProgressBar&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleHorizontal&quot;&gt;@android:style/Widget.Holo.Light.ProgressBar.Horizontal&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleSmall&quot;&gt;@android:style/Widget.Holo.Light.ProgressBar.Small&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleSmallTitle&quot;&gt;@android:style/Widget.Holo.Light.ProgressBar.Small.Title&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleLarge&quot;&gt;@android:style/Widget.Holo.Light.ProgressBar.Large&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleInverse&quot;&gt;@android:style/Widget.Holo.Light.ProgressBar.Inverse&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleSmallInverse&quot;&gt;@android:style/Widget.Holo.Light.ProgressBar.Small.Inverse&lt;/item&gt;
+        &lt;item name=&quot;progressBarStyleLargeInverse&quot;&gt;@android:style/Widget.Holo.Light.ProgressBar.Large.Inverse&lt;/item&gt;
+        &lt;item name=&quot;seekBarStyle&quot;&gt;@android:style/Widget.Holo.Light.SeekBar&lt;/item&gt;
+        &lt;item name=&quot;ratingBarStyle&quot;&gt;@android:style/Widget.Holo.Light.RatingBar&lt;/item&gt;
+        &lt;item name=&quot;ratingBarStyleIndicator&quot;&gt;@android:style/Widget.Holo.Light.RatingBar.Indicator&lt;/item&gt;
+        &lt;item name=&quot;ratingBarStyleSmall&quot;&gt;@android:style/Widget.Holo.Light.RatingBar.Small&lt;/item&gt;
+        &lt;item name=&quot;radioButtonStyle&quot;&gt;@android:style/Widget.Holo.Light.CompoundButton.RadioButton&lt;/item&gt;
+        &lt;item name=&quot;scrollViewStyle&quot;&gt;@android:style/Widget.Holo.Light.ScrollView&lt;/item&gt;
+        &lt;item name=&quot;horizontalScrollViewStyle&quot;&gt;@android:style/Widget.Holo.Light.HorizontalScrollView&lt;/item&gt;
+        &lt;item name=&quot;spinnerStyle&quot;&gt;?android:attr/dropDownSpinnerStyle&lt;/item&gt;
+        &lt;item name=&quot;dropDownSpinnerStyle&quot;&gt;@android:style/Widget.Holo.Light.Spinner.DropDown&lt;/item&gt;
+        &lt;item name=&quot;starStyle&quot;&gt;@android:style/Widget.Holo.Light.CompoundButton.Star&lt;/item&gt;
+        &lt;item name=&quot;tabWidgetStyle&quot;&gt;@android:style/Widget.Holo.Light.TabWidget&lt;/item&gt;
+        &lt;item name=&quot;textViewStyle&quot;&gt;@android:style/Widget.Holo.Light.TextView&lt;/item&gt;
+        &lt;item name=&quot;errorMessageBackground&quot;&gt;@android:drawable/popup_inline_error_holo_light&lt;/item&gt;
+        &lt;item name=&quot;errorMessageAboveBackground&quot;&gt;@android:drawable/popup_inline_error_above_holo_light&lt;/item&gt;
+        &lt;item name=&quot;webTextViewStyle&quot;&gt;@android:style/Widget.Holo.Light.WebTextView&lt;/item&gt;
+        &lt;item name=&quot;webViewStyle&quot;&gt;@android:style/Widget.Holo.Light.WebView&lt;/item&gt;
+        &lt;item name=&quot;dropDownItemStyle&quot;&gt;@android:style/Widget.Holo.Light.DropDownItem&lt;/item&gt;
+        &lt;item name=&quot;spinnerDropDownItemStyle&quot;&gt;@android:style/Widget.Holo.Light.DropDownItem.Spinner&lt;/item&gt;
+        &lt;item name=&quot;spinnerItemStyle&quot;&gt;@android:style/Widget.Holo.TextView.SpinnerItem&lt;/item&gt;
+        &lt;item name=&quot;dropDownHintAppearance&quot;&gt;@android:style/TextAppearance.Holo.Widget.DropDownHint&lt;/item&gt;
+        &lt;item name=&quot;keyboardViewStyle&quot;&gt;@android:style/Widget.Holo.KeyboardView&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleWindowSmall&quot;&gt;@android:style/Widget.Holo.QuickContactBadge.WindowSmall&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleWindowMedium&quot;&gt;@android:style/Widget.Holo.QuickContactBadge.WindowMedium&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleWindowLarge&quot;&gt;@android:style/Widget.Holo.QuickContactBadge.WindowLarge&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleSmallWindowSmall&quot;&gt;@android:style/Widget.Holo.QuickContactBadgeSmall.WindowSmall&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleSmallWindowMedium&quot;&gt;@android:style/Widget.Holo.QuickContactBadgeSmall.WindowMedium&lt;/item&gt;
+        &lt;item name=&quot;quickContactBadgeStyleSmallWindowLarge&quot;&gt;@android:style/Widget.Holo.QuickContactBadgeSmall.WindowLarge&lt;/item&gt;
+        &lt;item name=&quot;listPopupWindowStyle&quot;&gt;@android:style/Widget.Holo.Light.ListPopupWindow&lt;/item&gt;
+        &lt;item name=&quot;popupMenuStyle&quot;&gt;@android:style/Widget.Holo.Light.PopupMenu&lt;/item&gt;
+        &lt;item name=&quot;stackViewStyle&quot;&gt;@android:style/Widget.Holo.StackView&lt;/item&gt;
+        &lt;item name=&quot;activityChooserViewStyle&quot;&gt;@android:style/Widget.Holo.Light.ActivityChooserView&lt;/item&gt;
+
+        &lt;!-- Preference styles --&gt;
+        &lt;item name=&quot;preferenceScreenStyle&quot;&gt;@android:style/Preference.Holo.PreferenceScreen&lt;/item&gt;
+        &lt;item name=&quot;preferenceFragmentStyle&quot;&gt;@style/PreferenceFragment.Holo&lt;/item&gt;
+        &lt;item name=&quot;preferenceCategoryStyle&quot;&gt;@android:style/Preference.Holo.Category&lt;/item&gt;
+        &lt;item name=&quot;preferenceStyle&quot;&gt;@android:style/Preference.Holo&lt;/item&gt;
+        &lt;item name=&quot;preferenceInformationStyle&quot;&gt;@android:style/Preference.Holo.Information&lt;/item&gt;
+        &lt;item name=&quot;checkBoxPreferenceStyle&quot;&gt;@android:style/Preference.Holo.CheckBoxPreference&lt;/item&gt;
+        &lt;item name=&quot;switchPreferenceStyle&quot;&gt;@android:style/Preference.Holo.SwitchPreference&lt;/item&gt;
+        &lt;item name=&quot;yesNoPreferenceStyle&quot;&gt;@android:style/Preference.Holo.DialogPreference.YesNoPreference&lt;/item&gt;
+        &lt;item name=&quot;dialogPreferenceStyle&quot;&gt;@android:style/Preference.Holo.DialogPreference&lt;/item&gt;
+        &lt;item name=&quot;editTextPreferenceStyle&quot;&gt;@android:style/Preference.Holo.DialogPreference.EditTextPreference&lt;/item&gt;
+        &lt;item name=&quot;ringtonePreferenceStyle&quot;&gt;@android:style/Preference.Holo.RingtonePreference&lt;/item&gt;
+        &lt;item name=&quot;preferenceLayoutChild&quot;&gt;@android:layout/preference_child_holo&lt;/item&gt;
+        &lt;item name=&quot;detailsElementBackground&quot;&gt;@android:drawable/panel_bg_holo_light&lt;/item&gt;
+
+        &lt;!-- PreferenceFrameLayout attributes --&gt;
+        &lt;item name=&quot;preferenceFrameLayoutStyle&quot;&gt;@android:style/Widget.Holo.PreferenceFrameLayout&lt;/item&gt;
+
+        &lt;!-- Search widget styles --&gt;
+        &lt;item name=&quot;searchWidgetCorpusItemBackground&quot;&gt;@android:color/search_widget_corpus_item_background&lt;/item&gt;
+
+        &lt;!-- Action bar styles --&gt;
+        &lt;item name=&quot;actionDropDownStyle&quot;&gt;@android:style/Widget.Holo.Light.Spinner.DropDown.ActionBar&lt;/item&gt;
+        &lt;item name=&quot;actionButtonStyle&quot;&gt;@android:style/Widget.Holo.Light.ActionButton&lt;/item&gt;
+        &lt;item name=&quot;actionOverflowButtonStyle&quot;&gt;@android:style/Widget.Holo.Light.ActionButton.Overflow&lt;/item&gt;
+        &lt;item name=&quot;actionModeBackground&quot;&gt;@android:drawable/cab_background_top_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeSplitBackground&quot;&gt;@android:drawable/cab_background_bottom_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeCloseDrawable&quot;&gt;@android:drawable/ic_cab_done_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionBarTabStyle&quot;&gt;@style/Widget.Holo.Light.ActionBar.TabView&lt;/item&gt;
+        &lt;item name=&quot;actionBarTabBarStyle&quot;&gt;@style/Widget.Holo.Light.ActionBar.TabBar&lt;/item&gt;
+        &lt;item name=&quot;actionBarTabTextStyle&quot;&gt;@style/Widget.Holo.Light.ActionBar.TabText&lt;/item&gt;
+        &lt;item name=&quot;actionModeStyle&quot;&gt;@style/Widget.Holo.Light.ActionMode&lt;/item&gt;
+        &lt;item name=&quot;actionModeCloseButtonStyle&quot;&gt;@style/Widget.Holo.Light.ActionButton.CloseMode&lt;/item&gt;
+        &lt;item name=&quot;android:actionBarStyle&quot;&gt;@android:style/Widget.Holo.Light.ActionBar.Solid&lt;/item&gt;
+        &lt;item name=&quot;actionBarSize&quot;&gt;@dimen/action_bar_default_height&lt;/item&gt;
+        &lt;item name=&quot;actionModePopupWindowStyle&quot;&gt;@android:style/Widget.Holo.Light.PopupWindow.ActionMode&lt;/item&gt;
+        &lt;item name=&quot;actionBarWidgetTheme&quot;&gt;@null&lt;/item&gt;
+
+        &lt;item name=&quot;actionModeCutDrawable&quot;&gt;@android:drawable/ic_menu_cut_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeCopyDrawable&quot;&gt;@android:drawable/ic_menu_copy_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModePasteDrawable&quot;&gt;@android:drawable/ic_menu_paste_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeSelectAllDrawable&quot;&gt;@android:drawable/ic_menu_selectall_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeShareDrawable&quot;&gt;@android:drawable/ic_menu_share_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeFindDrawable&quot;&gt;@android:drawable/ic_menu_find_holo_light&lt;/item&gt;
+        &lt;item name=&quot;actionModeWebSearchDrawable&quot;&gt;@android:drawable/ic_menu_search_holo_light&lt;/item&gt;
+
+        &lt;item name=&quot;dividerVertical&quot;&gt;?android:attr/listDivider&lt;/item&gt;
+        &lt;item name=&quot;dividerHorizontal&quot;&gt;?android:attr/listDivider&lt;/item&gt;
+        &lt;item name=&quot;buttonBarStyle&quot;&gt;@android:style/Holo.Light.ButtonBar&lt;/item&gt;
+        &lt;item name=&quot;buttonBarButtonStyle&quot;&gt;?android:attr/borderlessButtonStyle&lt;/item&gt;
+        &lt;item name=&quot;segmentedButtonStyle&quot;&gt;@android:style/Holo.Light.SegmentedButton&lt;/item&gt;
+
+        &lt;!-- SearchView attributes --&gt;
+        &lt;item name=&quot;searchDropdownBackground&quot;&gt;@android:drawable/search_dropdown_light&lt;/item&gt;
+
+        &lt;item name=&quot;searchDialogTheme&quot;&gt;@style/Theme.Holo.Light.SearchBar&lt;/item&gt;
+
+        &lt;!-- NumberPicker style--&gt;
+        &lt;item name=&quot;numberPickerStyle&quot;&gt;@style/Widget.Holo.Light.NumberPicker&lt;/item&gt;
+
+        &lt;!-- CalendarView style--&gt;
+        &lt;item name=&quot;calendarViewStyle&quot;&gt;@style/Widget.Holo.Light.CalendarView&lt;/item&gt;
+
+        &lt;!-- TimePicker style --&gt;
+        &lt;item name=&quot;timePickerStyle&quot;&gt;@style/Widget.Holo.Light.TimePicker&lt;/item&gt;
+
+        &lt;!-- DatePicker style --&gt;
+        &lt;item name=&quot;datePickerStyle&quot;&gt;@style/Widget.Holo.Light.DatePicker&lt;/item&gt;
+
+        &lt;item name=&quot;fastScrollThumbDrawable&quot;&gt;@android:drawable/fastscroll_thumb_holo&lt;/item&gt;
+        &lt;item name=&quot;fastScrollPreviewBackgroundLeft&quot;&gt;@android:drawable/fastscroll_label_left_holo_light&lt;/item&gt;
+        &lt;item name=&quot;fastScrollPreviewBackgroundRight&quot;&gt;@android:drawable/fastscroll_label_right_holo_light&lt;/item&gt;
+        &lt;item name=&quot;fastScrollTrackDrawable&quot;&gt;@android:drawable/fastscroll_track_holo_light&lt;/item&gt;
+        &lt;item name=&quot;fastScrollOverlayPosition&quot;&gt;atThumb&lt;/item&gt;
+
+    &lt;/style&gt;
+
+    &lt;!-- Variant of the holographic (light) theme that has a solid (opaque) action bar
+         with an inverse color profile. The dark action bar sharply stands out against
+         the light content. --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.DarkActionBar&quot;&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@android:drawable/ab_solid_shadow_holo&lt;/item&gt;
+        &lt;item name=&quot;android:actionBarStyle&quot;&gt;@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse&lt;/item&gt;
+        &lt;item name=&quot;actionBarWidgetTheme&quot;&gt;@android:style/Theme.Holo&lt;/item&gt;
+
+        &lt;item name=&quot;actionDropDownStyle&quot;&gt;@android:style/Widget.Holo.Spinner.DropDown.ActionBar&lt;/item&gt;
+        &lt;item name=&quot;actionButtonStyle&quot;&gt;@android:style/Widget.Holo.ActionButton&lt;/item&gt;
+        &lt;item name=&quot;actionOverflowButtonStyle&quot;&gt;@android:style/Widget.Holo.ActionButton.Overflow&lt;/item&gt;
+        &lt;item name=&quot;actionModeBackground&quot;&gt;@android:drawable/cab_background_top_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeSplitBackground&quot;&gt;@android:drawable/cab_background_bottom_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeCloseDrawable&quot;&gt;@android:drawable/ic_cab_done_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;homeAsUpIndicator&quot;&gt;@android:drawable/ic_ab_back_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionBarTabStyle&quot;&gt;@style/Widget.Holo.Light.ActionBar.TabView.Inverse&lt;/item&gt;
+        &lt;item name=&quot;actionBarTabBarStyle&quot;&gt;@style/Widget.Holo.Light.ActionBar.TabBar.Inverse&lt;/item&gt;
+        &lt;item name=&quot;actionBarTabTextStyle&quot;&gt;@style/Widget.Holo.Light.ActionBar.TabText.Inverse&lt;/item&gt;
+        &lt;item name=&quot;actionBarDivider&quot;&gt;@android:drawable/list_divider_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionBarItemBackground&quot;&gt;@android:drawable/item_background_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionMenuTextColor&quot;&gt;?android:attr/textColorPrimaryInverse&lt;/item&gt;
+        &lt;item name=&quot;actionModeStyle&quot;&gt;@style/Widget.Holo.Light.ActionMode.Inverse&lt;/item&gt;
+        &lt;item name=&quot;actionModeCloseButtonStyle&quot;&gt;@style/Widget.Holo.ActionButton.CloseMode&lt;/item&gt;
+        &lt;item name=&quot;actionModePopupWindowStyle&quot;&gt;@android:style/Widget.Holo.PopupWindow.ActionMode&lt;/item&gt;
+
+        &lt;item name=&quot;actionModeCutDrawable&quot;&gt;@android:drawable/ic_menu_cut_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeCopyDrawable&quot;&gt;@android:drawable/ic_menu_copy_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModePasteDrawable&quot;&gt;@android:drawable/ic_menu_paste_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeSelectAllDrawable&quot;&gt;@android:drawable/ic_menu_selectall_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeShareDrawable&quot;&gt;@android:drawable/ic_menu_share_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeFindDrawable&quot;&gt;@android:drawable/ic_menu_find_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;actionModeWebSearchDrawable&quot;&gt;@android:drawable/ic_menu_search_holo_dark&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of the holographic (dark) theme with no action bar. --&gt;
+    &lt;style name=&quot;Theme.Holo.NoActionBar&quot;&gt;
+        &lt;item name=&quot;android:windowActionBar&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+    
+    &lt;!-- Variant of the holographic (dark) theme that has no title bar and fills
+         the entire screen --&gt;
+    &lt;style name=&quot;Theme.Holo.NoActionBar.Fullscreen&quot;&gt;
+        &lt;item name=&quot;android:windowFullscreen&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of the holographic (light) theme with no action bar. --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.NoActionBar&quot;&gt;
+        &lt;item name=&quot;android:windowActionBar&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of the holographic (light) theme that has no title bar and fills
+         the entire screen --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.NoActionBar.Fullscreen&quot;&gt;
+        &lt;item name=&quot;android:windowFullscreen&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+    &lt;/style&gt;
+ 
+    &lt;!-- Dialog themes for Holo --&gt;
+    &lt;eat-comment /&gt;
+
+    &lt;!-- Holo theme for dialog windows and activities, which is used by the
+         {@link android.app.Dialog} class.  This changes the window to be
+         floating (not fill the entire screen), and puts a frame around its
+         contents.  You can set this theme on an activity if you would like to
+         make an activity that looks like a Dialog.
+         This is the default Dialog theme for applications targeting Honeycomb
+         or newer. --&gt;
+    &lt;style name=&quot;Theme.Holo.Dialog&quot;&gt;
+        &lt;item name=&quot;android:windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowTitleStyle&quot;&gt;@android:style/DialogWindowTitle.Holo&lt;/item&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:drawable/dialog_full_holo_dark&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsFloating&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.Holo.Dialog&lt;/item&gt;
+        &lt;item name=&quot;android:windowSoftInputMode&quot;&gt;stateUnspecified|adjustPan&lt;/item&gt;
+        &lt;item name=&quot;android:windowActionBar&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowActionModeOverlay&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowCloseOnTouchOutside&quot;&gt;@bool/config_closeDialogWhenTouchOutside&lt;/item&gt;
+
+        &lt;item name=&quot;android:colorBackgroundCacheHint&quot;&gt;@null&lt;/item&gt;
+
+        &lt;item name=&quot;android:buttonBarStyle&quot;&gt;@android:style/Holo.ButtonBar.AlertDialog&lt;/item&gt;
+        &lt;item name=&quot;borderlessButtonStyle&quot;&gt;@android:style/Widget.Holo.Button.Borderless.Small&lt;/item&gt;
+        
+        &lt;item name=&quot;textAppearance&quot;&gt;@android:style/TextAppearance.Holo&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceInverse&quot;&gt;@android:style/TextAppearance.Holo.Inverse&lt;/item&gt;
+
+        &lt;item name=&quot;listPreferredItemPaddingLeft&quot;&gt;16dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingRight&quot;&gt;16dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingStart&quot;&gt;16dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingEnd&quot;&gt;16dip&lt;/item&gt;
+
+        &lt;item name=&quot;preferencePanelStyle&quot;&gt;@style/PreferencePanel.Dialog&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of Theme.Holo.Dialog that has a nice minimum width for
+         a regular dialog. --&gt;
+    &lt;style name=&quot;Theme.Holo.Dialog.MinWidth&quot;&gt;
+        &lt;item name=&quot;android:windowMinWidthMajor&quot;&gt;@android:dimen/dialog_min_width_major&lt;/item&gt;
+        &lt;item name=&quot;android:windowMinWidthMinor&quot;&gt;@android:dimen/dialog_min_width_minor&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of Theme.Holo.Dialog that does not include a title bar. --&gt;
+    &lt;style name=&quot;Theme.Holo.Dialog.NoActionBar&quot;&gt;
+        &lt;item name=&quot;android:windowActionBar&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of Theme.Holo.Dialog.NoActionBar that has a nice minimum width for
+         a regular dialog. --&gt;
+    &lt;style name=&quot;Theme.Holo.Dialog.NoActionBar.MinWidth&quot;&gt;
+        &lt;item name=&quot;android:windowMinWidthMajor&quot;&gt;@android:dimen/dialog_min_width_major&lt;/item&gt;
+        &lt;item name=&quot;android:windowMinWidthMinor&quot;&gt;@android:dimen/dialog_min_width_minor&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of Theme.Holo.Dialog that has a fixed size. --&gt;
+    &lt;style name=&quot;Theme.Holo.Dialog.FixedSize&quot;&gt;
+        &lt;item name=&quot;windowFixedWidthMajor&quot;&gt;@android:dimen/dialog_fixed_width_major&lt;/item&gt;
+        &lt;item name=&quot;windowFixedWidthMinor&quot;&gt;@android:dimen/dialog_fixed_width_minor&lt;/item&gt;
+        &lt;item name=&quot;windowFixedHeightMajor&quot;&gt;@android:dimen/dialog_fixed_height_major&lt;/item&gt;
+        &lt;item name=&quot;windowFixedHeightMinor&quot;&gt;@android:dimen/dialog_fixed_height_minor&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of Theme.Holo.Dialog.NoActionBar that has a fixed size. --&gt;
+    &lt;style name=&quot;Theme.Holo.Dialog.NoActionBar.FixedSize&quot;&gt;
+        &lt;item name=&quot;windowFixedWidthMajor&quot;&gt;@android:dimen/dialog_fixed_width_major&lt;/item&gt;
+        &lt;item name=&quot;windowFixedWidthMinor&quot;&gt;@android:dimen/dialog_fixed_width_minor&lt;/item&gt;
+        &lt;item name=&quot;windowFixedHeightMajor&quot;&gt;@android:dimen/dialog_fixed_height_major&lt;/item&gt;
+        &lt;item name=&quot;windowFixedHeightMinor&quot;&gt;@android:dimen/dialog_fixed_height_minor&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of Theme.Holo.Dialog that does not include a frame (or background).
+         The view hierarchy of the dialog is responsible for drawing all of
+         its pixels. --&gt;
+    &lt;style name=&quot;Theme.Holo.Dialog.NoFrame&quot;&gt;
+        &lt;item name=&quot;windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;android:windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:backgroundDimEnabled&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsTranslucent&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowCloseOnTouchOutside&quot;&gt;false&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Holo theme for alert dialog windows, which is used by the
+         {@link android.app.AlertDialog} class.  This is basically a dialog
+         but sets the background to empty so it can do two-tone backgrounds.
+         For applications targeting Honeycomb or newer, this is the default
+         AlertDialog theme. --&gt;
+    &lt;style name=&quot;Theme.Holo.Dialog.Alert&quot;&gt;
+        &lt;item name=&quot;windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;windowTitleStyle&quot;&gt;@android:style/DialogWindowTitle.Holo&lt;/item&gt;
+        &lt;item name=&quot;windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowMinWidthMajor&quot;&gt;@android:dimen/dialog_min_width_major&lt;/item&gt;
+        &lt;item name=&quot;android:windowMinWidthMinor&quot;&gt;@android:dimen/dialog_min_width_minor&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Theme for a window that will be displayed either full-screen on
+         smaller screens (small, normal) or as a dialog on larger screens
+         (large, xlarge). --&gt;
+    &lt;style name=&quot;Theme.Holo.DialogWhenLarge&quot; parent=&quot;@android:style/Theme.Holo&quot;&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Theme for a window without a title bar that will be displayed either
+         full-screen on smaller screens (small, normal) or as a dialog on larger screens
+         (large, xlarge). --&gt;
+    &lt;style name=&quot;Theme.Holo.DialogWhenLarge.NoActionBar&quot; parent=&quot;@android:style/Theme.Holo.NoActionBar&quot;&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Theme for a presentation window on a secondary display. --&gt;
+    &lt;style name=&quot;Theme.Holo.Dialog.Presentation&quot; parent=&quot;@android:style/Theme.Holo.NoActionBar.Fullscreen&quot;&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Light holo dialog themes --&gt;
+
+    &lt;!-- Holo light theme for dialog windows and activities, which is used by the
+         {@link android.app.Dialog} class.  This changes the window to be
+         floating (not fill the entire screen), and puts a frame around its
+         contents.  You can set this theme on an activity if you would like to
+         make an activity that looks like a Dialog.
+         This is the default Dialog theme for applications targeting Honeycomb
+         or newer. --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.Dialog&quot;&gt;
+        &lt;item name=&quot;android:windowFrame&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowTitleStyle&quot;&gt;@android:style/DialogWindowTitle.Holo.Light&lt;/item&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:drawable/dialog_full_holo_light&lt;/item&gt;
+        &lt;item name=&quot;android:windowIsFloating&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@android:style/Animation.Holo.Dialog&lt;/item&gt;
+        &lt;item name=&quot;android:windowSoftInputMode&quot;&gt;stateUnspecified|adjustPan&lt;/item&gt;
+        &lt;item name=&quot;android:windowActionBar&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowActionModeOverlay&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:windowCloseOnTouchOutside&quot;&gt;@bool/config_closeDialogWhenTouchOutside&lt;/item&gt;
+
+        &lt;item name=&quot;android:colorBackgroundCacheHint&quot;&gt;@null&lt;/item&gt;
+
+        &lt;item name=&quot;android:buttonBarStyle&quot;&gt;@android:style/Holo.Light.ButtonBar.AlertDialog&lt;/item&gt;
+        &lt;item name=&quot;borderlessButtonStyle&quot;&gt;@android:style/Widget.Holo.Light.Button.Borderless.Small&lt;/item&gt;
+
+        &lt;item name=&quot;textAppearance&quot;&gt;@android:style/TextAppearance.Holo.Light&lt;/item&gt;
+        &lt;item name=&quot;textAppearanceInverse&quot;&gt;@android:style/TextAppearance.Holo.Light.Inverse&lt;/item&gt;
+
+        &lt;item name=&quot;listPreferredItemPaddingLeft&quot;&gt;16dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingRight&quot;&gt;16dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingStart&quot;&gt;16dip&lt;/item&gt;
+        &lt;item name=&quot;listPreferredItemPaddingEnd&quot;&gt;16dip&lt;/item&gt;
+
+        &lt;item name=&quot;preferencePanelStyle&quot;&gt;@style/PreferencePanel.Dialog&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of Theme.Holo.Light.Dialog that has a nice minimum width for
+         a regular dialog. --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.Dialog.MinWidth&quot;&gt;
+        &lt;item name=&quot;android:windowMinWidthMajor&quot;&gt;@android:dimen/dialog_min_width_major&lt;/item&gt;
+        &lt;item name=&quot;android:windowMinWidthMinor&quot;&gt;@android:dimen/dialog_min_width_minor&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of Theme.Holo.Light.Dialog that does not include a title bar. --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.Dialog.NoActionBar&quot;&gt;
+        &lt;item name=&quot;android:windowActionBar&quot;&gt;false&lt;/item&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of Theme.Holo.Light.Dialog.NoActionBar that has a nice minimum width for
+         a regular dialog. --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.Dialog.NoActionBar.MinWidth&quot;&gt;
+        &lt;item name=&quot;android:windowMinWidthMajor&quot;&gt;@android:dimen/dialog_min_width_major&lt;/item&gt;
+        &lt;item name=&quot;android:windowMinWidthMinor&quot;&gt;@android:dimen/dialog_min_width_minor&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of Theme.Holo.Light.Dialog that has a fixed size. --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.Dialog.FixedSize&quot;&gt;
+        &lt;item name=&quot;windowFixedWidthMajor&quot;&gt;@android:dimen/dialog_fixed_width_major&lt;/item&gt;
+        &lt;item name=&quot;windowFixedWidthMinor&quot;&gt;@android:dimen/dialog_fixed_width_minor&lt;/item&gt;
+        &lt;item name=&quot;windowFixedHeightMajor&quot;&gt;@android:dimen/dialog_fixed_height_major&lt;/item&gt;
+        &lt;item name=&quot;windowFixedHeightMinor&quot;&gt;@android:dimen/dialog_fixed_height_minor&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Variant of Theme.Holo.Light.Dialog.NoActionBar that has a fixed size. --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.Dialog.NoActionBar.FixedSize&quot;&gt;
+        &lt;item name=&quot;windowFixedWidthMajor&quot;&gt;@android:dimen/dialog_fixed_width_major&lt;/item&gt;
+        &lt;item name=&quot;windowFixedWidthMinor&quot;&gt;@android:dimen/dialog_fixed_width_minor&lt;/item&gt;
+        &lt;item name=&quot;windowFixedHeightMajor&quot;&gt;@android:dimen/dialog_fixed_height_major&lt;/item&gt;
+        &lt;item name=&quot;windowFixedHeightMinor&quot;&gt;@android:dimen/dialog_fixed_height_minor&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Theme for a window that will be displayed either full-screen on
+         smaller screens (small, normal) or as a dialog on larger screens
+         (large, xlarge). --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.DialogWhenLarge&quot; parent=&quot;@android:style/Theme.Holo.Light&quot;&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Theme for a window without an action bar that will be displayed either full-screen
+         on smaller screens (small, normal) or as a dialog on larger screens
+         (large, xlarge). --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.DialogWhenLarge.NoActionBar&quot;
+            parent=&quot;@android:style/Theme.Holo.Light.NoActionBar&quot;&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Holo light theme for alert dialog windows, which is used by the
+         {@link android.app.AlertDialog} class.  This is basically a dialog
+         but sets the background to empty so it can do two-tone backgrounds.
+         For applications targeting Honeycomb or newer, this is the default
+         AlertDialog theme. --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.Dialog.Alert&quot;&gt;
+        &lt;item name=&quot;windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;windowTitleStyle&quot;&gt;@android:style/DialogWindowTitle.Holo.Light&lt;/item&gt;
+        &lt;item name=&quot;windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowMinWidthMajor&quot;&gt;@android:dimen/dialog_min_width_major&lt;/item&gt;
+        &lt;item name=&quot;android:windowMinWidthMinor&quot;&gt;@android:dimen/dialog_min_width_minor&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!-- Theme for a presentation window on a secondary display. --&gt;
+    &lt;style name=&quot;Theme.Holo.Light.Dialog.Presentation&quot; parent=&quot;@android:style/Theme.Holo.Light.NoActionBar.Fullscreen&quot; &gt;
+    &lt;/style&gt;
+
+    &lt;!-- Default holographic (dark) for windows that want to have the user&#39;s selected
+         wallpaper appear behind them.  --&gt;
+    &lt;style name=&quot;Theme.Holo.Wallpaper&quot;&gt;
+        &lt;item name=&quot;android:windowBackground&quot;&gt;@android:color/transparent&lt;/item&gt;
+        &lt;item name=&quot;android:colorBackgroundCacheHint&quot;&gt;@null&lt;/item&gt;
+        &lt;item name=&quot;android:windowShowWallpaper&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+
+    &lt;!--Default holographic (dark) for windows that want to have the user&#39;s selected
+         wallpaper appear behind them and without an action bar. --&gt;
+    &lt;style name=&quot;Theme.Holo.Wallpaper.NoTitleBar&quot;&gt;
+        &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+&lt;/resources&gt;
+</pre><div class="footer">Powered by <a href="https://code.google.com/p/gitiles/">Gitiles</a></div></body></html>

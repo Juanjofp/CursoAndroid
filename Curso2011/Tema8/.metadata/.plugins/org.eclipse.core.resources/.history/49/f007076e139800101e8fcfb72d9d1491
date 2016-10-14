@@ -1,0 +1,5 @@
+package com.juanjofp.android.tema8.receiver;
+
+public class CustomReceiver {
+
+}

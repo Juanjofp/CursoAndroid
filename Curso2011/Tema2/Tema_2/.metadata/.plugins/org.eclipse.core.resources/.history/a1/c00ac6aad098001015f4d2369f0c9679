@@ -1,0 +1,51 @@
+package com.juanjofp.android;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+
+public class ActivityRecreate extends Activity {
+    int mCurTheme;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        if (savedInstanceState != null) {
+            mCurTheme = savedInstanceState.getInt("theme");
+
+            // Switch to a new theme different from last theme.
+            switch (mCurTheme) {
+                case android.R.style.Theme_Black_NoTitleBar_Fullscreen:
+                    mCurTheme = android.R.style.Theme_Dialog;
+                    break;
+                case android.R.style.Theme_Dialog:
+                    mCurTheme = android.R.style.Theme_Black_NoTitleBar;
+                    break;
+                default:
+                    mCurTheme = android.R.style.Theme_Black_NoTitleBar;
+                    break;
+            }
+            setTheme(mCurTheme);
+        }
+
+        setContentView(R.layout.activity_recreate);
+
+        // Watch for button clicks.
+        Button button = (Button)findViewById(R.id.recreate);
+        button.setOnClickListener(mRecreateListener);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("theme", mCurTheme);
+    }
+
+    private OnClickListener mRecreateListener = new OnClickListener() {
+        public void onClick(View v) {
+            recreate();
+        }
+    };
+}

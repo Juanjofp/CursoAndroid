@@ -1,0 +1,42 @@
+package com.juanjofp.android.tema8;
+
+import com.juanjofp.android.tema8.services.SampleIntentService;
+
+import android.app.Activity;
+import android.app.Notification;
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+
+public class Tema_8Activity extends Activity {
+    /** Called when the activity is first created. */
+	
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+    }
+    
+    public void sampleIntentService(View v){
+    	startService(new Intent(this, SampleIntentService.class));
+    }
+    
+    public void sampleService(View v){
+    	startService(new Intent(this, SampleIntentService.class));
+    }
+    
+    public void sampleForegroundService(View v){
+    	
+    	Notification notification = new Notification(R.drawable.icon, "ForegroundService",System.currentTimeMillis());
+    	Intent notificationIntent = new Intent(this, Tema_8Activity.class);
+    	notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    	
+    	PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
+    	notification.setLatestEventInfo(this, "ForegroundService",
+    	        "", pendingIntent);
+    	
+    	startForeground(125, notification);
+    }
+}

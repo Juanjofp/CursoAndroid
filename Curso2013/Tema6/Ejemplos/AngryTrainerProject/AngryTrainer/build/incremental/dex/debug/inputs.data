@@ -1,0 +1,33 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1370804802000 359 739afdcf324819b03a91fce06a18f2e50eafc193 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/BuildConfig.class
+1370804802000 621 f4a2ae95cbe38ca7c21c9792816192ec4e0f5593 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/google/android/gms/R.class
+1370804801000 4985 9a88deae3461d7cc335f6842ab4ad5cc81083243 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/LogFile.class
+1370804802000 888 a7a11d7675474dffdabc82565883cd1ce68ff85b /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/google/android/gms/R$attr.class
+1370804802000 813 ced24777bef428d1dcae5b354d9ff129f42bf328 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/MainActivity$1.class
+1370804802000 6711 a75a12fa26f267dba45e2c345b74e541adb919c8 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/MainActivity.class
+1370804802000 1075 5e23d626c97f927f15bd72bca3345d65e15ff6a8 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/R$color.class
+1370804802000 563 66f02c27a5dde18b7b5c8d5d27e464850931f54a /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/R$dimen.class
+1370804802000 527 09ecb49c0609d2735db03a9e5106d4ff784f399b /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/R$style.class
+1370804372000 591443 f0d8e4a84fad131bc291c3c4850afcaa8ba0b299 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/exploded-bundles/google-play-services_lib.aar/libs/google-play-services.jar
+1370804802000 459 05f438a3764984a0790340b060fa2a5d6105a942 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/R$layout.class
+1370803576000 484258 bd6479f5dd592790607e0504e66e0f31c2b4d308 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/libs/android-support-v4.jar
+1370804802000 861 001c24a70abc013c775c6e9ed794c8ed81e253cc /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/R.class
+1370804801000 1845 ad40773147ab3dc06dec223ea6a486b972638d97 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/ActivityUtils.class
+1370804802000 3656 8c6075b9ccbf75d13216221945a8126c170ac7cb /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/R$string.class
+1370804802000 1277 014448a90c17c637b2f7a9a401a80f39bad325f6 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/R$styleable.class
+1370804372000 1110 44e7ace28c1ee12484f1f65e7e646180dfd791b2 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/exploded-bundles/google-play-services_lib.aar/classes.jar
+1370804802000 1800 ad6eafac99e342ff3cd9fca89352dc108e01b618 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/google/android/gms/R$drawable.class
+1370804802000 1268 54bdb1b557a375fddbde8b35597667bbd09ad9fc /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/google/android/gms/R$styleable.class
+1370804801000 4186 d1545c41106c4b613275b89f41e72d3158318b86 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/DetectionRequester.class
+1370804802000 1729 afbdad6b191d399a642bf83ddfe90892fb1ff3d0 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/google/android/gms/R$string.class
+1370804802000 833 7061b402c8302f22953ab462a38f52f23aa0fd57 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/R$id.class
+1370804802000 1883 e28641520a688aeff16a4d798281fea9f6109df2 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/R$drawable.class
+1370804801000 1221 e400fefe034d4e3c2bb7d63e674a747e33869241 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/ActivityUtils$REQUEST_TYPE.class
+1370804802000 897 e33cb627370df6884cdbd1f2362556707eab57af /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/R$attr.class
+1370804801000 3625 c63ff34191abea9a53f3f2232f50a4675f1aa8aa /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/DetectionRemover.class
+1370804802000 518 7faaf5717d8c53502857385057e3dcac7f7be390 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/google/android/gms/R$id.class
+1370804802000 402 78fae7c97b2607f5a492c675f72994cc314e85ec /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/R$menu.class
+1370804802000 1066 a80d2deca37fb10827b40ee3aa4d203badc41a70 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/google/android/gms/R$color.class
+1370804801000 6289 5b2e69b22bc2e1de9bd51a9acb5b67aef7cefc37 /Users/centic/Documents/Centic/Curso Android/Tema6/Ejemplos/AngryTrainerProject/AngryTrainer/build/classes/debug/com/juanjofp/angrytrainer/ActivityRecognitionIntentService.class

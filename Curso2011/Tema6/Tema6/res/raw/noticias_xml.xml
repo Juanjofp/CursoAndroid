@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<noticias>
+	<noticia>
+		<titulo>Titulo 1</titulo>
+		<resumen>Resumen noticia 1</resumen>
+		<enlace>http://noticia1.com</enlace>
+		<fecha>010504120856-0700</fecha>
+		<latitud>38.019252</latitud>
+		<longitud>-1.666666</longitud>
+	</noticia>
+	<noticia>
+		<titulo>Titulo 2</titulo>
+		<resumen>Resumen noticia 1</resumen>
+		<enlace>http://noticia1.com</enlace>
+		<fecha>010504120856-0700</fecha>
+		<latitud>37.019252</latitud>
+		<longitud>-1.666666</longitud>
+	</noticia>
+	<noticia>
+		<titulo>Titulo 3</titulo>
+		<resumen>Resumen noticia 1</resumen>
+		<enlace>http://noticia1.com</enlace>
+		<fecha>010504120856-0700</fecha>
+		<latitud>38.019252</latitud>
+		<longitud>-1.276666</longitud>
+	</noticia>
+	<noticia>
+		<titulo>Titulo 4</titulo>
+		<resumen>Resumen noticia 1</resumen>
+		<enlace>http://noticia1.com</enlace>
+		<fecha>010504120856-0700</fecha>
+		<latitud>37.925236</latitud>
+		<longitud>-1.666666</longitud>
+	</noticia>
+	<noticia>
+		<titulo>Titulo 5</titulo>
+		<resumen>Resumen noticia 1</resumen>
+		<enlace>http://noticia1.com</enlace>
+		<fecha>010504120856-0700</fecha>
+		<latitud>38.019252</latitud>
+		<longitud>-1.126666</longitud>
+	</noticia>
+</noticias>

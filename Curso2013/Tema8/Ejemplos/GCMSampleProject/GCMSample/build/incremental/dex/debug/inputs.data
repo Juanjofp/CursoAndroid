@@ -1,0 +1,30 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1372758260000 888 a7a11d7675474dffdabc82565883cd1ce68ff85b /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/google/android/gms/R$attr.class
+1372758260000 588 e36f6155484d9c5909652b6a0185cda343189d5c /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/R$id.class
+1373266822000 3763 8d6513f22528f4f55f99590d182b7ecfd59f6bdd /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/GcmBroadcastReceiver.class
+1372758260000 888 386d772a20f3b0ec7208d4afdb4433acda8e048d /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/R$attr.class
+1372758260000 1066 a80d2deca37fb10827b40ee3aa4d203badc41a70 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/google/android/gms/R$color.class
+1372758260000 1268 54bdb1b557a375fddbde8b35597667bbd09ad9fc /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/google/android/gms/R$styleable.class
+1372758260000 400 4709fd3671cae031b5989ebab9982435bc0f345c /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/R$menu.class
+1371036742000 484258 bd6479f5dd592790607e0504e66e0f31c2b4d308 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/libs/android-support-v4.jar
+1373287604000 11397 67b3f1feafe6e97330ad09c19dfc18fbd206bcfa /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/MainActivity.class
+1372758254000 1110 013deda5dfc507c4f113214b2367f3ab5790da32 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/exploded-bundles/google-play-services_lib.aar/classes.jar
+1372758260000 516 78c7623692f2553ea88fe2641c95584694b00dca /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/Manifest$permission.class
+1372758260000 621 f4a2ae95cbe38ca7c21c9792816192ec4e0f5593 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/google/android/gms/R.class
+1372758260000 518 7faaf5717d8c53502857385057e3dcac7f7be390 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/google/android/gms/R$id.class
+1372758260000 1268 b7da3a6cbed197cc3bc055451ac9682a718e44fd /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/R$styleable.class
+1373287604000 2461 d87f4c511822b8a8dae8757e1526291978197246 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/MainActivity$1.class
+1372758260000 1066 6163d034d934bc3a40e2f7f89616917af2c5a3e4 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/R$color.class
+1372758260000 391 c81c69f756cedc526a9ed6dd0093003edf866e99 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/Manifest.class
+1372758260000 1870 9ebd2d4e6d798fa48c12b4e1a5767543a476970f /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/R$drawable.class
+1372758260000 825 d1d4719efc686797cc2f7e9c03463ed2674c179c /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/R.class
+1372758260000 415 b68fc17124d35d2050abb499c617af6bc3430d11 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/R$layout.class
+1372758260000 353 77bc98a66a0e7767878815a023928c2c48a8a763 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/BuildConfig.class
+1372758260000 1729 1ae51cd36a60c3aa76fddc42b443ad664d234830 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/google/android/gms/R$string.class
+1372758254000 591443 f0d8e4a84fad131bc291c3c4850afcaa8ba0b299 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/exploded-bundles/google-play-services_lib.aar/libs/google-play-services.jar
+1372758260000 443 38125a0741901889d0e0eb4ecd64c681a1102d76 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/R$style.class
+1372758260000 473 78f8822bb433f1f6920cefb9b1e481daa102de00 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/R$dimen.class
+1372758260000 1900 8191f7bdcfa3629f6f449ac09e082be84f22887d /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/juanojfp/gcmsample/R$string.class
+1372758260000 1800 ad6eafac99e342ff3cd9fca89352dc108e01b618 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/GCMSampleProject/GCMSample/build/classes/debug/com/google/android/gms/R$drawable.class

@@ -1,0 +1,13 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1332924120000 907 82a5037b01c5416d79890392dcc2cd78375df4eb /Users/centic/Documents/Centic/Curso Android/Tema5/Ejemplos/NavigationSampleProject/NavigationSample/src/main/res/values/strings.xml
+1332924120000 810 8d62959d21af94246b733e5250937727ea5dca5a /Users/centic/Documents/Centic/Curso Android/Tema5/Ejemplos/NavigationSampleProject/NavigationSample/src/main/res/layout/activity_main.xml
+1332924120000 5857 f680a294e61a818c68c062eee05b49c1fa7e3487 /Users/centic/Documents/Centic/Curso Android/Tema5/Ejemplos/NavigationSampleProject/NavigationSample/src/main/res/drawable-xhdpi/ic_launcher.png
+1332924120000 882 2be34b487db62cf03ab6e3002cac4e76d79db0d9 /Users/centic/Documents/Centic/Curso Android/Tema5/Ejemplos/NavigationSampleProject/NavigationSample/src/main/res/layout/fragment_section_dummy.xml
+1332924120000 1445 482007699466f8d2f3c2c6026986f19072ca95dd /Users/centic/Documents/Centic/Curso Android/Tema5/Ejemplos/NavigationSampleProject/NavigationSample/src/main/res/layout/fragment_section_launchpad.xml
+1332924120000 2203 ff28169f4c9617b964de16deb7170c72f5af0632 /Users/centic/Documents/Centic/Curso Android/Tema5/Ejemplos/NavigationSampleProject/NavigationSample/src/main/res/drawable-ldpi/ic_launcher.png
+1332924120000 883 e3e76b96105a6d64037d06bd821f0ba96b66fcd9 /Users/centic/Documents/Centic/Curso Android/Tema5/Ejemplos/NavigationSampleProject/NavigationSample/src/main/res/layout/fragment_collection_object.xml
+1332924120000 2911 511e7b4072a9edcf2c75bb7fd93fa1184dac7892 /Users/centic/Documents/Centic/Curso Android/Tema5/Ejemplos/NavigationSampleProject/NavigationSample/src/main/res/drawable-mdpi/ic_launcher.png
+1332924120000 1332 6338261e52ac7cb33326e8dd8ff19985cc2e3da7 /Users/centic/Documents/Centic/Curso Android/Tema5/Ejemplos/NavigationSampleProject/NavigationSample/src/main/res/layout/activity_collection_demo.xml
+1332924120000 4398 bde6340a49d48ed88a76e08b29161ec0a3713d52 /Users/centic/Documents/Centic/Curso Android/Tema5/Ejemplos/NavigationSampleProject/NavigationSample/src/main/res/drawable-hdpi/ic_launcher.png

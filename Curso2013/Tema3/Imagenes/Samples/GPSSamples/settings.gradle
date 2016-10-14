@@ -1,0 +1,1 @@
+include ':auth', ':maps', ':panorama', ':plus'

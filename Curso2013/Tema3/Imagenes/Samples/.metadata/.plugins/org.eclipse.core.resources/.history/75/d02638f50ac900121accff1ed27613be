@@ -1,0 +1,10 @@
+package com.centic.testsample.test;
+
+import android.test.ActivityInstrumentationTestCase2;
+
+import com.centic.testsample.MainActivity;
+
+public class ReverseActivityTest extends
+		ActivityInstrumentationTestCase2<MainActivity> {
+
+}

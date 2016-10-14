@@ -1,0 +1,10 @@
+what,kind,bundleId,bundleVersion,description,time
+stopped,bundle,org.eclipse.jdt.junit,3.6.1.r361_v20100825-0800,"org.eclipse.jdt.junit",1309429438963
+stopped,bundle,org.eclipse.egit.mylyn.ui,0.12.1,"org.eclipse.egit.mylyn.ui",1309429438968
+stopped,bundle,org.eclipse.egit.ui,0.12.1,"org.eclipse.egit.ui",1309429438968
+stopped,bundle,org.eclipse.jsch.ui,1.1.300.I20100505-1245,"org.eclipse.jsch.ui",1309429438973
+stopped,bundle,org.eclipse.wst.dtd.ui,1.0.500.v201004290328,"org.eclipse.wst.dtd.ui",1309429438973
+stopped,bundle,org.eclipse.wst.xml.ui,1.1.103.v201101122108,"org.eclipse.wst.xml.ui",1309429438973
+stopped,bundle,org.eclipse.wst.common.ui,1.1.500.v200911190730,"org.eclipse.wst.common.ui",1309429438975
+stopped,bundle,org.eclipse.cdt.debug.mi.ui,6.1.0.201102110609,"org.eclipse.cdt.debug.mi.ui",1309429438978
+stopped,bundle,org.eclipse.cdt.dsf.gdb.ui,2.1.0.201102110609,"org.eclipse.cdt.dsf.gdb.ui",1309429438978

@@ -1,0 +1,7 @@
+package com.juanjofp.android.tema1.test;
+
+import android.test.ActivityInstrumentationTestCase2;
+
+public class TestApp extends ActivityInstrumentationTestCase2 {
+
+}

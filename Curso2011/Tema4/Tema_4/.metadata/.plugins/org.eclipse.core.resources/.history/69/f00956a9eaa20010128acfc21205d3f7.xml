@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Tema4Activity!</string>
+    <string name="app_name">Tema4</string>
+    <string name="menu_principal_mapa">Mapas</string>
+    <string name="menu_principal_brujula">Brujula</string>
+    <string name="menu_principal_menu3">Menu 3</string>
+    <string name="menu_principal_menu4">Menu 4</string>
+    <string name="menu_principal_menu5">Menu 5</string>
+    <string name="menu_principal_menu6">Menu 6</string>
+    <string name="menu_principal_menu7">Menu 7</string>
+</resources>

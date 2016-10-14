@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="actionbarsherlock.aar" >
+        <source path="/Users/centic/Documents/Centic/Curso Android/Tema4/Ejemplos/ActionbarSherlockSampleProject/ActionbarSherlockSample/build/exploded-bundles/actionbarsherlock.aar/assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/Users/centic/Documents/Centic/Curso Android/Tema4/Ejemplos/ActionbarSherlockSampleProject/ActionbarSherlockSample/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/centic/Documents/Centic/Curso Android/Tema4/Ejemplos/ActionbarSherlockSampleProject/ActionbarSherlockSample/src/debug/assets" />
+    </dataSet>
+
+</merger>

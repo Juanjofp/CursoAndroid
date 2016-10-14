@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+C:\Users\jfranco\Desktop\Android2011\Tema 2\Tema_2\.metadata\.plugins\org.eclipse.jdt.core
+4292563968.index
+2355474398.index

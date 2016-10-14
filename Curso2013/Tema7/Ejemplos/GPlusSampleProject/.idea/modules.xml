@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GPlusSample/GPlusSample.iml" filepath="$PROJECT_DIR$/GPlusSample/GPlusSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GPlusSampleProject.iml" filepath="$PROJECT_DIR$/GPlusSampleProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/google-play-services_lib/google-play-services_lib.iml" filepath="$PROJECT_DIR$/libraries/google-play-services_lib/google-play-services_lib.iml" />
+    </modules>
+  </component>
+</project>
+

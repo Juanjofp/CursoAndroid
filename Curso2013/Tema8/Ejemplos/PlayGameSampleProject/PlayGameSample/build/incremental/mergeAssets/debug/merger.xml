@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="google-play-services_lib.aar" >
+        <source path="/Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/PlayGameSample/build/exploded-bundles/google-play-services_lib.aar/assets" />
+    </dataSet>
+    <dataSet config="BaseGameUtils.aar" >
+        <source path="/Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/PlayGameSample/build/exploded-bundles/BaseGameUtils.aar/assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/PlayGameSample/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/PlayGameSample/src/debug/assets" />
+    </dataSet>
+
+</merger>

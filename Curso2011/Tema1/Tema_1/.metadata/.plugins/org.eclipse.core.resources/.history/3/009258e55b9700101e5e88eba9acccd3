@@ -1,0 +1,42 @@
+package com.juanjofp.android.tema1;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.widget.ImageView;
+
+public class AplicacionActivity extends Activity {
+    /** Called when the activity is first created. */
+	ImageView mIvPhoto;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+    }
+    
+    
+    private void sample(){
+    	
+    	final Handler handler = new Handler(new Handler.Callback() {
+			
+			public boolean handleMessage(Message msg) {
+				// TODO Auto-generated method stub
+				//Volrcar cambios en la UI
+				return false;
+			}
+		});
+    	
+    	new Thread(new Runnable() {
+			
+			public void run() {
+				// TODO Auto-generated method stub
+				
+				//Trabajo pesado
+				
+				handler.sendMessage(handler.obtainMessage());
+			}
+		}).start();
+    	
+    }
+}

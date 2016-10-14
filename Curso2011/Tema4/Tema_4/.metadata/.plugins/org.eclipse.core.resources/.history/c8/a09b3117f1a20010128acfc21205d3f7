@@ -1,0 +1,134 @@
+package com.juanjofp.android;
+
+
+import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ContextMenu.ContextMenuInfo;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+public class Tema4Activity extends Activity {
+	
+	private static final int RESPONSE_TAKE_PHOTO = 0;
+	
+	private ImageView mImage;
+	private EditText etEditText;
+	
+	
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        mImage = (ImageView)findViewById(R.id.imageView1);
+        registerForContextMenu(mImage);
+        etEditText = (EditText)findViewById(R.id.etComponenteTextView);
+        registerForContextMenu(etEditText);
+    }
+    
+    public void takePhoto(View view){
+        Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE );
+        startActivityForResult(intent, RESPONSE_TAKE_PHOTO);	
+    }
+    
+    public void shareLink(View v){
+    	Intent intent = new Intent(Intent.ACTION_SEND);
+    	intent.setType("text/plain");
+    	intent.putExtra(Intent.EXTRA_TEXT, "Curso de Android en el centic!!! http://centic.es");
+    	startActivity(Intent.createChooser(intent, "Compartir con:"));
+    }
+    
+    public void showWeb(View v){
+    	Intent intent = new Intent(Intent.ACTION_VIEW);
+    	intent.setData(Uri.parse("http://centic.es"));
+    	startActivity(Intent.createChooser(intent, "Compartir con:"));
+    }
+    
+    public void makeCall(View v){
+    	Intent intent = new Intent(Intent.ACTION_DIAL);
+    	intent.setData(Uri.parse("tel:123456789"));
+    	startActivity(intent);
+    }
+    
+    
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    	// TODO Auto-generated method stub
+    	super.onActivityResult(requestCode, resultCode, data);
+    	
+    	if(requestCode == RESPONSE_TAKE_PHOTO && resultCode == Activity.RESULT_OK){
+    		BitmapFactory.Options options = new BitmapFactory.Options();
+    	    options.inSampleSize = 4;
+
+    	    Bitmap thumbnail = (Bitmap) data.getExtras().get("data");  
+    	    mImage.setImageBitmap(thumbnail);
+
+    	}
+    }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+    	// TODO Auto-generated method stub
+    	MenuInflater inflater = getMenuInflater();
+    	inflater.inflate(R.menu.menu_principal, menu);
+    	//Fin del menu
+    	return true;
+    }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	// TODO Auto-generated method stub
+    	switch (item.getItemId()) {
+		case R.id.menu_principla_mapas:
+			Toast.makeText(this, "Soy el menu de mapas", Toast.LENGTH_LONG).show();
+			return true;
+		case R.id.menu_principla_call:
+			makeCall(null);
+			return true;
+		case R.id.menu_principla_foto:
+			takePhoto(null);
+			return true;
+		case R.id.menu_principla_4:
+			Toast.makeText(this, "Soy el menu 4", Toast.LENGTH_LONG).show();
+			return true;
+		case R.id.menu_principla_5:
+			Toast.makeText(this, "Soy el menu 5", Toast.LENGTH_LONG).show();
+			return true;
+		case R.id.menu_principla_6:
+			Toast.makeText(this, "Soy el menu 6", Toast.LENGTH_LONG).show();
+			return true;
+		case R.id.menu_principla_7:
+			Toast.makeText(this, "Soy el menu 7", Toast.LENGTH_LONG).show();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
+    }
+    
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+    	// TODO Auto-generated method stub
+    	menu.findItem(R.id.menu_principla_4).setTitle("menu 4 cambiado");
+    	return true;
+    }
+    
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v,
+    		ContextMenuInfo menuInfo) {
+    	// TODO Auto-generated method stub
+    	super.onCreateContextMenu(menu, v, menuInfo);
+    	MenuInflater inflater = getMenuInflater();
+    	int menuXML = (v == mImage)?R.menu.menu_contextual_componente1:R.menu.menu_contextual_componente2;
+    	inflater.inflate(menuXML, menu);
+    }
+}

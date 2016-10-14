@@ -1,0 +1,7 @@
+package com.juanjofp.android;
+
+import Activity;
+
+public class SaveRestoreState extends Activity {
+
+}

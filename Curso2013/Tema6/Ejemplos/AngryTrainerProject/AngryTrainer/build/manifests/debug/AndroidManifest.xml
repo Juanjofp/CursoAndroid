@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.juanjofp.angrytrainer">
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="16"/>
+
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/Theme.Sample">
+        <activity android:label="@string/app_name" android:name="com.juanjofp.angrytrainer.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.juanjofp.angrytrainer.ActivityRecognitionIntentService"/>
+
+    </application>
+
+</manifest>

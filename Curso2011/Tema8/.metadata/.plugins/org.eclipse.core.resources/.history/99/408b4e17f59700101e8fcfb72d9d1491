@@ -1,0 +1,17 @@
+package com.juanjofp.android.tema8.services;
+
+import android.app.IntentService;
+import android.content.Intent;
+
+public class SampleIntentService extends IntentService{
+
+	@Override
+	protected void onHandleIntent(Intent intent) {
+		// TODO Auto-generated method stub
+		//Espera 5s. antes de lanzar la notificación
+		//Aquí va el trabajo del servicio
+		Thread.sleep(5000);
+		
+	}
+
+}

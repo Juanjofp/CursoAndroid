@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dimensions"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickDimension"
+            android:layout_marginTop="32dp"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Metrics"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickMetrics"
+            android:layout_marginTop="21dp"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-Commerce"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickCommerce"
+            android:layout_marginTop="21dp"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Events"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickEvents"
+            android:layout_marginTop="21dp"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Social"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickSocial"
+            android:layout_marginTop="21dp"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timing"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickTiming"
+            android:layout_marginTop="21dp"/>
+
+</LinearLayout>

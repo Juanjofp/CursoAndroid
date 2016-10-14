@@ -1,0 +1,8 @@
+package es.centic.curso.android.uitest;
+import com.android.uiautomator.testrunner.UiAutomatorTestCase;
+
+
+public class UITestSample extends UiAutomatorTestCase
+{
+
+}

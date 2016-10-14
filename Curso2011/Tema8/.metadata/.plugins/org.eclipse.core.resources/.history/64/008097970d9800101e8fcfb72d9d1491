@@ -1,0 +1,17 @@
+package com.juanjofp.android.tema8.services;
+
+import com.juanjofp.android.tema8.Tema_8Activity;
+
+import android.app.Service;
+import android.content.Intent;
+
+public class SampleBoundedService extends Service {
+
+	@Override
+	public IBinder onBind(Intent intent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

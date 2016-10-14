@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.juanjofp.android.tema3"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".Tema3Activity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="SaveRestoreState"></activity>
+        <activity android:name="AnimationSample"></activity>
+        <activity android:name="Buttons1"></activity>
+        <activity android:name="AutoCompleteSample"></activity>
+        <activity android:name="ChronometerDemo"></activity>
+        <activity android:name="Controls1"></activity>
+        <activity android:name="DateWidgets1"></activity>
+        <activity android:name="Gallery1"></activity>
+        <activity android:name="ImageButton1"></activity>
+        <activity android:name="ImageSwitcher1"></activity>
+        <activity android:name="ImageView1"></activity>
+        <activity android:name="LinearLayout1"></activity>
+        <activity android:name="ProgressBar1"></activity>
+        <activity android:name="RatingBar1"></activity>
+        <activity android:name="RelativeLayout1"></activity>
+        <activity android:name="ScrollBar1"></activity>
+        <activity android:name="Spinner1"></activity>
+        <activity android:name="TableLayout1"></activity>
+
+    </application>
+</manifest>

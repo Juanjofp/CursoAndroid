@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="BaseGameUtils.aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Game2/build/exploded-bundles/BaseGameUtils.aar/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PlayGameSample/build/exploded-bundles/BaseGameUtils.aar/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

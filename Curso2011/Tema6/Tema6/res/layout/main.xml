@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+      
+<Button 
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Wifi On/Off"
+    android:onClick="connectWIFI"
+/>
+
+<Button 
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Peticion Web"
+    android:onClick="doRequest"
+/>
+
+<Button 
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Webview Interno"
+    android:onClick="loadWebviewActv"
+/>
+
+<Button 
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Navegador"
+    android:onClick="loadWebview"
+/>
+
+<Button 
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Leer XML"
+    android:onClick="loadXML"
+/>
+
+<Button 
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Leer JSON"
+    android:onClick="loadJSON"
+/>
+
+<Button 
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Ver Mapa"
+    android:onClick="showMap"
+/>
+
+<Button 
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Location Sample"
+    android:onClick="showLocation"
+/>
+
+<Button 
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Brujula"
+    android:onClick="showBrujula"
+/>
+
+<Button 
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Video Recorder"
+    android:onClick="showRecorder"
+/>
+
+<Button 
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="VideoView"
+    android:onClick="showVideoView"
+/>
+
+<Button 
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Video Player"
+    android:onClick="showVieoPlayer"
+/>
+
+<TextView
+	android:id="@+id/tvSalida"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+    
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+package com.juanjofp.android.tema1;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ImageView;
+
+public class AplicacionActivity extends Activity {
+    /** Called when the activity is first created. */
+	ImageView mIvPhoto;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+    }
+}

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="android-support-v4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libraries/BaseGameUtils/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Game2/build/exploded-bundles/BaseGameUtils.aar/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PlayGameSample/build/exploded-bundles/BaseGameUtils.aar/libs/android-support-v4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,14 @@
+package com.juanjofp.android.tema1.test;
+
+import com.juanjofp.android.tema1.AplicacionActivity;
+
+import android.test.ActivityInstrumentationTestCase2;
+
+public class TestApp extends ActivityInstrumentationTestCase2<AplicacionActivity> {
+
+	public TestApp() {
+		super("com.juanjofp.android.tema", AplicacionActivity.class);
+		// TODO Auto-generated constructor stub
+	}
+
+}

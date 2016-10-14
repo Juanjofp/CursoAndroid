@@ -1,0 +1,27 @@
+package com.juanjofp.android.tema8.services;
+
+import android.app.IntentService;
+import android.content.Intent;
+
+public class SampleIntentService extends IntentService{
+	
+	public SampleIntentService() {
+		// TODO Auto-generated constructor stub
+		super("SampleIntentService");
+	}
+
+	@Override
+	protected void onHandleIntent(Intent intent) {
+		// TODO Auto-generated method stub
+		//Espera 5s. antes de lanzar la notificación
+		//Aquí va el trabajo del servicio
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+    	android:id="@+id/menu_principla_mapas" 
+    	android:title="@string/menu_principal_mapa"
+    	android:icon="@android:drawable/ic_menu_mapmode"/>
+    	
+    <item 
+    	android:id="@+id/menu_principla_foto" 
+    	android:title="@string/menu_principal_foto"
+    	android:icon="@android:drawable/ic_menu_camera"/>
+    	
+    <item 
+    	android:id="@+id/menu_principla_call" 
+    	android:title="@string/menu_principal_call"
+    	android:icon="@android:drawable/ic_menu_call"/>
+    	
+    <item 
+    	android:id="@+id/menu_principla_4" 
+    	android:title="@string/menu_principal_menu4"
+    	android:icon="@android:drawable/ic_menu_add"/>
+    	
+    <item 
+    	android:id="@+id/menu_principla_5" 
+    	android:title="@string/menu_principal_menu5"
+    	android:icon="@android:drawable/ic_menu_agenda"/>
+    	
+    <item 
+    	android:id="@+id/menu_principla_6" 
+    	android:title="@string/menu_principal_menu6"
+    	android:icon="@android:drawable/ic_menu_delete"/>
+    	
+    <item 
+    	android:id="@+id/menu_principla_7" 
+    	android:title="@string/menu_principal_menu7"
+    	android:icon="@android:drawable/ic_menu_directions"/>
+    	
+</menu>

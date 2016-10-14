@@ -1,0 +1,34 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1372762716000 397 6063c0b91ae56ed841a16bab0306a77b19cd1306 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/R$menu.class
+1372762716000 1316 9a276853e464dec43aa12d91ab50d9d4fbc5d7f4 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/example/games/basegameutils/R$styleable.class
+1372762716000 621 f4a2ae95cbe38ca7c21c9792816192ec4e0f5593 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/android/gms/R.class
+1372762934000 9124 3827ee6db6efa87f97fb30c205e98a7d9f101e8b /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/MainActivity.class
+1372762716000 729 1e1a66266c669606f87cbe2f6c45fdb80e5bf670 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/R.class
+1372762716000 1777 f33c8590726e37fea583215954f43eac44ab283c /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/example/games/basegameutils/R$string.class
+1372762716000 566 29db95b880c75afcc38bbb6c9f6bffc095a892aa /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/example/games/basegameutils/R$id.class
+1372762712000 1110 097594f5a0f2979d7be63adb2012da28940fec3b /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/exploded-bundles/google-play-services_lib.aar/classes.jar
+1372762716000 345 20b97a46de54ad537c4a6c9cfc88539d66af8eea /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/BuildConfig.class
+1372762716000 1729 f451b35c0764a58134f66522d003187653e81f32 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/android/gms/R$string.class
+1372762716000 1268 54bdb1b557a375fddbde8b35597667bbd09ad9fc /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/android/gms/R$styleable.class
+1372762716000 1457 b3f57e41ce7322cec05fe5a4a9796a30ff40c879 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/R$id.class
+1372762716000 5940 07d6cf31ab7cac4da22f5db758979163b4ebae19 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/SaveGame.class
+1372762716000 1252 c300ebd315d6910091763f3d3f613e51e666383f /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/R$color.class
+1372762711000 10040 ab68250054ed2cbf5c8ce474e16a65a41f6a10ed /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/exploded-bundles/BaseGameUtils.aar/classes.jar
+1372762716000 749 8524addbbffacc8dfa46216098f09e120eb03445 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/example/games/basegameutils/R.class
+1372762716000 1848 6d97733d7ea7c0bead528210c1973d6fb59d30d3 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/example/games/basegameutils/R$drawable.class
+1372762716000 876 dc6f6e24911131b81cc69ca841e5e5b2965daa33 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/R$attr.class
+1372762716000 1066 a3db400e31743720e7027435ebf342fe2e202b86 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/android/gms/R$color.class
+1372762716000 1256 9809a3d1d815fb0ec1be21b116e2684d6940d7e1 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/R$styleable.class
+1372762711000 385685 48c94ae70fa65718b382098237806a5909bb096e /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/exploded-bundles/BaseGameUtils.aar/libs/android-support-v4.jar
+1372762712000 591443 f0d8e4a84fad131bc291c3c4850afcaa8ba0b299 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/exploded-bundles/google-play-services_lib.aar/libs/google-play-services.jar
+1372762716000 888 a7a11d7675474dffdabc82565883cd1ce68ff85b /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/android/gms/R$attr.class
+1372762716000 1800 ad6eafac99e342ff3cd9fca89352dc108e01b618 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/android/gms/R$drawable.class
+1372762716000 1070 bb008b653da1d0c188d8020998d07b2e8c35e1aa /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/R$style.class
+1372762716000 1114 55c3b00d008a2bba65819d1928a484003e0e23a8 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/example/games/basegameutils/R$color.class
+1372762716000 518 7faaf5717d8c53502857385057e3dcac7f7be390 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/android/gms/R$id.class
+1372762716000 403 78dc2c54887444f52edb7b929aba9b9d52291546 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/R$layout.class
+1372762716000 1823 5ac98061cb94bd45b133fa8215c9087fd0667404 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/R$drawable.class
+1372762716000 936 c844ae9991e56b0df0c0e030a943de802893c55e /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/google/example/games/basegameutils/R$attr.class
+1372762716000 2357 1914dadca7a19e6eac33fc452aedc30970502991 /Users/centic/Documents/Centic/Curso Android/Tema8/Ejemplos/PlayGameSampleProject/Game2/build/classes/debug/com/juanjofp/game2/R$string.class

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="google-play-services_lib.aar" >
+        <source path="/Users/centic/Documents/Centic/Curso Android/Tema4/Ejemplos/SherlockSampleProject/SherlockSample/build/exploded-bundles/google-play-services_lib.aar/assets" />
+    </dataSet>
+    <dataSet config="actionbarsherlock.aar" >
+        <source path="/Users/centic/Documents/Centic/Curso Android/Tema4/Ejemplos/SherlockSampleProject/SherlockSample/build/exploded-bundles/actionbarsherlock.aar/assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/Users/centic/Documents/Centic/Curso Android/Tema4/Ejemplos/SherlockSampleProject/SherlockSample/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/centic/Documents/Centic/Curso Android/Tema4/Ejemplos/SherlockSampleProject/SherlockSample/src/debug/assets" />
+    </dataSet>
+
+</merger>

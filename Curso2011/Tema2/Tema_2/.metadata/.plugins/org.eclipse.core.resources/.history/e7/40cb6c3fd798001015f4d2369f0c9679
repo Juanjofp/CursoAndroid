@@ -1,0 +1,70 @@
+package com.juanjofp.android;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class ActivityRecreate extends Activity {
+    int mCurTheme;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        String text = "Recrear Actv.";
+        
+        
+
+        setContentView(R.layout.activity_recreate);
+
+        // Watch for button clicks.
+        Button button = (Button)findViewById(R.id.recreate);
+        button.setOnClickListener(mRecreateListener);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("theme", mCurTheme);
+    }
+    
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+    	// TODO Auto-generated method stub
+    	super.onRestoreInstanceState(savedInstanceState);
+    	String text;
+    	if (savedInstanceState != null) {
+            mCurTheme = savedInstanceState.getInt("theme");
+            
+            // Switch to a new theme different from last theme.
+            switch (mCurTheme) {
+                case android.R.style.Theme_Black_NoTitleBar_Fullscreen:
+                    mCurTheme = android.R.style.Theme_Dialog;
+                    text = "Tema Dialogo";
+                    break;
+                case android.R.style.Theme_Dialog:
+                    mCurTheme = android.R.style.Theme_Black_NoTitleBar;
+                    text = "Tema Sin titulo";
+                    break;
+                default:
+                    mCurTheme = android.R.style.Theme_Black_NoTitleBar;
+                    text = "Tema Sin Titulo";
+                    break;
+            }
+            setTheme(mCurTheme);
+            Button button = (Button)findViewById(R.id.recreate);
+            button.setText(text);
+        }
+    }
+
+    private OnClickListener mRecreateListener = new OnClickListener() {
+        public void onClick(View v) {
+            Intent it = new Intent(ActivityRecreate.this, ActivityRecreate.class);
+            //Eliminamos la instancia existente
+            re
+        }
+    };
+}

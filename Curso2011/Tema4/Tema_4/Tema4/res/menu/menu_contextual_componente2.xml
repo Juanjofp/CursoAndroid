@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+    	android:id="@+id/menu_contextual_comp2_1" 
+    	android:title="@string/menu_contextual_comp2_1">
+    	<menu>
+    	<item 
+    		android:id="@+id/menu_contextual_comp2_11" 
+    		android:title="@string/menu_contextual_comp2_11"/>
+    		
+    	<item 
+    		android:id="@+id/menu_contextual_comp2_12" 
+    		android:title="@string/menu_contextual_comp1_12"/>
+    	</menu>
+    </item>
+    
+    <item 
+    	android:id="@+id/menu_contextual_comp2_2" 
+    	android:title="@string/menu_contextual_comp2_2">
+    	<menu>
+    	<item 
+    		android:id="@+id/menu_contextual_comp2_21" 
+    		android:title="@string/menu_contextual_comp2_21"/>
+    		
+    	<item 
+    		android:id="@+id/menu_contextual_comp2_22" 
+    		android:title="@string/menu_contextual_comp2_22"/>
+    	</menu>
+    </item>
+    
+</menu>

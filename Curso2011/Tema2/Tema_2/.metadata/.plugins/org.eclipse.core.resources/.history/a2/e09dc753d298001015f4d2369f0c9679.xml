@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Tema2Activity!</string>
+    <string name="app_name">Tema2</string>
+    
+    <string name="activity_reorder">App/Activity/Reorder Activities</string>
+    <string name="reorder_on_launch">This is the first of a sequence of four Activities.  A button on the fourth will use the Intent.FLAG_ACTIVITY_REORDER_TO_FRONT flag to bring the second of the activities to the front of the history stack. After that, proceeding back through the history should begin with the newly-frontmost second reorder activity, then the fourth, the third, and finally the first.</string>
+    <string name="reorder_launch_two">Go to the second</string>
+    <string name="reorder_two_text">This is the second in a sequence of four Activities.</string>
+    <string name="reorder_launch_three">Go to the third</string>
+    <string name="reorder_three_text">This is the third of a sequence of four Activities.</string>
+    <string name="reorder_launch_four">Go to the fourth</string>
+    <string name="reorder_four_text">This is the last in a sequence of four Activities.</string>
+    <string name="reorder_second_to_front">Bring the second in front</string>
+    
+</resources>

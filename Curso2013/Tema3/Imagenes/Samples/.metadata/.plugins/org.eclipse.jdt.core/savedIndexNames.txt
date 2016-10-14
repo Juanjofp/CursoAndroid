@@ -1,0 +1,12 @@
+INDEX VERSION 1.126+/Users/centic/Desktop/Samples/.metadata/.plugins/org.eclipse.jdt.core
+288857688.index
+2684850621.index
+1386502487.index
+617514875.index
+4266491041.index
+3789522498.index
+2775947321.index
+3306426388.index
+3932212810.index
+1715910156.index
+601597220.index

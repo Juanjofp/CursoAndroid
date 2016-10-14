@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Tema2Activity!</string>
+    <string name="app_name">Tema2</string>
+    
+    <string name="activity_reorder">App/Activity/Reorder Activities</string>
+    <string name="reorder_on_launch">Esta es la primera de 4 activities.</string>
+    <string name="reorder_launch_two">Ir a la segunda</string>
+    <string name="reorder_two_text">Esta es la segunda actividad.</string>
+    <string name="reorder_launch_three">Ir a la tercera</string>
+    <string name="reorder_three_text">Esta es la tercera actividad</string>
+    <string name="reorder_launch_four">Ir a la cuarta</string>
+    <string name="reorder_four_text">Esta es la cuarta actividad</string>
+    <string name="reorder_second_to_front">Ponme la primera</string>
+    
+    
+    <string name="receive_result_instructions">Selecciona una opción: </string>
+    <string name="receive_result_result">Resultado</string>
+    <string name="pick_result">Selecciona un resultado.</string>
+    <string name="corky">Corky</string>
+    <string name="violet">Violet</string>
+    
+    <string name="translucent_background">Cómo crear una activity con el cuerpo transparente.</string>
+    
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Tema4Activity!</string>
+    <string name="app_name">Tema4</string>
+    
+    <!-- Menu principal -->
+    <string name="menu_principal_mapa">Mapas</string>
+    <string name="menu_principal_foto">Foto</string>
+    <string name="menu_principal_call">Llamar</string>
+    <string name="menu_principal_menu4">Notificacion</string>
+    <string name="menu_principal_menu5">Dialogos List</string>
+    <string name="menu_contextual_principal5_1">Lista</string>
+    <string name="menu_contextual_principal5_2">Radiobuttons</string>
+    <string name="menu_principal_menu6">Salir</string>
+    <string name="menu_principal_menu7">ProgressBar</string>
+    
+    <!-- Menu contextual -->
+    <string name="menu_contextual_comp1_1">Menu Contextual 1.1</string>
+    <string name="menu_contextual_comp1_2">Menu Contextual 1.2</string>
+    <string name="menu_contextual_comp1_11">Menu Contextual 1.1.1</string>
+    <string name="menu_contextual_comp1_12">Menu Contextual 1.1.2</string>
+    <string name="menu_contextual_comp1_21">Menu Contextual 1.2.1</string>
+    <string name="menu_contextual_comp1_22">Menu Contextual 1.2.2</string>
+    
+    
+    <string name="menu_contextual_comp2_1">Menu Contextual 2.1</string>
+    <string name="menu_contextual_comp2_2">Menu Contextual 2.2</string>
+    <string name="menu_contextual_comp2_11">Menu Contextual 2.1.1</string>
+    <string name="menu_contextual_comp2_12">Menu Contextual 2.1.2</string>
+    <string name="menu_contextual_comp2_21">Menu Contextual 2.2.1</string>
+    <string name="menu_contextual_comp2_22">Menu Contextual 2.2.2</string>
+</resources>

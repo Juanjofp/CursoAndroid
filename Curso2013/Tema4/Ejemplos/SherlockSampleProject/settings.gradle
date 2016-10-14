@@ -1,0 +1,1 @@
+include ':libraries:actionbarsherlock', ':libraries:google-play-services_lib', ':SherlockSample'

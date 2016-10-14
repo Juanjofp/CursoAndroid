@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, CursoAndroid!</string>
+    <string name="app_name">CursoAndroid</string>
+    <string name="ck_pref">checkboxPref</string>
+    <string name="txt_pref">editTextPref</string>
+    <string name="lst_pref">listPref</string>
+    
+    
+    
+     <string-array name="listArray">
+     	<item>Value 1</item>
+     	<item>Value 2</item>
+     	<item>Value 3</item>
+ 	 </string-array>
+ 	<string-array name="listValues">
+    	 <item>1</item>
+     	<item>2</item>
+     	<item>3</item>
+ 	</string-array>
+ 
+</resources>

@@ -1,0 +1,76 @@
+package com.juanjofp.android.tema8.services;
+
+import com.juanjofp.android.tema8.Tema_8Activity;
+
+import android.app.Service;
+import android.content.Intent;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.Message;
+import android.os.Messenger;
+import android.os.RemoteException;
+import android.widget.Toast;
+
+public class SampleBoundedService extends Service {
+
+	public static final int MSG_SAY_HELLO = 1;
+	final Messenger mMessenger = new Messenger(new IncomingHandler());
+
+	
+	@Override
+	public IBinder onBind(Intent intent) {
+		// TODO Auto-generated method stub
+		 Toast.makeText(getApplicationContext(), "binding", Toast.LENGTH_SHORT).show();
+	     return mMessenger.getBinder();
+	}
+	
+	
+	
+	class IncomingHandler extends Handler {
+
+		@Override
+		public void handleMessage(Message msg) {
+			switch (msg.what) {
+			case MSG_SAY_HELLO:
+				Toast.makeText(getApplicationContext(), "hello!",
+						Toast.LENGTH_SHORT).show();
+				
+				procesarMensaje(msg);
+				break;
+			default:
+				super.handleMessage(msg);
+			}
+		}
+	} 
+	
+	private void procesarMensaje(final Message msg){
+		
+		new Thread(new Runnable() {
+			
+			public void run() {
+				// TODO Auto-generated method stub
+				//Proceso pesado
+				try {
+					Thread.sleep(msg.arg1);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				
+				try {
+					
+					//Respondemos al componente
+					Message msgResponse = Message.obtain(null, Tema_8Activity.MSG_RESPONSE_HELLO, 12345, 0);
+					msg.replyTo.send(msgResponse);
+					
+				} catch (RemoteException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+		});
+	}
+
+}

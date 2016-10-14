@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Tema3Activity!</string>
+    <string name="app_name">Tema3</string>
+    
+    <string name="chronometer_start">Iniciar</string>
+    <string name="chronometer_stop">Parar</string>
+    <string name="chronometer_reset">Limpiar</string>
+    <string name="chronometer_set_format">Formatear</string>
+    <string name="chronometer_clear_format">Limpiar formato</string>
+    
+    <string name="controls_1_save">Save</string>
+    <string name="controls_1_checkbox_1">Checkbox 1</string>
+    <string name="controls_1_checkbox_2">Checkbox 2</string>
+    <string name="controls_1_radiobutton_1">RadioButton 1</string>
+    <string name="controls_1_radiobutton_2">RadioButton 2</string>
+    <string name="controls_1_star">Star</string>
+    
+    <string name="textColorPrimary">textColorPrimary</string>
+    <string name="textColorSecondary">textColorSecondary</string>
+    <string name="textColorTertiary">textColorTertiary</string>
+    <string name="listSeparatorTextViewStyle">listSeparatorTextViewStyle</string>
+    
+    <string name="date_widgets_example_dateDisplay_text"></string>
+    <string name="date_widgets_example_pickTime_text">Cambiar la hora</string>
+    <string name="date_widgets_example_pickDate_text">Cambiar la fecha</string>
+    
+    <string name="image_view_large_normal">Large image at normal size</string>
+    <string name="image_view_large_at_most">Large image scaled to at most 50x50</string>
+    <string name="image_view_large_at_most_padded">Large image scaled to at most 70x70 with padding</string>
+    <string name="image_view_large_exactly_padded">Large image scaled to exactly 70x70 with padding</string>
+    <string name="image_view_small_normal">Small image at normal size</string>
+    <string name="image_view_small_at_most">Small image scaled to at most 50x50</string>
+    <string name="image_view_small_at_most_padded">Small image scaled to at most 70x70 with padding</string>
+    <string name="image_view_small_exactly_padded">Small image scaled to exactly 70x70 with padding</string>
+    
+    <string name="linear_layout_1_top">This is the top view.</string>
+    <string name="linear_layout_1_middle">This is the middle view. It has more text in it than either the top view or the bottom view.</string>
+    <string name="linear_layout_1_bottom">This is the bottom view.</string>
+    
+    <string name="progressbar_1_plus">+</string>
+    <string name="progressbar_1_minus">-</string>
+    <string name="progressbar_1_default_progress">Default progress:</string>
+    <string name="progressbar_1_secondary_progress">Secondary progress:</string>
+    
+    
+    <string name="relative_layout_1_top">Top</string>
+    <string name="relative_layout_1_bottom">Bottom</string>
+    <string name="relative_layout_1_center">center_vertical</string>
+    
+    <string name="scrollbar_1_text">Lorem ipsum dolor sit amet.</string>
+    
+    <string name="spinner_1_color">Color:</string>
+    <string name="spinner_1_planet">Planet:</string>
+    <string name="spinner_1_color_prompt">Choose a color</string>
+    <string name="spinner_1_planet_prompt">Choose a planet</string>
+    
+    <string name="table_layout_1_star">*</string>
+    <string name="table_layout_1_triple_star">***</string>
+    <string name="table_layout_1_open">Open\u2026</string>
+    <string name="table_layout_1_open_shortcut">Ctrl-O</string>
+    <string name="table_layout_1_save">Save As\u2026</string>
+    <string name="table_layout_1_save_shortcut">(Save Document)</string>
+    <string name="table_layout_1_quit">Quit Application</string>
+    <string name="table_layout_1_quit_shortcut">Ctrl-Shift-Q</string>
+</resources>

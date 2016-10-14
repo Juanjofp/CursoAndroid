@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_default_background">#FFDD4B39</color>
+    <color name="common_signin_btn_light_text_default">#FF737373</color>
+    <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_light_text_focused">#FF737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+
+    <declare-styleable name="MapAttrs">
+        <attr name="mapType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="normal" value="1" />
+            <enum name="satellite" value="2" />
+            <enum name="terrain" value="3" />
+            <enum name="hybrid" value="4" />
+        </attr>
+        <attr name="cameraBearing" format="float" />
+        <attr name="cameraTargetLat" format="float" />
+        <attr name="cameraTargetLng" format="float" />
+        <attr name="cameraTilt" format="float" />
+        <attr name="cameraZoom" format="float" />
+        <attr name="uiCompass" format="boolean" />
+        <attr name="uiRotateGestures" format="boolean" />
+        <attr name="uiScrollGestures" format="boolean" />
+        <attr name="uiTiltGestures" format="boolean" />
+        <attr name="uiZoomControls" format="boolean" />
+        <attr name="uiZoomGestures" format="boolean" />
+        <attr name="useViewLifecycle" format="boolean" />
+        <attr name="zOrderOnTop" format="boolean" />
+    </declare-styleable>
+
+    <string name="achievement">Achievement</string>
+    <string name="achievement_arrogant">CgkI2d2hgKIYEAIQCA</string>
+    <string name="achievement_arrogant_toast_text">Arrogant (requested maximum score)!</string>
+    <string name="achievement_bored">CgkI2d2hgKIYEAIQBA</string>
+    <string name="achievement_humble">CgkI2d2hgKIYEAIQAg</string>
+    <string name="achievement_humble_toast_text">Humble! (requested 0 score)</string>
+    <string name="achievement_leet">CgkI2d2hgKIYEAIQAw</string>
+    <string name="achievement_leet_toast_text">L33t! (got 1337 score)</string>
+    <string name="achievement_prime">CgkI2d2hgKIYEAIQAQ</string>
+    <string name="achievement_prime_toast_text">Prime score!</string>
+    <string name="achievement_really_bored">CgkI2d2hgKIYEAIQBQ</string>
+    <string name="achievements_not_available">Please sign in to view achievements.</string>
+    <string name="app_id">833761079001</string>
+    <string name="app_name">Type-a-Number Challenge</string>
+    <string name="auth_client_availability_notification_title">Install/Update/Enable Google Play services</string>
+    <string name="auth_client_play_services_err_notification_msg">Google Play services error</string>
+    <string name="auth_client_requested_by_msg">Requested by <ns1:g id="app_name">%1$s</ns1:g></string>
+    <string name="choose_difficulty">Choose a difficulty to play:</string>
+    <string name="clear">Clear</string>
+    <string name="common_google_play_services_enable_button" msgid="2523291102206661146">Enable Google Play services</string>
+    <string name="common_google_play_services_enable_text" msgid="227660514972886228">This app won\'t work unless you enable Google Play services.</string>
+    <string name="common_google_play_services_enable_title" msgid="5122002158466380389">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button" msgid="7153882981874058840">Get Google Play services</string>
+    <string name="common_google_play_services_install_text_phone" msgid="2122112764540849864">This app won\'t run without Google Play services, which are missing from your phone.</string>
+    <string name="common_google_play_services_install_text_tablet" msgid="7351599665250191022">This app won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string name="common_google_play_services_install_title" msgid="7215213145546190223">Get Google Play services</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string name="common_google_play_services_update_button" msgid="6556509956452265614">Update</string>
+    <string name="common_google_play_services_update_text" msgid="9053896323427875356">This app won\'t run unless you update Google Play services.</string>
+    <string name="common_google_play_services_update_title" msgid="1788179980625863495">Update Google Play services</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="digit0"> 0 </string>
+    <string name="digit1">1</string>
+    <string name="digit2">2</string>
+    <string name="digit3">3</string>
+    <string name="digit4">4</string>
+    <string name="digit5">5</string>
+    <string name="digit6">6</string>
+    <string name="digit7">7</string>
+    <string name="digit8">8</string>
+    <string name="digit9">9</string>
+    <string name="easy">Easy</string>
+    <string name="easy_mode_explanation">You\'re playing in easy mode, so you got the score you requested! Wasn\'t that easy?</string>
+    <string name="hard">Hard</string>
+    <string name="hard_mode_explanation">You\'re playing in hard mode, so you only got half the score you requested! Isn\'t this game hard?</string>
+    <string name="initial_input">0000</string>
+    <string name="leaderboard_easy">CgkI2d2hgKIYEAIQBg</string>
+    <string name="leaderboard_hard">CgkI2d2hgKIYEAIQBw</string>
+    <string name="leaderboards_not_available">Please sign in to view leaderboards.</string>
+    <string name="location_client_ulr_inactive_age_under_13" translatable="false">        AgeUnder13</string>
+    <string name="location_client_ulr_inactive_age_unknown" translatable="false">AgeUnknown</string>
+    <string name="location_client_ulr_inactive_unknown_restriction" translatable="false">        UnknownRestriction</string>
+    <string name="ok">OK</string>
+    <string name="see_your_progress">See your progress:</string>
+    <string name="show_achievements">Show Achievements</string>
+    <string name="show_leaderboards">Show Leaderboards</string>
+    <string name="sign_in_to_upload_this_score">Sign in now to upload this score, save your achievements and share your progress with friends.</string>
+    <string name="sign_in_why">Sign in with Google to share your scores and achievements with your friends.</string>
+    <string name="sign_out">Sign out</string>
+    <string name="signed_out_greeting">Hello, anonymous user (not signed in)!</string>
+    <string name="signing_in">Signing in with Google</string>
+    <string name="signing_out">Signing out</string>
+    <string name="title_activity_main">Type-a-Number Challenge</string>
+    <string name="what_score_do_you_deserve">What score do you think you deserve?</string>
+    <string name="you_are_signed_in">You are signed in with Google.</string>
+    <string name="you_win">You win! Your score is:</string>
+    <string name="your_progress_will_be_uploaded">Your existing achievements and score will be uploaded shortly.</string>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+</resources>

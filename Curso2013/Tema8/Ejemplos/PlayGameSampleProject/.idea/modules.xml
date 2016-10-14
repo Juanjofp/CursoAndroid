@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/libraries/BaseGameUtils/BaseGameUtils.iml" filepath="$PROJECT_DIR$/libraries/BaseGameUtils/BaseGameUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Game2/Game2.iml" filepath="$PROJECT_DIR$/Game2/Game2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PlayGameSample/PlayGameSample.iml" filepath="$PROJECT_DIR$/PlayGameSample/PlayGameSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PlayGameSampleProject.iml" filepath="$PROJECT_DIR$/PlayGameSampleProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/google-play-services_lib/google-play-services_lib.iml" filepath="$PROJECT_DIR$/libraries/google-play-services_lib/google-play-services_lib.iml" />
+    </modules>
+  </component>
+</project>
+
