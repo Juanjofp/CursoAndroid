@@ -9,4 +9,25 @@
         android:checkable="false"
         android:enabled="true"
         app:showAsAction="always"/>
+
+    <item android:title="Registrar"
+        android:visible="true"
+        android:id="@+id/register"
+        android:checkable="false"
+        android:enabled="true"
+        app:showAsAction="never"/>
+
+    <item android:title="Loguear"
+        android:visible="true"
+        android:id="@+id/login"
+        android:checkable="false"
+        android:enabled="true"
+        app:showAsAction="never"/>
+
+    <item android:title="Libros"
+        android:visible="true"
+        android:id="@+id/books"
+        android:checkable="false"
+        android:enabled="true"
+        app:showAsAction="never"/>
 </menu>
