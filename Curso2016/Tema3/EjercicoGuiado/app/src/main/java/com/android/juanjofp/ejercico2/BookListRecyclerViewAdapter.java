@@ -1,9 +1,11 @@
 package com.android.juanjofp.ejercico2;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.juanjofp.ejercico2.models.Book;
@@ -34,6 +36,13 @@ public class BookListRecyclerViewAdapter extends RecyclerView.Adapter<BookListRe
         holder.mIdView.setText(mValues.get(position).getmTitulo());
         holder.mContentView.setText(mValues.get(position).getmResumen());
 
+        holder.mIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e("", "");
+            }
+        });
+
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +64,7 @@ public class BookListRecyclerViewAdapter extends RecyclerView.Adapter<BookListRe
         public final View mView;
         public final TextView mIdView;
         public final TextView mContentView;
+        public final ImageView mIcon;
         public Book mItem;
 
         public ViewHolder(View view) {
@@ -62,6 +72,7 @@ public class BookListRecyclerViewAdapter extends RecyclerView.Adapter<BookListRe
             mView = view;
             mIdView = (TextView) view.findViewById(R.id.id);
             mContentView = (TextView) view.findViewById(R.id.content);
+            mIcon = (ImageView) view.findViewById(R.id.ivIcon);
         }
 
         @Override
